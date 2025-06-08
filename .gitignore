@@ -51,3 +51,6 @@ tmp/
 
 # exclude saved oauth tokens
 oauth*_token.json
+
+# Claude local settings
+.claude/settings.local.json

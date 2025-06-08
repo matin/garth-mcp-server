@@ -1,12 +1,13 @@
 import os
 from datetime import date
 from functools import wraps
+from urllib.parse import urlencode
 
 import garth
 from mcp.server.fastmcp import FastMCP
 
 
-__version__ = "0.0.6"
+__version__ = "0.0.7"
 
 server = FastMCP("Garth - Garmin Connect", dependencies=["garth"], version=__version__)
 
@@ -159,18 +160,15 @@ def get_activities(
     start_date: Start date for activities (YYYY-MM-DD format)
     limit: Maximum number of activities to return
     """
-    params = []
+    params = {}
     if start_date:
-        params.append(f"startDate={start_date}")
+        params["startDate"] = start_date
     if limit:
-        params.append(f"limit={limit}")
+        params["limit"] = str(limit)
 
-    query_string = "&".join(params) if params else ""
-    endpoint = (
-        f"activitylist-service/activities/search/activities?{query_string}"
-        if query_string
-        else "activitylist-service/activities/search/activities"
-    )
+    endpoint = "activitylist-service/activities/search/activities"
+    if params:
+        endpoint += "?" + urlencode(params)
     return garth.connectapi(endpoint)
 
 
@@ -323,7 +321,8 @@ def nightly_sleep(
     sleep_data = garth.SleepData.list(end_date, nights)
     if not sleep_movement:
         for night in sleep_data:
-            del night.sleep_movement
+            if hasattr(night, "sleep_movement"):
+                del night.sleep_movement
     return sleep_data
 
 
