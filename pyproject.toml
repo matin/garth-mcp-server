@@ -8,7 +8,7 @@ authors = [
     {name = "Matin Tamizi", email = "mtamizi@duck.com"},
 ]
 dependencies = [
-    "garth>=0.5.9,<0.6.0",
+    "garth>=0.5.14,<0.6.0",
     "mcp>=1.9.0,<2.0.0",
 ]
 license = {text = "MIT"}
