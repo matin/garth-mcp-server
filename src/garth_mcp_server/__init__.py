@@ -28,7 +28,7 @@ def requires_garth_session(func):
 
 @server.tool()
 @requires_garth_session
-async def user_profile() -> str | garth.UserProfile:
+def user_profile() -> str | garth.UserProfile:
     """
     Get user profile information using Garth's UserProfile data class.
     """
@@ -37,7 +37,7 @@ async def user_profile() -> str | garth.UserProfile:
 
 @server.tool()
 @requires_garth_session
-async def user_settings() -> str | garth.UserSettings:
+def user_settings() -> str | garth.UserSettings:
     """
     Get user settings using Garth's UserSettings data class.
     """
@@ -46,7 +46,7 @@ async def user_settings() -> str | garth.UserSettings:
 
 @server.tool()
 @requires_garth_session
-async def weekly_intensity_minutes(
+def weekly_intensity_minutes(
     end_date: date | None = None, weeks: int = 1
 ) -> str | list[garth.WeeklyIntensityMinutes]:
     """
@@ -59,7 +59,7 @@ async def weekly_intensity_minutes(
 
 @server.tool()
 @requires_garth_session
-async def daily_body_battery(
+def daily_body_battery(
     end_date: date | None = None, days: int = 1
 ) -> str | list[garth.DailyBodyBatteryStress]:
     """
@@ -72,7 +72,7 @@ async def daily_body_battery(
 
 @server.tool()
 @requires_garth_session
-async def daily_hydration(
+def daily_hydration(
     end_date: date | None = None, days: int = 1
 ) -> str | list[garth.DailyHydration]:
     """
@@ -85,7 +85,7 @@ async def daily_hydration(
 
 @server.tool()
 @requires_garth_session
-async def daily_steps(
+def daily_steps(
     end_date: date | None = None, days: int = 1
 ) -> str | list[garth.DailySteps]:
     """
@@ -98,7 +98,7 @@ async def daily_steps(
 
 @server.tool()
 @requires_garth_session
-async def weekly_steps(
+def weekly_steps(
     end_date: date | None = None, weeks: int = 1
 ) -> str | list[garth.WeeklySteps]:
     """
@@ -111,7 +111,7 @@ async def weekly_steps(
 
 @server.tool()
 @requires_garth_session
-async def daily_hrv(
+def daily_hrv(
     end_date: date | None = None, days: int = 1
 ) -> str | list[garth.DailyHRV]:
     """
@@ -124,9 +124,7 @@ async def daily_hrv(
 
 @server.tool()
 @requires_garth_session
-async def hrv_data(
-    end_date: date | None = None, days: int = 1
-) -> str | list[garth.HRVData]:
+def hrv_data(end_date: date | None = None, days: int = 1) -> str | list[garth.HRVData]:
     """
     Get detailed HRV data for a given date and number of days.
     If no date is provided, the current date will be used.
@@ -137,7 +135,7 @@ async def hrv_data(
 
 @server.tool()
 @requires_garth_session
-async def daily_sleep(
+def daily_sleep(
     end_date: date | None = None, days: int = 1
 ) -> str | list[garth.DailySleep]:
     """
@@ -153,7 +151,7 @@ async def daily_sleep(
 
 @server.tool()
 @requires_garth_session
-async def get_activities(
+def get_activities(
     start_date: str | None = None, limit: int | None = None
 ) -> str | dict | None:
     """
@@ -178,7 +176,7 @@ async def get_activities(
 
 @server.tool()
 @requires_garth_session
-async def get_activities_by_date(date: str) -> str | dict | None:
+def get_activities_by_date(date: str) -> str | dict | None:
     """
     Get activities for a specific date from Garmin Connect.
     date: Date for activities (YYYY-MM-DD format)
@@ -188,7 +186,7 @@ async def get_activities_by_date(date: str) -> str | dict | None:
 
 @server.tool()
 @requires_garth_session
-async def get_activity_details(activity_id: str) -> str | dict | None:
+def get_activity_details(activity_id: str) -> str | dict | None:
     """
     Get detailed information for a specific activity.
     activity_id: Garmin Connect activity ID
@@ -198,7 +196,7 @@ async def get_activity_details(activity_id: str) -> str | dict | None:
 
 @server.tool()
 @requires_garth_session
-async def get_activity_splits(activity_id: str) -> str | dict | None:
+def get_activity_splits(activity_id: str) -> str | dict | None:
     """
     Get lap/split data for a specific activity.
     activity_id: Garmin Connect activity ID
@@ -208,7 +206,7 @@ async def get_activity_splits(activity_id: str) -> str | dict | None:
 
 @server.tool()
 @requires_garth_session
-async def get_activity_weather(activity_id: str) -> str | dict | None:
+def get_activity_weather(activity_id: str) -> str | dict | None:
     """
     Get weather data for a specific activity.
     activity_id: Garmin Connect activity ID
@@ -218,7 +216,7 @@ async def get_activity_weather(activity_id: str) -> str | dict | None:
 
 @server.tool()
 @requires_garth_session
-async def get_body_composition(date: str | None = None) -> str | dict | None:
+def get_body_composition(date: str | None = None) -> str | dict | None:
     """
     Get body composition data from Garmin Connect.
     date: Date for body composition data (YYYY-MM-DD format), if not provided returns latest
@@ -232,7 +230,7 @@ async def get_body_composition(date: str | None = None) -> str | dict | None:
 
 @server.tool()
 @requires_garth_session
-async def get_respiration_data(date: str) -> str | dict | None:
+def get_respiration_data(date: str) -> str | dict | None:
     """
     Get respiration data from Garmin Connect.
     date: Date for respiration data (YYYY-MM-DD format)
@@ -242,7 +240,7 @@ async def get_respiration_data(date: str) -> str | dict | None:
 
 @server.tool()
 @requires_garth_session
-async def get_spo2_data(date: str) -> str | dict | None:
+def get_spo2_data(date: str) -> str | dict | None:
     """
     Get SpO2 (blood oxygen) data from Garmin Connect.
     date: Date for SpO2 data (YYYY-MM-DD format)
@@ -252,7 +250,7 @@ async def get_spo2_data(date: str) -> str | dict | None:
 
 @server.tool()
 @requires_garth_session
-async def get_blood_pressure(date: str) -> str | dict | None:
+def get_blood_pressure(date: str) -> str | dict | None:
     """
     Get blood pressure readings from Garmin Connect.
     date: Date for blood pressure data (YYYY-MM-DD format)
@@ -262,7 +260,7 @@ async def get_blood_pressure(date: str) -> str | dict | None:
 
 @server.tool()
 @requires_garth_session
-async def get_devices() -> str | dict | None:
+def get_devices() -> str | dict | None:
     """
     Get connected devices from Garmin Connect.
     """
@@ -271,7 +269,7 @@ async def get_devices() -> str | dict | None:
 
 @server.tool()
 @requires_garth_session
-async def get_device_settings(device_id: str) -> str | dict | None:
+def get_device_settings(device_id: str) -> str | dict | None:
     """
     Get settings for a specific device.
     device_id: Device ID from Garmin Connect
@@ -283,7 +281,7 @@ async def get_device_settings(device_id: str) -> str | dict | None:
 
 @server.tool()
 @requires_garth_session
-async def get_gear() -> str | dict | None:
+def get_gear() -> str | dict | None:
     """
     Get gear information from Garmin Connect.
     """
@@ -292,7 +290,7 @@ async def get_gear() -> str | dict | None:
 
 @server.tool()
 @requires_garth_session
-async def get_gear_stats(gear_uuid: str) -> str | dict | None:
+def get_gear_stats(gear_uuid: str) -> str | dict | None:
     """
     Get usage statistics for specific gear.
     gear_uuid: UUID of the gear item
@@ -302,7 +300,7 @@ async def get_gear_stats(gear_uuid: str) -> str | dict | None:
 
 @server.tool()
 @requires_garth_session
-async def get_connectapi_endpoint(endpoint: str) -> str | dict | None:
+def get_connectapi_endpoint(endpoint: str) -> str | dict | None:
     """
     Get the data from a given Garmin Connect API endpoint.
     This is a generic tool that can be used to get data from any Garmin Connect API endpoint.
@@ -312,7 +310,7 @@ async def get_connectapi_endpoint(endpoint: str) -> str | dict | None:
 
 @server.tool()
 @requires_garth_session
-async def nightly_sleep(
+def nightly_sleep(
     end_date: date | None = None, nights: int = 1, sleep_movement: bool = False
 ) -> str | list[garth.SleepData]:
     """
@@ -331,7 +329,7 @@ async def nightly_sleep(
 
 @server.tool()
 @requires_garth_session
-async def daily_stress(
+def daily_stress(
     end_date: date | None = None, days: int = 1
 ) -> str | list[garth.DailyStress]:
     """
@@ -344,7 +342,7 @@ async def daily_stress(
 
 @server.tool()
 @requires_garth_session
-async def weekly_stress(
+def weekly_stress(
     end_date: date | None = None, weeks: int = 1
 ) -> str | list[garth.WeeklyStress]:
     """
@@ -357,7 +355,7 @@ async def weekly_stress(
 
 @server.tool()
 @requires_garth_session
-async def daily_intensity_minutes(
+def daily_intensity_minutes(
     end_date: date | None = None, days: int = 1
 ) -> str | list[garth.DailyIntensityMinutes]:
     """
@@ -370,7 +368,7 @@ async def daily_intensity_minutes(
 
 @server.tool()
 @requires_garth_session
-async def monthly_activity_summary(month: int, year: int) -> str | dict | None:
+def monthly_activity_summary(month: int, year: int) -> str | dict | None:
     """
     Get the monthly activity summary for a given month and year.
     """
@@ -379,7 +377,7 @@ async def monthly_activity_summary(month: int, year: int) -> str | dict | None:
 
 @server.tool()
 @requires_garth_session
-async def snapshot(from_date: date, to_date: date) -> str | dict | None:
+def snapshot(from_date: date, to_date: date) -> str | dict | None:
     """
     Get the snapshot for a given date range. This is a good starting point for
     getting data for a given date range. It can be used in combination with
