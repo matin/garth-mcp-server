@@ -1,3 +1,5 @@
+[![MseeP.ai Security Assessment Badge](https://mseep.net/pr/matin-garth-mcp-server-badge.png)](https://mseep.ai/app/matin-garth-mcp-server)
+
 # garth-mcp-server
 
 [![PyPI version](
