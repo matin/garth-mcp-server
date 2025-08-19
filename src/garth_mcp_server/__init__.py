@@ -7,7 +7,7 @@ import garth
 from mcp.server.fastmcp import FastMCP
 
 
-__version__ = "0.0.7"
+__version__ = "0.0.8"
 
 server = FastMCP("Garth - Garmin Connect", dependencies=["garth"])
 
