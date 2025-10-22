@@ -2,12 +2,16 @@ import os
 from datetime import date
 from functools import wraps
 from urllib.parse import urlencode
+from typing import Union
 
 import garth
 from mcp.server.fastmcp import FastMCP
 
 
-__version__ = "0.0.9a1"
+__version__ = "0.0.9.dev1"
+
+# Type alias for functions that return data from garth.connectapi
+ConnectAPIResponse = Union[str, dict, list, None]
 
 server = FastMCP("Garth - Garmin Connect", dependencies=["garth"])
 
@@ -154,7 +158,7 @@ def daily_sleep(
 @requires_garth_session
 def get_activities(
     start_date: str | None = None, limit: int | None = None
-) -> str | dict | list | None:
+) -> ConnectAPIResponse:
     """
     Get list of activities from Garmin Connect.
     start_date: Start date for activities (YYYY-MM-DD format)
@@ -174,7 +178,7 @@ def get_activities(
 
 @server.tool()
 @requires_garth_session
-def get_activities_by_date(date: str) -> str | dict | None:
+def get_activities_by_date(date: str) -> ConnectAPIResponse:
     """
     Get activities for a specific date from Garmin Connect.
     date: Date for activities (YYYY-MM-DD format)
@@ -184,7 +188,7 @@ def get_activities_by_date(date: str) -> str | dict | None:
 
 @server.tool()
 @requires_garth_session
-def get_activity_details(activity_id: str) -> str | dict | None:
+def get_activity_details(activity_id: str) -> ConnectAPIResponse:
     """
     Get detailed information for a specific activity.
     activity_id: Garmin Connect activity ID
@@ -194,7 +198,7 @@ def get_activity_details(activity_id: str) -> str | dict | None:
 
 @server.tool()
 @requires_garth_session
-def get_activity_splits(activity_id: str) -> str | dict | None:
+def get_activity_splits(activity_id: str) -> ConnectAPIResponse:
     """
     Get lap/split data for a specific activity.
     activity_id: Garmin Connect activity ID
@@ -204,7 +208,7 @@ def get_activity_splits(activity_id: str) -> str | dict | None:
 
 @server.tool()
 @requires_garth_session
-def get_activity_weather(activity_id: str) -> str | dict | None:
+def get_activity_weather(activity_id: str) -> ConnectAPIResponse:
     """
     Get weather data for a specific activity.
     activity_id: Garmin Connect activity ID
@@ -214,7 +218,7 @@ def get_activity_weather(activity_id: str) -> str | dict | None:
 
 @server.tool()
 @requires_garth_session
-def get_body_composition(date: str | None = None) -> str | dict | None:
+def get_body_composition(date: str | None = None) -> ConnectAPIResponse:
     """
     Get body composition data from Garmin Connect.
     date: Date for body composition data (YYYY-MM-DD format), if not provided returns latest
@@ -228,7 +232,7 @@ def get_body_composition(date: str | None = None) -> str | dict | None:
 
 @server.tool()
 @requires_garth_session
-def get_respiration_data(date: str) -> str | dict | None:
+def get_respiration_data(date: str) -> ConnectAPIResponse:
     """
     Get respiration data from Garmin Connect.
     date: Date for respiration data (YYYY-MM-DD format)
@@ -238,7 +242,7 @@ def get_respiration_data(date: str) -> str | dict | None:
 
 @server.tool()
 @requires_garth_session
-def get_spo2_data(date: str) -> str | dict | None:
+def get_spo2_data(date: str) -> ConnectAPIResponse:
     """
     Get SpO2 (blood oxygen) data from Garmin Connect.
     date: Date for SpO2 data (YYYY-MM-DD format)
@@ -248,7 +252,7 @@ def get_spo2_data(date: str) -> str | dict | None:
 
 @server.tool()
 @requires_garth_session
-def get_blood_pressure(date: str) -> str | dict | None:
+def get_blood_pressure(date: str) -> ConnectAPIResponse:
     """
     Get blood pressure readings from Garmin Connect.
     date: Date for blood pressure data (YYYY-MM-DD format)
@@ -258,7 +262,7 @@ def get_blood_pressure(date: str) -> str | dict | None:
 
 @server.tool()
 @requires_garth_session
-def get_devices() -> str | dict | None:
+def get_devices() -> ConnectAPIResponse:
     """
     Get connected devices from Garmin Connect.
     """
@@ -267,7 +271,7 @@ def get_devices() -> str | dict | None:
 
 @server.tool()
 @requires_garth_session
-def get_device_settings(device_id: str) -> str | dict | None:
+def get_device_settings(device_id: str) -> ConnectAPIResponse:
     """
     Get settings for a specific device.
     device_id: Device ID from Garmin Connect
@@ -279,7 +283,7 @@ def get_device_settings(device_id: str) -> str | dict | None:
 
 @server.tool()
 @requires_garth_session
-def get_gear() -> str | dict | None:
+def get_gear() -> ConnectAPIResponse:
     """
     Get gear information from Garmin Connect.
     """
@@ -288,7 +292,7 @@ def get_gear() -> str | dict | None:
 
 @server.tool()
 @requires_garth_session
-def get_gear_stats(gear_uuid: str) -> str | dict | None:
+def get_gear_stats(gear_uuid: str) -> ConnectAPIResponse:
     """
     Get usage statistics for specific gear.
     gear_uuid: UUID of the gear item
@@ -298,7 +302,7 @@ def get_gear_stats(gear_uuid: str) -> str | dict | None:
 
 @server.tool()
 @requires_garth_session
-def get_connectapi_endpoint(endpoint: str) -> str | dict | None:
+def get_connectapi_endpoint(endpoint: str) -> ConnectAPIResponse:
     """
     Get the data from a given Garmin Connect API endpoint.
     This is a generic tool that can be used to get data from any Garmin Connect API endpoint.
@@ -367,7 +371,7 @@ def daily_intensity_minutes(
 
 @server.tool()
 @requires_garth_session
-def monthly_activity_summary(month: int, year: int) -> str | dict | None:
+def monthly_activity_summary(month: int, year: int) -> ConnectAPIResponse:
     """
     Get the monthly activity summary for a given month and year.
     """
@@ -376,7 +380,7 @@ def monthly_activity_summary(month: int, year: int) -> str | dict | None:
 
 @server.tool()
 @requires_garth_session
-def snapshot(from_date: date, to_date: date) -> str | dict | None:
+def snapshot(from_date: date, to_date: date) -> ConnectAPIResponse:
     """
     Get the snapshot for a given date range. This is a good starting point for
     getting data for a given date range. It can be used in combination with
