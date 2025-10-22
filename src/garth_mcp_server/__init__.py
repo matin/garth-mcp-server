@@ -2,7 +2,6 @@ import os
 from datetime import date
 from functools import wraps
 from urllib.parse import urlencode
-from typing import Union
 
 import garth
 from mcp.server.fastmcp import FastMCP
