@@ -8,7 +8,7 @@ import garth
 from mcp.server.fastmcp import FastMCP
 
 
-__version__ = "0.0.9.dev1"
+__version__ = "0.0.9.dev2"
 
 # Type alias for functions that return data from garth.connectapi
 ConnectAPIResponse = Union[str, dict, list, None]
