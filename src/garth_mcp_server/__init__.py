@@ -154,7 +154,7 @@ def daily_sleep(
 @requires_garth_session
 def get_activities(
     start_date: str | None = None, limit: int | None = None
-) -> str | dict | None:
+) -> str | dict | list | None:
     """
     Get list of activities from Garmin Connect.
     start_date: Start date for activities (YYYY-MM-DD format)
