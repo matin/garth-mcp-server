@@ -11,7 +11,7 @@ from mcp.server.fastmcp import FastMCP
 __version__ = "0.0.9"
 
 # Type alias for functions that return data from garth.connectapi
-ConnectAPIResponse = Union[str, dict, list, None]
+ConnectAPIResponse = str | dict | list | int | float | bool | None
 
 server = FastMCP("Garth - Garmin Connect", dependencies=["garth"])
 
