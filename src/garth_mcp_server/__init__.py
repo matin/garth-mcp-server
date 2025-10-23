@@ -7,7 +7,7 @@ import garth
 from mcp.server.fastmcp import FastMCP
 
 
-__version__ = "0.0.10"
+__version__ = "0.0.10.dev1"
 
 # Type alias for functions that return data from garth.connectapi
 ConnectAPIResponse = str | dict | list | int | float | bool | None
@@ -191,7 +191,7 @@ def get_activities(start: int = 0, limit: int = 20) -> ConnectAPIResponse:
         activity.pop("ownerProfileImageUrlSmall")
         activity.pop("ownerProfileImageUrlMedium")
         activity.pop("ownerProfileImageUrlLarge")
-    
+
     return activities
 
 
@@ -202,7 +202,7 @@ def get_activities_by_date(date: str) -> ConnectAPIResponse:
     Get activities for a specific date from Garmin Connect.
     date: Date for activities (YYYY-MM-DD format)
     """
-    return garth.connectapi(f"wellness-service/wellness/dailySummaryChart/{date}")
+    return garth.connectapi(f"wellness-service/wellness/dailySummaryChart/?date={date}")
 
 
 @server.tool()
