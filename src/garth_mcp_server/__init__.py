@@ -7,7 +7,7 @@ import garth
 from mcp.server.fastmcp import FastMCP
 
 
-__version__ = "0.0.9"
+__version__ = "0.0.10.dev0"
 
 # Type alias for functions that return data from garth.connectapi
 ConnectAPIResponse = str | dict | list | int | float | bool | None
@@ -155,24 +155,44 @@ def daily_sleep(
 
 @server.tool()
 @requires_garth_session
-def get_activities(
-    start_date: str | None = None, limit: int | None = None
-) -> ConnectAPIResponse:
+def get_activities(start: int = 0, limit: int = 20) -> ConnectAPIResponse:
     """
-    Get list of activities from Garmin Connect.
-    start_date: Start date for activities (YYYY-MM-DD format)
-    limit: Maximum number of activities to return
-    """
-    params = {}
-    if start_date:
-        params["startDate"] = start_date
-    if limit:
-        params["limit"] = str(limit)
+    Lists activities from Garmin Connect.
 
+    Parameters
+    ----------
+    start : int, optional
+        The zero-based index in the activity list from which to start returning results (default: 0).
+    limit : int, optional
+        The maximum number of activities to retrieve starting from 'start' (default: 20).
+
+    Returns
+    -------
+    activities : list
+        List of activity records.
+
+    Notes
+    -----
+    Use 'start' and 'limit' to paginate through your activities, e.g. set start=0, limit=20 for the first page,
+    start=20, limit=20 for the next page, etc.
+    """
+    params = {
+        "start": start,
+        "limit": limit,
+    }
     endpoint = "activitylist-service/activities/search/activities"
-    if params:
-        endpoint += "?" + urlencode(params)
-    return garth.connectapi(endpoint)
+    endpoint += "?" + urlencode(params)
+    activities = garth.connectapi(endpoint)
+
+    # remove user roles and profile image urls
+    for activity in activities:
+        activity.pop("userRoles")
+        activity.pop("ownerDisplayName")
+        activity.pop("ownerProfileImageUrlSmall")
+        activity.pop("ownerProfileImageUrlMedium")
+        activity.pop("ownerProfileImageUrlLarge")
+    
+    return activities
 
 
 @server.tool()
