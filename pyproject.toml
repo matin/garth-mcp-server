@@ -8,8 +8,8 @@ authors = [
     {name = "Matin Tamizi", email = "mtamizi@duck.com"},
 ]
 dependencies = [
-    "garth>=0.5.14,<0.6.0",
-    "mcp>=1.9.0,<2.0.0",
+    "garth>=0.5.18,<0.6.0",
+    "fastmcp>=2.13",
 ]
 license = {text = "MIT"}
 classifiers = [
@@ -29,12 +29,20 @@ path = "src/garth_mcp_server/__init__.py"
 [project.scripts]
 garth-mcp-server = "garth_mcp_server:main"
 
-[project.optional-dependencies]
+[dependency-groups]
+testing = [
+    "pytest",
+    "pytest-cov",
+    "pytest-vcr",
+    "pytest-anyio",
+]
 dev = [
     "ipython",
     "ipdb",
     "ipykernel",
     "mcp[cli]",
+    "pytest-anyio>=0.0.0",
+    "pre-commit>=4.3.0",
 ]
 linting = [
     "ruff",

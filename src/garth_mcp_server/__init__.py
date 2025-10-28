@@ -183,6 +183,7 @@ def get_activities(start: int = 0, limit: int = 20) -> ConnectAPIResponse:
     endpoint = "activitylist-service/activities/search/activities"
     endpoint += "?" + urlencode(params)
     activities = garth.connectapi(endpoint)
+    assert isinstance(activities, list)
 
     # remove user roles and profile image urls
     for activity in activities:
