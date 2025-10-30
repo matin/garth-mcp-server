@@ -1,0 +1,228 @@
+interactions:
+- request:
+    body: mfa_token=SANITIZED
+    headers:
+      Accept:
+      - !!binary |
+        Ki8q
+      Accept-Encoding:
+      - !!binary |
+        Z3ppcCwgZGVmbGF0ZQ==
+      Authorization:
+      - Bearer SANITIZED
+      Connection:
+      - !!binary |
+        a2VlcC1hbGl2ZQ==
+      Content-Length:
+      - '74'
+      Content-Type:
+      - !!binary |
+        YXBwbGljYXRpb24veC13d3ctZm9ybS11cmxlbmNvZGVk
+      User-Agent:
+      - !!binary |
+        Y29tLmdhcm1pbi5hbmRyb2lkLmFwcHMuY29ubmVjdG1vYmlsZQ==
+    method: POST
+    uri: https://connectapi.garmin.com/oauth-service/oauth/exchange/user/2.0
+  response:
+    body:
+      string: '{"scope": "GARMINPAY_WRITE ATP_READ GHS_SAMD INSIGHTS_READ CIQ_APPSTORE_SERVICES_CREATE
+        COMMUNITY_COURSE_WRITE GCOFFER_WRITE DT_CLIENT_ANALYTICS_WRITE CIQ_APPSTORE_SERVICES_DELETE
+        OMT_SUBSCRIPTION_READ CONNECT_READ COMMUNITY_COURSE_READ GOLF_API_READ GHS_UPLOAD
+        DIVE_API_READ CIQ_APPSTORE_SERVICES_READ CIQ_APPSTORE_SERVICES_UPDATE CONNECT_WRITE
+        CONNECT_MCT_DAILY_LOG_READ DI_OAUTH_2_AUTHORIZATION_CODE_CREATE GARMINPAY_READ
+        GOLF_API_WRITE INSIGHTS_WRITE PRODUCT_SEARCH_READ OMT_CAMPAIGN_READ GCOFFER_READ
+        ATP_WRITE", "jti": "SANITIZED", "access_token": "SANITIZED", "token_type":
+        "bearer", "refresh_token": "SANITIZED", "expires_in": 92773, "refresh_token_expires_in":
+        2591999}'
+    headers:
+      CF-RAY:
+      - 99675e7f8fc15638-QRO
+      Cache-Control:
+      - no-cache, no-store, private
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      Date:
+      - Thu, 30 Oct 2025 02:09:11 GMT
+      NEL:
+      - '{"success_fraction":0.01,"report_to":"cf-nel","max_age":604800}'
+      Report-To:
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=7wNXqstom%2BhuRtdbG4aJJsQ2LVGGTVhTqL9lKM7AqE%2BSsf5MXcWcUZ3CD9Cs73fKUNrOKzGDeCpCTEDlG6eQYORIeouQPTA8%2BB%2F7j4IE9iGld7F1Xxn7DwY%2F5ge4H5P%2BVodgeRkYtkF%2FQ%2B4twxYM5IdHvQ%3D%3D"}],"group":"cf-nel","max_age":604800}'
+      Server:
+      - cloudflare
+      Set-Cookie:
+      - _cfuvid=SANITIZED; path=SANITIZED; domain=SANITIZED; HttpOnly; Secure; SameSite=SANITIZED
+      Transfer-Encoding:
+      - chunked
+      alt-svc:
+      - h3=":443"; ma=86400
+      cf-cache-status:
+      - DYNAMIC
+      pragma:
+      - no-cache
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Authorization:
+      - Bearer SANITIZED
+      Connection:
+      - keep-alive
+      Cookie:
+      - _cfuvid=SANITIZED
+      User-Agent:
+      - GCM-iOS-5.7.2.1
+    method: GET
+    uri: https://connectapi.garmin.com/hrv-service/hrv/2025-10-29
+  response:
+    body:
+      string: '{"userProfilePk": 2591602, "hrvSummary": {"calendarDate": "2025-10-29",
+        "weeklyAvg": 43, "lastNightAvg": 47, "lastNight5MinHigh": 76, "baseline":
+        {"lowUpper": 39, "balancedLow": 41, "balancedUpper": 52, "markerValue": 0.3408966},
+        "status": "BALANCED", "feedbackPhrase": "HRV_BALANCED_7", "createTimeStamp":
+        "2025-10-29T13:37:39.967"}, "hrvReadings": [{"hrvValue": 37, "readingTimeGMT":
+        "2025-10-29T05:39:57.0", "readingTimeLocal": "2025-10-28T23:39:57.0"}, {"hrvValue":
+        38, "readingTimeGMT": "2025-10-29T05:44:57.0", "readingTimeLocal": "2025-10-28T23:44:57.0"},
+        {"hrvValue": 34, "readingTimeGMT": "2025-10-29T05:49:57.0", "readingTimeLocal":
+        "2025-10-28T23:49:57.0"}, {"hrvValue": 42, "readingTimeGMT": "2025-10-29T05:54:57.0",
+        "readingTimeLocal": "2025-10-28T23:54:57.0"}, {"hrvValue": 28, "readingTimeGMT":
+        "2025-10-29T05:59:57.0", "readingTimeLocal": "2025-10-28T23:59:57.0"}, {"hrvValue":
+        35, "readingTimeGMT": "2025-10-29T06:04:57.0", "readingTimeLocal": "2025-10-29T00:04:57.0"},
+        {"hrvValue": 37, "readingTimeGMT": "2025-10-29T06:09:57.0", "readingTimeLocal":
+        "2025-10-29T00:09:57.0"}, {"hrvValue": 40, "readingTimeGMT": "2025-10-29T06:14:57.0",
+        "readingTimeLocal": "2025-10-29T00:14:57.0"}, {"hrvValue": 46, "readingTimeGMT":
+        "2025-10-29T06:19:57.0", "readingTimeLocal": "2025-10-29T00:19:57.0"}, {"hrvValue":
+        42, "readingTimeGMT": "2025-10-29T06:24:57.0", "readingTimeLocal": "2025-10-29T00:24:57.0"},
+        {"hrvValue": 43, "readingTimeGMT": "2025-10-29T06:29:57.0", "readingTimeLocal":
+        "2025-10-29T00:29:57.0"}, {"hrvValue": 52, "readingTimeGMT": "2025-10-29T06:34:57.0",
+        "readingTimeLocal": "2025-10-29T00:34:57.0"}, {"hrvValue": 53, "readingTimeGMT":
+        "2025-10-29T06:39:57.0", "readingTimeLocal": "2025-10-29T00:39:57.0"}, {"hrvValue":
+        45, "readingTimeGMT": "2025-10-29T06:44:57.0", "readingTimeLocal": "2025-10-29T00:44:57.0"},
+        {"hrvValue": 56, "readingTimeGMT": "2025-10-29T06:49:57.0", "readingTimeLocal":
+        "2025-10-29T00:49:57.0"}, {"hrvValue": 65, "readingTimeGMT": "2025-10-29T06:54:57.0",
+        "readingTimeLocal": "2025-10-29T00:54:57.0"}, {"hrvValue": 42, "readingTimeGMT":
+        "2025-10-29T06:59:57.0", "readingTimeLocal": "2025-10-29T00:59:57.0"}, {"hrvValue":
+        37, "readingTimeGMT": "2025-10-29T07:04:57.0", "readingTimeLocal": "2025-10-29T01:04:57.0"},
+        {"hrvValue": 35, "readingTimeGMT": "2025-10-29T07:09:57.0", "readingTimeLocal":
+        "2025-10-29T01:09:57.0"}, {"hrvValue": 46, "readingTimeGMT": "2025-10-29T07:14:57.0",
+        "readingTimeLocal": "2025-10-29T01:14:57.0"}, {"hrvValue": 39, "readingTimeGMT":
+        "2025-10-29T07:19:57.0", "readingTimeLocal": "2025-10-29T01:19:57.0"}, {"hrvValue":
+        48, "readingTimeGMT": "2025-10-29T07:24:57.0", "readingTimeLocal": "2025-10-29T01:24:57.0"},
+        {"hrvValue": 42, "readingTimeGMT": "2025-10-29T07:29:57.0", "readingTimeLocal":
+        "2025-10-29T01:29:57.0"}, {"hrvValue": 41, "readingTimeGMT": "2025-10-29T07:34:57.0",
+        "readingTimeLocal": "2025-10-29T01:34:57.0"}, {"hrvValue": 36, "readingTimeGMT":
+        "2025-10-29T07:39:57.0", "readingTimeLocal": "2025-10-29T01:39:57.0"}, {"hrvValue":
+        33, "readingTimeGMT": "2025-10-29T07:44:57.0", "readingTimeLocal": "2025-10-29T01:44:57.0"},
+        {"hrvValue": 48, "readingTimeGMT": "2025-10-29T07:49:57.0", "readingTimeLocal":
+        "2025-10-29T01:49:57.0"}, {"hrvValue": 40, "readingTimeGMT": "2025-10-29T07:54:57.0",
+        "readingTimeLocal": "2025-10-29T01:54:57.0"}, {"hrvValue": 45, "readingTimeGMT":
+        "2025-10-29T07:59:57.0", "readingTimeLocal": "2025-10-29T01:59:57.0"}, {"hrvValue":
+        34, "readingTimeGMT": "2025-10-29T08:04:57.0", "readingTimeLocal": "2025-10-29T02:04:57.0"},
+        {"hrvValue": 33, "readingTimeGMT": "2025-10-29T08:09:57.0", "readingTimeLocal":
+        "2025-10-29T02:09:57.0"}, {"hrvValue": 34, "readingTimeGMT": "2025-10-29T08:14:57.0",
+        "readingTimeLocal": "2025-10-29T02:14:57.0"}, {"hrvValue": 32, "readingTimeGMT":
+        "2025-10-29T08:19:57.0", "readingTimeLocal": "2025-10-29T02:19:57.0"}, {"hrvValue":
+        36, "readingTimeGMT": "2025-10-29T08:24:57.0", "readingTimeLocal": "2025-10-29T02:24:57.0"},
+        {"hrvValue": 36, "readingTimeGMT": "2025-10-29T08:29:57.0", "readingTimeLocal":
+        "2025-10-29T02:29:57.0"}, {"hrvValue": 50, "readingTimeGMT": "2025-10-29T08:34:57.0",
+        "readingTimeLocal": "2025-10-29T02:34:57.0"}, {"hrvValue": 52, "readingTimeGMT":
+        "2025-10-29T08:39:57.0", "readingTimeLocal": "2025-10-29T02:39:57.0"}, {"hrvValue":
+        43, "readingTimeGMT": "2025-10-29T08:44:57.0", "readingTimeLocal": "2025-10-29T02:44:57.0"},
+        {"hrvValue": 42, "readingTimeGMT": "2025-10-29T08:49:57.0", "readingTimeLocal":
+        "2025-10-29T02:49:57.0"}, {"hrvValue": 46, "readingTimeGMT": "2025-10-29T08:54:57.0",
+        "readingTimeLocal": "2025-10-29T02:54:57.0"}, {"hrvValue": 45, "readingTimeGMT":
+        "2025-10-29T08:59:57.0", "readingTimeLocal": "2025-10-29T02:59:57.0"}, {"hrvValue":
+        45, "readingTimeGMT": "2025-10-29T09:04:57.0", "readingTimeLocal": "2025-10-29T03:04:57.0"},
+        {"hrvValue": 58, "readingTimeGMT": "2025-10-29T09:09:57.0", "readingTimeLocal":
+        "2025-10-29T03:09:57.0"}, {"hrvValue": 34, "readingTimeGMT": "2025-10-29T09:14:57.0",
+        "readingTimeLocal": "2025-10-29T03:14:57.0"}, {"hrvValue": 44, "readingTimeGMT":
+        "2025-10-29T09:19:57.0", "readingTimeLocal": "2025-10-29T03:19:57.0"}, {"hrvValue":
+        52, "readingTimeGMT": "2025-10-29T09:24:57.0", "readingTimeLocal": "2025-10-29T03:24:57.0"},
+        {"hrvValue": 50, "readingTimeGMT": "2025-10-29T09:29:57.0", "readingTimeLocal":
+        "2025-10-29T03:29:57.0"}, {"hrvValue": 39, "readingTimeGMT": "2025-10-29T09:34:57.0",
+        "readingTimeLocal": "2025-10-29T03:34:57.0"}, {"hrvValue": 58, "readingTimeGMT":
+        "2025-10-29T09:39:57.0", "readingTimeLocal": "2025-10-29T03:39:57.0"}, {"hrvValue":
+        51, "readingTimeGMT": "2025-10-29T09:44:57.0", "readingTimeLocal": "2025-10-29T03:44:57.0"},
+        {"hrvValue": 62, "readingTimeGMT": "2025-10-29T09:49:57.0", "readingTimeLocal":
+        "2025-10-29T03:49:57.0"}, {"hrvValue": 65, "readingTimeGMT": "2025-10-29T09:54:57.0",
+        "readingTimeLocal": "2025-10-29T03:54:57.0"}, {"hrvValue": 62, "readingTimeGMT":
+        "2025-10-29T09:59:57.0", "readingTimeLocal": "2025-10-29T03:59:57.0"}, {"hrvValue":
+        52, "readingTimeGMT": "2025-10-29T10:04:57.0", "readingTimeLocal": "2025-10-29T04:04:57.0"},
+        {"hrvValue": 67, "readingTimeGMT": "2025-10-29T10:09:57.0", "readingTimeLocal":
+        "2025-10-29T04:09:57.0"}, {"hrvValue": 45, "readingTimeGMT": "2025-10-29T10:14:57.0",
+        "readingTimeLocal": "2025-10-29T04:14:57.0"}, {"hrvValue": 60, "readingTimeGMT":
+        "2025-10-29T10:19:57.0", "readingTimeLocal": "2025-10-29T04:19:57.0"}, {"hrvValue":
+        63, "readingTimeGMT": "2025-10-29T10:24:57.0", "readingTimeLocal": "2025-10-29T04:24:57.0"},
+        {"hrvValue": 69, "readingTimeGMT": "2025-10-29T10:29:57.0", "readingTimeLocal":
+        "2025-10-29T04:29:57.0"}, {"hrvValue": 76, "readingTimeGMT": "2025-10-29T10:34:57.0",
+        "readingTimeLocal": "2025-10-29T04:34:57.0"}, {"hrvValue": 64, "readingTimeGMT":
+        "2025-10-29T10:39:57.0", "readingTimeLocal": "2025-10-29T04:39:57.0"}, {"hrvValue":
+        41, "readingTimeGMT": "2025-10-29T10:44:57.0", "readingTimeLocal": "2025-10-29T04:44:57.0"},
+        {"hrvValue": 35, "readingTimeGMT": "2025-10-29T10:49:57.0", "readingTimeLocal":
+        "2025-10-29T04:49:57.0"}, {"hrvValue": 62, "readingTimeGMT": "2025-10-29T10:54:57.0",
+        "readingTimeLocal": "2025-10-29T04:54:57.0"}, {"hrvValue": 40, "readingTimeGMT":
+        "2025-10-29T10:59:57.0", "readingTimeLocal": "2025-10-29T04:59:57.0"}, {"hrvValue":
+        44, "readingTimeGMT": "2025-10-29T11:04:57.0", "readingTimeLocal": "2025-10-29T05:04:57.0"},
+        {"hrvValue": 29, "readingTimeGMT": "2025-10-29T11:09:57.0", "readingTimeLocal":
+        "2025-10-29T05:09:57.0"}, {"hrvValue": 41, "readingTimeGMT": "2025-10-29T11:14:57.0",
+        "readingTimeLocal": "2025-10-29T05:14:57.0"}, {"hrvValue": 45, "readingTimeGMT":
+        "2025-10-29T11:19:57.0", "readingTimeLocal": "2025-10-29T05:19:57.0"}, {"hrvValue":
+        49, "readingTimeGMT": "2025-10-29T11:24:57.0", "readingTimeLocal": "2025-10-29T05:24:57.0"},
+        {"hrvValue": 38, "readingTimeGMT": "2025-10-29T11:29:57.0", "readingTimeLocal":
+        "2025-10-29T05:29:57.0"}, {"hrvValue": 47, "readingTimeGMT": "2025-10-29T11:34:57.0",
+        "readingTimeLocal": "2025-10-29T05:34:57.0"}, {"hrvValue": 40, "readingTimeGMT":
+        "2025-10-29T11:39:57.0", "readingTimeLocal": "2025-10-29T05:39:57.0"}, {"hrvValue":
+        42, "readingTimeGMT": "2025-10-29T11:44:57.0", "readingTimeLocal": "2025-10-29T05:44:57.0"},
+        {"hrvValue": 40, "readingTimeGMT": "2025-10-29T11:49:57.0", "readingTimeLocal":
+        "2025-10-29T05:49:57.0"}, {"hrvValue": 41, "readingTimeGMT": "2025-10-29T11:54:57.0",
+        "readingTimeLocal": "2025-10-29T05:54:57.0"}, {"hrvValue": 47, "readingTimeGMT":
+        "2025-10-29T11:59:57.0", "readingTimeLocal": "2025-10-29T05:59:57.0"}, {"hrvValue":
+        51, "readingTimeGMT": "2025-10-29T12:04:57.0", "readingTimeLocal": "2025-10-29T06:04:57.0"},
+        {"hrvValue": 48, "readingTimeGMT": "2025-10-29T12:09:57.0", "readingTimeLocal":
+        "2025-10-29T06:09:57.0"}, {"hrvValue": 52, "readingTimeGMT": "2025-10-29T12:14:57.0",
+        "readingTimeLocal": "2025-10-29T06:14:57.0"}, {"hrvValue": 52, "readingTimeGMT":
+        "2025-10-29T12:19:57.0", "readingTimeLocal": "2025-10-29T06:19:57.0"}, {"hrvValue":
+        57, "readingTimeGMT": "2025-10-29T12:24:57.0", "readingTimeLocal": "2025-10-29T06:24:57.0"},
+        {"hrvValue": 42, "readingTimeGMT": "2025-10-29T12:29:57.0", "readingTimeLocal":
+        "2025-10-29T06:29:57.0"}, {"hrvValue": 34, "readingTimeGMT": "2025-10-29T12:34:57.0",
+        "readingTimeLocal": "2025-10-29T06:34:57.0"}], "startTimestampGMT": "2025-10-29T05:39:57.0",
+        "endTimestampGMT": "2025-10-29T12:34:57.0", "startTimestampLocal": "2025-10-28T23:39:57.0",
+        "endTimestampLocal": "2025-10-29T06:34:57.0", "sleepStartTimestampGMT": "2025-10-29T05:39:57.0",
+        "sleepEndTimestampGMT": "2025-10-29T12:34:57.0", "sleepStartTimestampLocal":
+        "2025-10-28T23:39:57.0", "sleepEndTimestampLocal": "2025-10-29T06:34:57.0"}'
+    headers:
+      CF-RAY:
+      - 99675e826b636a03-DFW
+      Cache-Control:
+      - no-cache, no-store, private
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      Date:
+      - Thu, 30 Oct 2025 02:09:12 GMT
+      NEL:
+      - '{"success_fraction":0.01,"report_to":"cf-nel","max_age":604800}'
+      Report-To:
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=HcW7gbD44UHJfAKFT%2BsnxgfdHVEdU6y%2F2O%2BB%2Fn8dEUoB88ozC0uQpEfGvzIvLtwo0y2vrH2sHrZEhJGDlS4YFqbzNyn%2FZbsg5u39V7BWrs2t5WjWHdV8DSZXTmj2SqnHZKNjuLLidKYyAQ3WC1yqjsbkYw%3D%3D"}],"group":"cf-nel","max_age":604800}'
+      Server:
+      - cloudflare
+      Transfer-Encoding:
+      - chunked
+      alt-svc:
+      - h3=":443"; ma=86400
+      cf-cache-status:
+      - DYNAMIC
+      pragma:
+      - no-cache
+    status:
+      code: 200
+      message: OK
+version: 1

@@ -1,0 +1,128 @@
+interactions:
+- request:
+    body: mfa_token=SANITIZED
+    headers:
+      Accept:
+      - !!binary |
+        Ki8q
+      Accept-Encoding:
+      - !!binary |
+        Z3ppcCwgZGVmbGF0ZQ==
+      Authorization:
+      - Bearer SANITIZED
+      Connection:
+      - !!binary |
+        a2VlcC1hbGl2ZQ==
+      Content-Length:
+      - '74'
+      Content-Type:
+      - !!binary |
+        YXBwbGljYXRpb24veC13d3ctZm9ybS11cmxlbmNvZGVk
+      User-Agent:
+      - !!binary |
+        Y29tLmdhcm1pbi5hbmRyb2lkLmFwcHMuY29ubmVjdG1vYmlsZQ==
+    method: POST
+    uri: https://connectapi.garmin.com/oauth-service/oauth/exchange/user/2.0
+  response:
+    body:
+      string: '{"scope": "GARMINPAY_WRITE ATP_READ GHS_SAMD INSIGHTS_READ CIQ_APPSTORE_SERVICES_CREATE
+        COMMUNITY_COURSE_WRITE GCOFFER_WRITE DT_CLIENT_ANALYTICS_WRITE CIQ_APPSTORE_SERVICES_DELETE
+        OMT_SUBSCRIPTION_READ CONNECT_READ COMMUNITY_COURSE_READ GOLF_API_READ GHS_UPLOAD
+        DIVE_API_READ CIQ_APPSTORE_SERVICES_READ CIQ_APPSTORE_SERVICES_UPDATE CONNECT_WRITE
+        CONNECT_MCT_DAILY_LOG_READ DI_OAUTH_2_AUTHORIZATION_CODE_CREATE GARMINPAY_READ
+        GOLF_API_WRITE INSIGHTS_WRITE PRODUCT_SEARCH_READ OMT_CAMPAIGN_READ GCOFFER_READ
+        ATP_WRITE", "jti": "SANITIZED", "access_token": "SANITIZED", "token_type":
+        "bearer", "refresh_token": "SANITIZED", "expires_in": 102084, "refresh_token_expires_in":
+        2591999}'
+    headers:
+      CF-RAY:
+      - 99675edb48787a65-QRO
+      Cache-Control:
+      - no-cache, no-store, private
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      Date:
+      - Thu, 30 Oct 2025 02:09:26 GMT
+      NEL:
+      - '{"success_fraction":0.01,"report_to":"cf-nel","max_age":604800}'
+      Report-To:
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=2mUXjEq23MGohv1WBaA1kSQCw0xCXccxmjaADKmOAjJ6dQlmwE7Q6JDQplro5h%2BOX1glpYwZpX%2FXOrD3E8uJOAZzPKYKmLV36Rpyq%2Blpf63ZSaXZS7evep%2FzhtazOTlpT2YUGtKwP%2BhgfU0EntJlHvv0eA%3D%3D"}],"group":"cf-nel","max_age":604800}'
+      Server:
+      - cloudflare
+      Set-Cookie:
+      - _cfuvid=SANITIZED; path=SANITIZED; domain=SANITIZED; HttpOnly; Secure; SameSite=SANITIZED
+      Transfer-Encoding:
+      - chunked
+      alt-svc:
+      - h3=":443"; ma=86400
+      cf-cache-status:
+      - DYNAMIC
+      pragma:
+      - no-cache
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Authorization:
+      - Bearer SANITIZED
+      Connection:
+      - keep-alive
+      Cookie:
+      - _cfuvid=SANITIZED
+      User-Agent:
+      - GCM-iOS-5.7.2.1
+    method: GET
+    uri: https://connectapi.garmin.com/wellness-service/wellness/daily/spo2acclimation/2024-01-15
+  response:
+    body:
+      string: '{"userProfilePK": 2591602, "calendarDate": "2024-01-15", "startTimestampGMT":
+        "2024-01-15T06:00:00.0", "endTimestampGMT": "2024-01-16T06:00:00.0", "startTimestampLocal":
+        "2024-01-15T00:00:00.0", "endTimestampLocal": "2024-01-16T00:00:00.0", "sleepStartTimestampGMT":
+        "2024-01-15T04:36:00.0", "sleepEndTimestampGMT": "2024-01-15T11:46:00.0",
+        "sleepStartTimestampLocal": "2024-01-14T22:36:00.0", "sleepEndTimestampLocal":
+        "2024-01-15T05:46:00.0", "tomorrowSleepStartTimestampGMT": "2024-01-16T04:26:00.0",
+        "tomorrowSleepEndTimestampGMT": "2024-01-16T11:59:00.0", "tomorrowSleepStartTimestampLocal":
+        "2024-01-15T22:26:00.0", "tomorrowSleepEndTimestampLocal": "2024-01-16T05:59:00.0",
+        "averageSpO2": 92.0, "lowestSpO2": 86, "lastSevenDaysAvgSpO2": 91.85714285714286,
+        "latestSpO2": 92, "latestSpO2TimestampGMT": "2024-01-16T06:00:00.0", "latestSpO2TimestampLocal":
+        "2024-01-16T00:00:00.0", "avgSleepSpO2": 91.0, "avgTomorrowSleepSpO2": 92.0,
+        "spO2SingleValuesDescriptorList": null, "spO2SingleValues": null, "spO2HourlyAveragesDescriptorList":
+        null, "spO2HourlyAverages": null, "monitoringEnvironmentValuesDescriptorList":
+        null, "monitoringEnvironmentValues": null}'
+    headers:
+      CF-RAY:
+      - 99675ede2a15a924-DFW
+      Cache-Control:
+      - no-cache, no-store, private
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      Date:
+      - Thu, 30 Oct 2025 02:09:26 GMT
+      NEL:
+      - '{"success_fraction":0.01,"report_to":"cf-nel","max_age":604800}'
+      Report-To:
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=HFuqsv2ZW%2BL32G05gqZbYneK2atdBnM0dvXDCVM3snaYZkT%2FsnIGnshVgSG7bIZBFSkQrwGkP60t9Vjw37lyXyRZsOAMz0Xc90EIgPgtkLPE4lMmqqKVAGGeaOA7aRjGTTDAD4T0eA80DL3JG%2BRpHHjy1w%3D%3D"}],"group":"cf-nel","max_age":604800}'
+      Server:
+      - cloudflare
+      Transfer-Encoding:
+      - chunked
+      alt-svc:
+      - h3=":443"; ma=86400
+      cf-cache-status:
+      - DYNAMIC
+      pragma:
+      - no-cache
+    status:
+      code: 200
+      message: OK
+version: 1

@@ -1,0 +1,159 @@
+interactions:
+- request:
+    body: mfa_token=SANITIZED
+    headers:
+      Accept:
+      - !!binary |
+        Ki8q
+      Accept-Encoding:
+      - !!binary |
+        Z3ppcCwgZGVmbGF0ZQ==
+      Authorization:
+      - Bearer SANITIZED
+      Connection:
+      - !!binary |
+        a2VlcC1hbGl2ZQ==
+      Content-Length:
+      - '74'
+      Content-Type:
+      - !!binary |
+        YXBwbGljYXRpb24veC13d3ctZm9ybS11cmxlbmNvZGVk
+      User-Agent:
+      - !!binary |
+        Y29tLmdhcm1pbi5hbmRyb2lkLmFwcHMuY29ubmVjdG1vYmlsZQ==
+    method: POST
+    uri: https://connectapi.garmin.com/oauth-service/oauth/exchange/user/2.0
+  response:
+    body:
+      string: '{"scope": "GARMINPAY_WRITE ATP_READ GHS_SAMD INSIGHTS_READ CIQ_APPSTORE_SERVICES_CREATE
+        COMMUNITY_COURSE_WRITE GCOFFER_WRITE DT_CLIENT_ANALYTICS_WRITE CIQ_APPSTORE_SERVICES_DELETE
+        OMT_SUBSCRIPTION_READ CONNECT_READ COMMUNITY_COURSE_READ GOLF_API_READ GHS_UPLOAD
+        DIVE_API_READ CIQ_APPSTORE_SERVICES_READ CIQ_APPSTORE_SERVICES_UPDATE CONNECT_WRITE
+        CONNECT_MCT_DAILY_LOG_READ DI_OAUTH_2_AUTHORIZATION_CODE_CREATE GARMINPAY_READ
+        GOLF_API_WRITE INSIGHTS_WRITE PRODUCT_SEARCH_READ OMT_CAMPAIGN_READ GCOFFER_READ
+        ATP_WRITE", "jti": "SANITIZED", "access_token": "SANITIZED", "token_type":
+        "bearer", "refresh_token": "SANITIZED", "expires_in": 106515, "refresh_token_expires_in":
+        2591999}'
+    headers:
+      CF-RAY:
+      - 99675eeb8c971f84-QRO
+      Cache-Control:
+      - no-cache, no-store, private
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      Date:
+      - Thu, 30 Oct 2025 02:09:29 GMT
+      NEL:
+      - '{"success_fraction":0.01,"report_to":"cf-nel","max_age":604800}'
+      Report-To:
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=0yl59eGn4zWrpVHAYPE23%2F2fID7YMjH%2BbT9t6a58wzzA0VwkFobbV8PSC0m1suYIY0%2Fc7LB8aS%2Bpa1JW7VEsAgahtWqeR5jMkU0VH1zk1bBs%2BfJ0RfbUU5j6FbRW8mZ28uXwKZa3kptemxxYgF%2BiNbVPqA%3D%3D"}],"group":"cf-nel","max_age":604800}'
+      Server:
+      - cloudflare
+      Set-Cookie:
+      - _cfuvid=SANITIZED; path=SANITIZED; domain=SANITIZED; HttpOnly; Secure; SameSite=SANITIZED
+      Transfer-Encoding:
+      - chunked
+      alt-svc:
+      - h3=":443"; ma=86400
+      cf-cache-status:
+      - DYNAMIC
+      pragma:
+      - no-cache
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Authorization:
+      - Bearer SANITIZED
+      Connection:
+      - keep-alive
+      Cookie:
+      - _cfuvid=SANITIZED
+      User-Agent:
+      - GCM-iOS-5.7.2.1
+    method: GET
+    uri: https://connectapi.garmin.com/device-service/deviceservice/device-info/settings/123456789
+  response:
+    body:
+      string: '{"deviceId": null, "timeFormat": null, "dateFormat": null, "measurementUnits":
+        null, "allUnits": null, "visibleScreens": null, "enabledScreens": null, "screenLists":
+        null, "isVivohubEnabled": null, "alarms": null, "supportedAlarmModes": null,
+        "multipleAlarmEnabled": null, "maxAlarm": null, "activityTracking": null,
+        "keyTonesEnabled": null, "keyVibrationEnabled": null, "alertTonesEnabled":
+        null, "userNoticeTonesEnabled": null, "glonassEnabled": null, "turnPromptEnabled":
+        null, "segmentPromptEnabled": null, "supportedLanguages": null, "language":
+        null, "supportedAudioPromptDialects": null, "defaultPage": null, "displayOrientation":
+        null, "mountingSide": null, "backlightMode": null, "backlightSetting": null,
+        "customWheelSize": null, "gestureMode": null, "goalAnimation": null, "autoSyncStepsBeforeSync":
+        null, "autoSyncMinutesBeforeSync": null, "bandOrientation": null, "screenOrientation":
+        null, "duringActivity": null, "phoneVibrationEnabled": null, "connectIQ":
+        null, "opticalHeartRateEnabled": null, "autoUploadEnabled": null, "bleConnectionAlertEnabled":
+        null, "phoneNotificationMode": null, "lactateThresholdAutoDetectEnabled":
+        null, "wiFiAutoUploadEnabled": null, "blueToothEnabled": null, "smartNotificationsStatus":
+        null, "smartNotificationsSound": null, "dndEnabled": null, "distanceUnit":
+        null, "paceSpeedUnit": null, "elevationUnit": null, "weightUnit": null, "heightUnit":
+        null, "temperatureUnit": null, "runningFormat": null, "cyclingFormat": null,
+        "hikingFormat": null, "strengthFormat": null, "cardioFormat": null, "xcSkiFormat":
+        null, "otherFormat": null, "startOfWeek": null, "dataRecording": null, "soundVibrationEnabled":
+        null, "soundInAppOnlyEnabled": null, "backlightKeysAndAlertsEnabled": null,
+        "backlightWristTurnEnabled": null, "backlightTimeout": null, "supportedBacklightTimeouts":
+        null, "screenTimeout": null, "colorTheme": null, "autoActivityDetect": null,
+        "sleep": null, "screenMode": null, "watchFace": null, "watchFaceItemList":
+        null, "multipleSupportedWatchFace": null, "supportedScreenModes": null, "supportedWatchFaces":
+        null, "supportedWatchFaceColors": null, "autoSyncFrequency": null, "supportedBacklightSettings":
+        null, "supportedColorThemes": null, "disableLastEnabledScreen": null, "nickname":
+        null, "avatar": null, "controlsMenuList": null, "customUserText": null, "metricsFileTrueupEnabled":
+        null, "relaxRemindersEnabled": null, "smartNotificationTimeout": null, "intensityMinutesCalcMethod":
+        null, "moderateIntensityMinutesHrZone": null, "vigorousIntensityMinutesHrZone":
+        null, "keepUserNamePrivate": null, "audioPromptLapEnabled": null, "audioPromptSpeedPaceEnabled":
+        null, "audioPromptSpeedPaceType": null, "audioPromptSpeedPaceFrequency": null,
+        "audioPromptSpeedPaceDuration": null, "audioPromptHeartRateEnabled": null,
+        "audioPromptHeartRateType": null, "audioPromptHeartRateFrequency": null, "audioPromptHeartRateDuration":
+        null, "audioPromptDialectType": null, "audioPromptActivityAlertsEnabled":
+        null, "audioPromptPowerEnabled": null, "audioPromptPowerType": null, "audioPromptPowerFrequency":
+        null, "audioPromptPowerDuration": null, "weightOnlyModeEnabled": null, "phoneNotificationPrivacyMode":
+        null, "diveAlerts": null, "liveEventSharingEnabled": null, "liveTrackEnabled":
+        null, "liveEventSharingEndTimestamp": null, "liveEventSharingMsgContents":
+        null, "liveEventSharingTargetDistance": null, "liveEventSharingMsgTriggers":
+        null, "liveEventSharingTriggerDistance": null, "liveEventSharingTriggerTime":
+        null, "dbDrivenDefaults": null, "schoolMode": null, "customMeasurementDate":
+        null, "customBodyFatPercent": null, "customMuscleMass": null, "customDeviceWeight":
+        null, "customDeviceBodyFatPercent": null, "customDeviceMuscleMass": null,
+        "vivohubEnabled": null}'
+    headers:
+      CF-RAY:
+      - 99675eede9f0b1f2-QRO
+      Cache-Control:
+      - no-cache, no-store, private
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      Date:
+      - Thu, 30 Oct 2025 02:09:29 GMT
+      NEL:
+      - '{"success_fraction":0.01,"report_to":"cf-nel","max_age":604800}'
+      Report-To:
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=nMttGe19e1EYzOyzFSme025QpoNu7yHS7PWL06B%2FyApTtyOY%2FsD6xAOM5hAirUDPkdmZdEdL03TlXv%2FGQATFlTnj9DEajyADl0tY0pIyNuBmLly7b%2BNGhliJPa4NXVBJvTfdfJhj27LIVkFVyAEP%2BnjEsQ%3D%3D"}],"group":"cf-nel","max_age":604800}'
+      Server:
+      - cloudflare
+      Transfer-Encoding:
+      - chunked
+      alt-svc:
+      - h3=":443"; ma=86400
+      cf-cache-status:
+      - DYNAMIC
+      pragma:
+      - no-cache
+    status:
+      code: 200
+      message: OK
+version: 1

@@ -267,7 +267,7 @@ def get_spo2_data(date: str) -> ConnectAPIResponse:
     Get SpO2 (blood oxygen) data from Garmin Connect.
     date: Date for SpO2 data (YYYY-MM-DD format)
     """
-    return garth.connectapi(f"wellness-service/wellness/dailyPulseOx/{date}")
+    return garth.connectapi(f"wellness-service/wellness/daily/spo2acclimation/{date}")
 
 
 @server.tool()

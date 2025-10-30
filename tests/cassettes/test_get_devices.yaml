@@ -1,0 +1,444 @@
+interactions:
+- request:
+    body: mfa_token=SANITIZED
+    headers:
+      Accept:
+      - !!binary |
+        Ki8q
+      Accept-Encoding:
+      - !!binary |
+        Z3ppcCwgZGVmbGF0ZQ==
+      Authorization:
+      - Bearer SANITIZED
+      Connection:
+      - !!binary |
+        a2VlcC1hbGl2ZQ==
+      Content-Length:
+      - '74'
+      Content-Type:
+      - !!binary |
+        YXBwbGljYXRpb24veC13d3ctZm9ybS11cmxlbmNvZGVk
+      User-Agent:
+      - !!binary |
+        Y29tLmdhcm1pbi5hbmRyb2lkLmFwcHMuY29ubmVjdG1vYmlsZQ==
+    method: POST
+    uri: https://connectapi.garmin.com/oauth-service/oauth/exchange/user/2.0
+  response:
+    body:
+      string: '{"scope": "GARMINPAY_WRITE ATP_READ GHS_SAMD INSIGHTS_READ CIQ_APPSTORE_SERVICES_CREATE
+        COMMUNITY_COURSE_WRITE GCOFFER_WRITE DT_CLIENT_ANALYTICS_WRITE CIQ_APPSTORE_SERVICES_DELETE
+        OMT_SUBSCRIPTION_READ CONNECT_READ COMMUNITY_COURSE_READ GOLF_API_READ GHS_UPLOAD
+        DIVE_API_READ CIQ_APPSTORE_SERVICES_READ CIQ_APPSTORE_SERVICES_UPDATE CONNECT_WRITE
+        CONNECT_MCT_DAILY_LOG_READ DI_OAUTH_2_AUTHORIZATION_CODE_CREATE GARMINPAY_READ
+        GOLF_API_WRITE INSIGHTS_WRITE PRODUCT_SEARCH_READ OMT_CAMPAIGN_READ GCOFFER_READ
+        ATP_WRITE", "jti": "SANITIZED", "access_token": "SANITIZED", "token_type":
+        "bearer", "refresh_token": "SANITIZED", "expires_in": 66077, "refresh_token_expires_in":
+        2591999}'
+    headers:
+      CF-RAY:
+      - 99675ee64bb06ca3-MCI
+      Cache-Control:
+      - no-cache, no-store, private
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      Date:
+      - Thu, 30 Oct 2025 02:09:28 GMT
+      NEL:
+      - '{"success_fraction":0.01,"report_to":"cf-nel","max_age":604800}'
+      Report-To:
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=W51T52XeDvwDJ1bhn%2FI2ioPVP%2Bq4g%2BnAvfwJ1jGXddsaoRDzWMky6gAa8wCyEZYPibHDxozvJWhUhlw98A54FE%2Fq2l8pW3481yA8zt3BLu90rLOUap5Lqn6s78OPzCAeoVHycN1pSCcmCSKpmQFqXTIb%2Fw%3D%3D"}],"group":"cf-nel","max_age":604800}'
+      Server:
+      - cloudflare
+      Set-Cookie:
+      - _cfuvid=SANITIZED; path=SANITIZED; domain=SANITIZED; HttpOnly; Secure; SameSite=SANITIZED
+      Transfer-Encoding:
+      - chunked
+      alt-svc:
+      - h3=":443"; ma=86400
+      cf-cache-status:
+      - DYNAMIC
+      pragma:
+      - no-cache
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Authorization:
+      - Bearer SANITIZED
+      Connection:
+      - keep-alive
+      Cookie:
+      - _cfuvid=SANITIZED
+      User-Agent:
+      - GCM-iOS-5.7.2.1
+    method: GET
+    uri: https://connectapi.garmin.com/device-service/deviceregistration/devices
+  response:
+    body:
+      string: '[{"appSupport": false, "applicationKey": "HRMDualAdvanced", "deviceTypePk":
+        36751, "bestInClassVideoLink": null, "bluetoothClassicDevice": false, "bluetoothLowEnergyDevice":
+        true, "deviceCategories": ["FITNESS", "WELLNESS"], "deviceEmbedVideoLink":
+        null, "deviceSettingsFile": "NoSettings.json", "gcmSettingsFile": null, "deviceVideoPageLink":
+        null, "displayOrder": 0, "golfDisplayOrder": 0, "hasOpticalHeartRate": true,
+        "highlighted": false, "hybrid": true, "imageUrl": "https://s3.amazonaws.com/garmin-connect-prod/profile_images/58de9b03-6e29-4113-8b69-f3aa184a41e2-71.png",
+        "minGCMAndroidVersion": 4650, "minGCMWindowsVersion": 99999, "minGCMiOSVersion":
+        670, "minGCMHarmonyVersion": 99999, "minGolfAppiOSVersion": 0, "minGolfAppAndroidVersion":
+        0, "partNumber": "006-B3300-00", "primary": true, "productDisplayName": "HRM-Pro",
+        "deviceTags": null, "productSku": "010-12955-00", "wasp": false, "weightScale":
+        false, "wellness": false, "wifi": false, "hasPowerButton": false, "supportsSecondaryUsers":
+        false, "primaryApplication": "GCM", "incompatibleApplications": ["GOLF", "DIVE",
+        "JUNIOR", "EXPLORE"], "deviceTypeSimpleName": "Garmin HRM-Pro", "abnormalHeartRateAlertCapable":
+        false, "activitySummFitFileCapable": false, "aerobicTrainingEffectCapable":
+        false, "alarmDaysCapable": false, "allDayStressCapable": false, "anaerobicTrainingEffectCapable":
+        false, "atpWorkoutCapable": false, "bodyBatteryCapable": false, "brickWorkoutCapable":
+        false, "cardioCapable": false, "cardioOptionCapable": false, "cardioSportsCapable":
+        false, "cardioWorkoutCapable": false, "cellularCapable": false, "changeLogCapable":
+        true, "contactManagementCapable": false, "courseCapable": false, "courseFileType":
+        null, "coursePromptCapable": false, "customIntensityMinutesCapable": true,
+        "customWorkoutCapable": false, "cyclingSegmentCapable": false, "cyclingSportsCapable":
+        false, "cyclingWorkoutCapable": false, "defaultSettingCapable": true, "deviceSettingCapable":
+        true, "deviceSettingFileType": null, "displayFieldsExtCapable": false, "divingCapable":
+        false, "ellipticalOptionCapable": false, "floorsClimbedGoalCapable": false,
+        "ftpCapable": false, "gcj02CourseCapable": false, "glonassCapable": false,
+        "goalCapable": false, "goalFileType": null, "golfAppSyncCapable": false, "gpsRouteCapable":
+        false, "handednessCapable": false, "hrZoneCapable": false, "hrvStressCapable":
+        false, "intensityMinutesGoalCapable": true, "lactateThresholdCapable": false,
+        "languageSettingCapable": false, "languageSettingFileType": null, "lowHrAlertCapable":
+        false, "maxHRCapable": false, "maxWorkoutCount": 0, "metricsFitFileReceiveCapable":
+        false, "metricsUploadCapable": false, "militaryTimeCapable": false, "moderateIntensityMinutesGoalCapable":
+        false, "nfcCapable": false, "otherOptionCapable": false, "otherSportsCapable":
+        false, "personalRecordCapable": false, "personalRecordFileType": null, "poolSwimOptionCapable":
+        false, "powerCurveCapable": false, "powerZonesCapable": false, "pulseOxAllDayCapable":
+        false, "pulseOxOnDemandCapable": false, "pulseOxSleepCapable": false, "remCapable":
+        false, "reminderAlarmCapable": false, "reorderablePagesCapable": false, "restingHRCapable":
+        false, "rideOptionsCapable": false, "runOptionIndoorCapable": false, "runOptionsCapable":
+        false, "runningSegmentCapable": false, "runningSportsCapable": false, "runningWorkoutCapable":
+        false, "scheduleCapable": false, "scheduleFileType": null, "segmentCapable":
+        false, "segmentPointCapable": false, "settingCapable": true, "settingFileType":
+        null, "sleepTimeCapable": false, "smallFitFileOnlyCapable": false, "sportCapable":
+        true, "sportFileType": null, "stairStepperOptionCapable": false, "strengthOptionsCapable":
+        false, "strengthWorkoutCapable": false, "supportedHrZones": ["ALL"], "swimWorkoutCapable":
+        false, "trainingPlanCapable": false, "trainingStatusCapable": false, "trainingStatusPauseCapable":
+        false, "userProfileCapable": false, "userProfileFileType": null, "userTcxExportCapable":
+        false, "vo2MaxBikeCapable": false, "vo2MaxRunCapable": false, "walkOptionCapable":
+        false, "walkingSportsCapable": false, "weatherAlertsCapable": false, "weatherSettingsCapable":
+        false, "workoutCapable": false, "workoutFileType": null, "yogaCapable": false,
+        "yogaOptionCapable": false, "heatAndAltitudeAcclimationCapable": false, "trainingLoadBalanceCapable":
+        false, "indoorTrackOptionsCapable": false, "indoorBikeOptionsCapable": false,
+        "indoorWalkOptionsCapable": false, "trainingEffectLabelCapable": false, "pacebandCapable":
+        false, "respirationCapable": false, "openWaterSwimOptionCapable": false, "phoneVerificationCheckRequired":
+        false, "weightGoalCapable": false, "yogaWorkoutCapable": false, "pilatesWorkoutCapable":
+        false, "connectedGPSCapable": false, "diveAppSyncCapable": false, "golfLiveScoringCapable":
+        false, "solarPanelUtilizationCapable": false, "sweatLossCapable": false, "diveAlertCapable":
+        false, "requiresInitialDeviceNickname": false, "defaultSettingsHbaseMigrated":
+        false, "sleepScoreCapable": false, "fitnessAgeV2Capable": false, "intensityMinutesV2Capable":
+        true, "collapsibleControlMenuCapable": false, "measurementUnitSettingCapable":
+        false, "onDeviceSleepCalculationCapable": false, "hiitWorkoutCapable": false,
+        "runningHeartRateZoneCapable": false, "cyclingHeartRateZoneCapable": false,
+        "swimmingHeartRateZoneCapable": false, "defaultHeartRateZoneCapable": true,
+        "cyclingPowerZonesCapable": false, "xcSkiPowerZonesCapable": false, "swimAlgorithmCapable":
+        false, "benchmarkExerciseCapable": false, "spectatorMessagingCapable": false,
+        "ecgCapable": false, "lteLiveEventSharingCapable": false, "sleepFitFileReceiveCapable":
+        false, "secondaryWorkoutStepTargetCapable": false, "assistancePlusCapable":
+        false, "powerGuidanceCapable": false, "airIntegrationCapable": false, "healthSnapshotCapable":
+        false, "racePredictionsRunCapable": false, "vivohubCompatible": false, "stepsTrueUpChartCapable":
+        false, "sportingEventCapable": false, "solarChargeCapable": false, "realTimeSettingsCapable":
+        false, "emergencyCallingCapable": false, "personalRepRecordCapable": false,
+        "hrvStatusCapable": false, "trainingReadinessCapable": false, "publicBetaSoftwareCapable":
+        false, "workoutAudioPromptsCapable": false, "actualStepRecordingCapable":
+        false, "groupTrack2Capable": false, "golfAppPairingCapable": false, "localWindConditionsCapable":
+        false, "multipleGolfCourseCapable": false, "beaconTrackingCapable": false,
+        "batteryStatusCapable": false, "runningPowerZonesCapable": false, "acuteTrainingLoadCapable":
+        false, "criticalSwimSpeedCapable": false, "primaryTrainingCapable": false,
+        "dayOfWeekSleepWindowCapable": false, "golfCourseDownloadCapable": false,
+        "launchMonitorEventSharingCapable": false, "lhaBackupCapable": false, "jetlagCapable":
+        false, "bloodPressureCapable": false, "bbiRecordingCapable": false, "wheelchairCapable":
+        false, "primaryActivityTrackerSettingCapable": false, "setBodyCompositionCapable":
+        false, "acuteChronicWorkloadRatioCapable": false, "sleepNeedCapable": false,
+        "wearableBackupRestoreCapable": false, "cyclingComputerBackupRestoreCapable":
+        false, "descriptiveTrainingEffectCapable": false, "sleepSkinTemperatureCapable":
+        false, "runningLactateThresholdCapable": false, "altitudeAcclimationPercentageCapable":
+        false, "hillScoreAndEnduranceScoreCapable": false, "swimWorkout2Capable":
+        false, "enhancedWorkoutStepCapable": false, "primaryTrainingBackupCapable":
+        false, "hideSoftwareUpdateVersionCapable": false, "adaptiveCoachingScheduleCapable":
+        false, "openWaterSwimWorkoutCapable": false, "multisportWorkoutCapable": false,
+        "fullNameSettingsCapable": false, "bodyBatteryTrueUpCapable": false, "skipLastWorkoutStepInRepeatBlockCapable":
+        false, "adaptiveCoachingStrengthCapable": false, "mobilityWorkoutCapable":
+        false, "coursePlannerCapable": false, "trainableTriathlonEventCapable": false,
+        "passcodeLockCapable": false, "strengthTrainingPlanCapable": false, "breathingDisruptionsCapable":
+        false, "standaloneFirstbeatActivityProcessingCapable": false, "rts20Capable":
+        false, "accessorySensorCanGenerateActivityCapable": false, "garminWellnessCoachCapable":
+        false, "adaptiveCoachingWorkoutSettingsCapable": false, "lifestyleLoggingCapable":
+        false, "topoactiveMapsRealTimeSettingCapable": false, "runningToleranceCapable":
+        false, "rechargeableSensorCapable": false, "lapByCoursePointsCapable": false,
+        "sleepAlignmentCapable": false, "runningEconomyCapable": false, "projectedRaceTimePredictionCapable":
+        false, "cyclingAbilityCapable": false, "archeryXCapable": false, "registrationMetricsBackfillUnsupported":
+        false, "healthStatusCapable": false, "adaptiveCoachingFitnessCapable": false,
+        "vbtCapable": false, "healthStatusTrueUpCapable": false, "walkWorkoutCapable":
+        false, "adaptiveCoachingNoviceCapable": false, "adaptiveCoachingWalkCapable":
+        false, "rowingCapable": false, "gearTrackingCapable": false, "liveTrackCapable":
+        false, "datasource": "C", "deviceStatus": "active", "registeredDate": 1605912560000,
+        "actualProductSku": "010-12955-00", "vivohubConfigurable": null, "unRetirable":
+        false, "corporateDevice": false, "prePairedWithHRM": false, "otherAssociation":
+        false, "serialNumber": "6BJ059412", "shortName": null, "displayName": "HRM-Pro",
+        "activeInd": 1, "primaryActivityTrackerIndicator": false, "deviceId": 3346679780,
+        "wifiSetup": false, "unitId": 3346679780, "currentFirmwareVersionMajor": 8,
+        "currentFirmwareVersionMinor": 80, "isPrimaryUser": false, "currentFirmwareVersion":
+        "8.80"}, {"appSupport": true, "applicationKey": "fenix7xProSapphireSolar",
+        "deviceTypePk": 37077, "bestInClassVideoLink": null, "bluetoothClassicDevice":
+        false, "bluetoothLowEnergyDevice": true, "deviceCategories": ["FITNESS", "WELLNESS",
+        "GOLF", "OUTDOOR"], "deviceEmbedVideoLink": null, "deviceSettingsFile": "RealTimeDeviceSettingsSolar_d9917145-090f-4924-8721-d5d1e3eeb633.json",
+        "gcmSettingsFile": null, "deviceVideoPageLink": null, "displayOrder": 0, "golfDisplayOrder":
+        0, "hasOpticalHeartRate": true, "highlighted": false, "hybrid": true, "imageUrl":
+        "https://res.garmin.com/en/products/010-02778-10/v/c1_01_md.png", "minGCMAndroidVersion":
+        7791, "minGCMWindowsVersion": 99999, "minGCMiOSVersion": 105591, "minGCMHarmonyVersion":
+        0, "minGolfAppiOSVersion": 0, "minGolfAppAndroidVersion": 0, "partNumber":
+        "006-B4376-00", "primary": true, "productDisplayName": "fenix 7X Pro Sapphire
+        Solar", "deviceTags": null, "productSku": "010-02778-10", "wasp": false, "weightScale":
+        false, "wellness": false, "wifi": true, "hasPowerButton": true, "supportsSecondaryUsers":
+        false, "primaryApplication": "GCM", "incompatibleApplications": ["DIVE", "JUNIOR"],
+        "deviceTypeSimpleName": "Garmin fenix 7 Pro", "abnormalHeartRateAlertCapable":
+        true, "activitySummFitFileCapable": true, "aerobicTrainingEffectCapable":
+        true, "alarmDaysCapable": true, "allDayStressCapable": true, "anaerobicTrainingEffectCapable":
+        true, "atpWorkoutCapable": true, "bodyBatteryCapable": true, "brickWorkoutCapable":
+        true, "cardioCapable": true, "cardioOptionCapable": false, "cardioSportsCapable":
+        false, "cardioWorkoutCapable": true, "cellularCapable": false, "changeLogCapable":
+        true, "contactManagementCapable": true, "courseCapable": true, "courseFileType":
+        "FIT", "coursePromptCapable": false, "customIntensityMinutesCapable": true,
+        "customWorkoutCapable": true, "cyclingSegmentCapable": true, "cyclingSportsCapable":
+        false, "cyclingWorkoutCapable": true, "defaultSettingCapable": true, "deviceSettingCapable":
+        true, "deviceSettingFileType": null, "displayFieldsExtCapable": false, "divingCapable":
+        false, "ellipticalOptionCapable": false, "floorsClimbedGoalCapable": true,
+        "ftpCapable": true, "gcj02CourseCapable": true, "glonassCapable": true, "goalCapable":
+        true, "goalFileType": "FIT", "golfAppSyncCapable": false, "gpsRouteCapable":
+        true, "handednessCapable": true, "hrZoneCapable": true, "hrvStressCapable":
+        true, "intensityMinutesGoalCapable": true, "lactateThresholdCapable": true,
+        "languageSettingCapable": true, "languageSettingFileType": null, "lowHrAlertCapable":
+        true, "maxHRCapable": true, "maxWorkoutCount": 200, "metricsFitFileReceiveCapable":
+        true, "metricsUploadCapable": true, "militaryTimeCapable": true, "moderateIntensityMinutesGoalCapable":
+        true, "nfcCapable": true, "otherOptionCapable": false, "otherSportsCapable":
+        false, "personalRecordCapable": true, "personalRecordFileType": "FIT", "poolSwimOptionCapable":
+        false, "powerCurveCapable": true, "powerZonesCapable": true, "pulseOxAllDayCapable":
+        true, "pulseOxOnDemandCapable": true, "pulseOxSleepCapable": true, "remCapable":
+        true, "reminderAlarmCapable": false, "reorderablePagesCapable": false, "restingHRCapable":
+        true, "rideOptionsCapable": false, "runOptionIndoorCapable": false, "runOptionsCapable":
+        false, "runningSegmentCapable": true, "runningSportsCapable": false, "runningWorkoutCapable":
+        true, "scheduleCapable": true, "scheduleFileType": "FIT", "segmentCapable":
+        true, "segmentPointCapable": true, "settingCapable": true, "settingFileType":
+        "FIT", "sleepTimeCapable": true, "smallFitFileOnlyCapable": false, "sportCapable":
+        true, "sportFileType": "FIT", "stairStepperOptionCapable": false, "strengthOptionsCapable":
+        false, "strengthWorkoutCapable": true, "supportedHrZones": ["RUNNING", "CYCLING",
+        "SWIMMING", "ALL"], "swimWorkoutCapable": true, "trainingPlanCapable": true,
+        "trainingStatusCapable": true, "trainingStatusPauseCapable": true, "userProfileCapable":
+        false, "userProfileFileType": null, "userTcxExportCapable": false, "vo2MaxBikeCapable":
+        true, "vo2MaxRunCapable": true, "walkOptionCapable": false, "walkingSportsCapable":
+        false, "weatherAlertsCapable": false, "weatherSettingsCapable": false, "workoutCapable":
+        true, "workoutFileType": "FIT", "yogaCapable": true, "yogaOptionCapable":
+        false, "heatAndAltitudeAcclimationCapable": true, "trainingLoadBalanceCapable":
+        true, "indoorTrackOptionsCapable": false, "indoorBikeOptionsCapable": false,
+        "indoorWalkOptionsCapable": false, "trainingEffectLabelCapable": true, "pacebandCapable":
+        true, "respirationCapable": true, "openWaterSwimOptionCapable": false, "phoneVerificationCheckRequired":
+        true, "weightGoalCapable": false, "yogaWorkoutCapable": true, "pilatesWorkoutCapable":
+        true, "connectedGPSCapable": false, "diveAppSyncCapable": false, "golfLiveScoringCapable":
+        true, "solarPanelUtilizationCapable": true, "sweatLossCapable": true, "diveAlertCapable":
+        false, "requiresInitialDeviceNickname": false, "defaultSettingsHbaseMigrated":
+        true, "sleepScoreCapable": true, "fitnessAgeV2Capable": true, "intensityMinutesV2Capable":
+        true, "collapsibleControlMenuCapable": false, "measurementUnitSettingCapable":
+        false, "onDeviceSleepCalculationCapable": true, "hiitWorkoutCapable": true,
+        "runningHeartRateZoneCapable": true, "cyclingHeartRateZoneCapable": true,
+        "swimmingHeartRateZoneCapable": true, "defaultHeartRateZoneCapable": true,
+        "cyclingPowerZonesCapable": true, "xcSkiPowerZonesCapable": true, "swimAlgorithmCapable":
+        true, "benchmarkExerciseCapable": true, "spectatorMessagingCapable": false,
+        "ecgCapable": true, "lteLiveEventSharingCapable": false, "sleepFitFileReceiveCapable":
+        true, "secondaryWorkoutStepTargetCapable": false, "assistancePlusCapable":
+        false, "powerGuidanceCapable": true, "airIntegrationCapable": false, "healthSnapshotCapable":
+        true, "racePredictionsRunCapable": true, "vivohubCompatible": false, "stepsTrueUpChartCapable":
+        true, "sportingEventCapable": true, "solarChargeCapable": false, "realTimeSettingsCapable":
+        true, "emergencyCallingCapable": false, "personalRepRecordCapable": false,
+        "hrvStatusCapable": true, "trainingReadinessCapable": true, "publicBetaSoftwareCapable":
+        true, "workoutAudioPromptsCapable": true, "actualStepRecordingCapable": true,
+        "groupTrack2Capable": false, "golfAppPairingCapable": false, "localWindConditionsCapable":
+        false, "multipleGolfCourseCapable": false, "beaconTrackingCapable": false,
+        "batteryStatusCapable": false, "runningPowerZonesCapable": true, "acuteTrainingLoadCapable":
+        true, "criticalSwimSpeedCapable": true, "primaryTrainingCapable": true, "dayOfWeekSleepWindowCapable":
+        true, "golfCourseDownloadCapable": false, "launchMonitorEventSharingCapable":
+        false, "lhaBackupCapable": true, "jetlagCapable": true, "bloodPressureCapable":
+        false, "bbiRecordingCapable": true, "wheelchairCapable": false, "primaryActivityTrackerSettingCapable":
+        true, "setBodyCompositionCapable": false, "acuteChronicWorkloadRatioCapable":
+        true, "sleepNeedCapable": true, "wearableBackupRestoreCapable": true, "cyclingComputerBackupRestoreCapable":
+        false, "descriptiveTrainingEffectCapable": false, "sleepSkinTemperatureCapable":
+        true, "runningLactateThresholdCapable": true, "altitudeAcclimationPercentageCapable":
+        true, "hillScoreAndEnduranceScoreCapable": true, "swimWorkout2Capable": false,
+        "enhancedWorkoutStepCapable": true, "primaryTrainingBackupCapable": true,
+        "hideSoftwareUpdateVersionCapable": false, "adaptiveCoachingScheduleCapable":
+        true, "openWaterSwimWorkoutCapable": false, "multisportWorkoutCapable": false,
+        "fullNameSettingsCapable": true, "bodyBatteryTrueUpCapable": true, "skipLastWorkoutStepInRepeatBlockCapable":
+        true, "adaptiveCoachingStrengthCapable": false, "mobilityWorkoutCapable":
+        false, "coursePlannerCapable": false, "trainableTriathlonEventCapable": false,
+        "passcodeLockCapable": false, "strengthTrainingPlanCapable": false, "breathingDisruptionsCapable":
+        true, "standaloneFirstbeatActivityProcessingCapable": false, "rts20Capable":
+        false, "accessorySensorCanGenerateActivityCapable": false, "garminWellnessCoachCapable":
+        false, "adaptiveCoachingWorkoutSettingsCapable": false, "lifestyleLoggingCapable":
+        false, "topoactiveMapsRealTimeSettingCapable": false, "runningToleranceCapable":
+        false, "rechargeableSensorCapable": false, "lapByCoursePointsCapable": false,
+        "sleepAlignmentCapable": false, "runningEconomyCapable": false, "projectedRaceTimePredictionCapable":
+        false, "cyclingAbilityCapable": false, "archeryXCapable": false, "registrationMetricsBackfillUnsupported":
+        false, "healthStatusCapable": true, "adaptiveCoachingFitnessCapable": false,
+        "vbtCapable": false, "healthStatusTrueUpCapable": false, "walkWorkoutCapable":
+        false, "adaptiveCoachingNoviceCapable": false, "adaptiveCoachingWalkCapable":
+        false, "rowingCapable": false, "gearTrackingCapable": false, "liveTrackCapable":
+        true, "datasource": "C", "deviceStatus": "active", "registeredDate": 1716151970000,
+        "actualProductSku": "010-02778-10", "vivohubConfigurable": null, "unRetirable":
+        false, "corporateDevice": false, "prePairedWithHRM": false, "otherAssociation":
+        false, "serialNumber": "847041237", "shortName": null, "displayName": "fenix
+        7X Pro Sapphire Solar", "activeInd": 1, "primaryActivityTrackerIndicator":
+        false, "deviceId": 3469703076, "wifiSetup": false, "unitId": 3469703076, "currentFirmwareVersionMajor":
+        23, "currentFirmwareVersionMinor": 18, "isPrimaryUser": false, "currentFirmwareVersion":
+        "23.18"}, {"appSupport": true, "applicationKey": "fenix8Pro51mm", "deviceTypePk":
+        37229, "bestInClassVideoLink": null, "bluetoothClassicDevice": false, "bluetoothLowEnergyDevice":
+        true, "deviceCategories": ["FITNESS", "WELLNESS", "GOLF", "OUTDOOR"], "deviceEmbedVideoLink":
+        null, "deviceSettingsFile": "RealTimeDeviceSettings_942cc9b6-c5ed-491f-8468-d151a2881156.json",
+        "gcmSettingsFile": null, "deviceVideoPageLink": null, "displayOrder": 0, "golfDisplayOrder":
+        0, "hasOpticalHeartRate": true, "highlighted": false, "hybrid": true, "imageUrl":
+        "https://res.garmin.com/en/products/010-03199-02/v/c1_01_md.png", "minGCMAndroidVersion":
+        10077, "minGCMWindowsVersion": 99999, "minGCMiOSVersion": 105860, "minGCMHarmonyVersion":
+        0, "minGolfAppiOSVersion": 0, "minGolfAppAndroidVersion": 0, "partNumber":
+        "006-B4631-00", "primary": true, "productDisplayName": "fenix 8 Pro - 51mm",
+        "deviceTags": null, "productSku": "010-03199-00", "wasp": false, "weightScale":
+        false, "wellness": false, "wifi": true, "hasPowerButton": true, "supportsSecondaryUsers":
+        false, "primaryApplication": "GCM", "incompatibleApplications": ["JUNIOR"],
+        "deviceTypeSimpleName": "Garmin fenix 8 Pro", "abnormalHeartRateAlertCapable":
+        true, "activitySummFitFileCapable": true, "aerobicTrainingEffectCapable":
+        true, "alarmDaysCapable": true, "allDayStressCapable": true, "anaerobicTrainingEffectCapable":
+        true, "atpWorkoutCapable": true, "bodyBatteryCapable": true, "brickWorkoutCapable":
+        true, "cardioCapable": true, "cardioOptionCapable": false, "cardioSportsCapable":
+        false, "cardioWorkoutCapable": true, "cellularCapable": false, "changeLogCapable":
+        true, "contactManagementCapable": true, "courseCapable": true, "courseFileType":
+        "FIT", "coursePromptCapable": false, "customIntensityMinutesCapable": true,
+        "customWorkoutCapable": true, "cyclingSegmentCapable": true, "cyclingSportsCapable":
+        false, "cyclingWorkoutCapable": true, "defaultSettingCapable": true, "deviceSettingCapable":
+        true, "deviceSettingFileType": null, "displayFieldsExtCapable": false, "divingCapable":
+        false, "ellipticalOptionCapable": false, "floorsClimbedGoalCapable": true,
+        "ftpCapable": true, "gcj02CourseCapable": true, "glonassCapable": true, "goalCapable":
+        true, "goalFileType": "FIT", "golfAppSyncCapable": false, "gpsRouteCapable":
+        true, "handednessCapable": true, "hrZoneCapable": true, "hrvStressCapable":
+        true, "intensityMinutesGoalCapable": true, "lactateThresholdCapable": true,
+        "languageSettingCapable": true, "languageSettingFileType": null, "lowHrAlertCapable":
+        true, "maxHRCapable": true, "maxWorkoutCount": 200, "metricsFitFileReceiveCapable":
+        true, "metricsUploadCapable": true, "militaryTimeCapable": true, "moderateIntensityMinutesGoalCapable":
+        true, "nfcCapable": true, "otherOptionCapable": false, "otherSportsCapable":
+        false, "personalRecordCapable": true, "personalRecordFileType": "FIT", "poolSwimOptionCapable":
+        false, "powerCurveCapable": true, "powerZonesCapable": true, "pulseOxAllDayCapable":
+        true, "pulseOxOnDemandCapable": true, "pulseOxSleepCapable": true, "remCapable":
+        true, "reminderAlarmCapable": false, "reorderablePagesCapable": false, "restingHRCapable":
+        true, "rideOptionsCapable": false, "runOptionIndoorCapable": false, "runOptionsCapable":
+        false, "runningSegmentCapable": true, "runningSportsCapable": false, "runningWorkoutCapable":
+        true, "scheduleCapable": true, "scheduleFileType": "FIT", "segmentCapable":
+        true, "segmentPointCapable": true, "settingCapable": true, "settingFileType":
+        "FIT", "sleepTimeCapable": true, "smallFitFileOnlyCapable": false, "sportCapable":
+        true, "sportFileType": "FIT", "stairStepperOptionCapable": false, "strengthOptionsCapable":
+        false, "strengthWorkoutCapable": true, "supportedHrZones": ["RUNNING", "CYCLING",
+        "SWIMMING", "ALL"], "swimWorkoutCapable": true, "trainingPlanCapable": true,
+        "trainingStatusCapable": true, "trainingStatusPauseCapable": true, "userProfileCapable":
+        false, "userProfileFileType": null, "userTcxExportCapable": false, "vo2MaxBikeCapable":
+        true, "vo2MaxRunCapable": true, "walkOptionCapable": false, "walkingSportsCapable":
+        false, "weatherAlertsCapable": true, "weatherSettingsCapable": true, "workoutCapable":
+        true, "workoutFileType": "FIT", "yogaCapable": true, "yogaOptionCapable":
+        false, "heatAndAltitudeAcclimationCapable": true, "trainingLoadBalanceCapable":
+        true, "indoorTrackOptionsCapable": false, "indoorBikeOptionsCapable": false,
+        "indoorWalkOptionsCapable": false, "trainingEffectLabelCapable": true, "pacebandCapable":
+        true, "respirationCapable": true, "openWaterSwimOptionCapable": false, "phoneVerificationCheckRequired":
+        true, "weightGoalCapable": false, "yogaWorkoutCapable": true, "pilatesWorkoutCapable":
+        true, "connectedGPSCapable": false, "diveAppSyncCapable": true, "golfLiveScoringCapable":
+        true, "solarPanelUtilizationCapable": false, "sweatLossCapable": true, "diveAlertCapable":
+        false, "requiresInitialDeviceNickname": false, "defaultSettingsHbaseMigrated":
+        true, "sleepScoreCapable": true, "fitnessAgeV2Capable": true, "intensityMinutesV2Capable":
+        true, "collapsibleControlMenuCapable": false, "measurementUnitSettingCapable":
+        false, "onDeviceSleepCalculationCapable": true, "hiitWorkoutCapable": true,
+        "runningHeartRateZoneCapable": true, "cyclingHeartRateZoneCapable": true,
+        "swimmingHeartRateZoneCapable": true, "defaultHeartRateZoneCapable": true,
+        "cyclingPowerZonesCapable": true, "xcSkiPowerZonesCapable": true, "swimAlgorithmCapable":
+        true, "benchmarkExerciseCapable": true, "spectatorMessagingCapable": true,
+        "ecgCapable": true, "lteLiveEventSharingCapable": true, "sleepFitFileReceiveCapable":
+        true, "secondaryWorkoutStepTargetCapable": false, "assistancePlusCapable":
+        false, "powerGuidanceCapable": true, "airIntegrationCapable": false, "healthSnapshotCapable":
+        true, "racePredictionsRunCapable": true, "vivohubCompatible": false, "stepsTrueUpChartCapable":
+        true, "sportingEventCapable": true, "solarChargeCapable": false, "realTimeSettingsCapable":
+        true, "emergencyCallingCapable": false, "personalRepRecordCapable": false,
+        "hrvStatusCapable": true, "trainingReadinessCapable": true, "publicBetaSoftwareCapable":
+        true, "workoutAudioPromptsCapable": true, "actualStepRecordingCapable": true,
+        "groupTrack2Capable": false, "golfAppPairingCapable": false, "localWindConditionsCapable":
+        false, "multipleGolfCourseCapable": false, "beaconTrackingCapable": false,
+        "batteryStatusCapable": false, "runningPowerZonesCapable": true, "acuteTrainingLoadCapable":
+        true, "criticalSwimSpeedCapable": true, "primaryTrainingCapable": true, "dayOfWeekSleepWindowCapable":
+        true, "golfCourseDownloadCapable": false, "launchMonitorEventSharingCapable":
+        false, "lhaBackupCapable": true, "jetlagCapable": true, "bloodPressureCapable":
+        false, "bbiRecordingCapable": true, "wheelchairCapable": false, "primaryActivityTrackerSettingCapable":
+        true, "setBodyCompositionCapable": false, "acuteChronicWorkloadRatioCapable":
+        true, "sleepNeedCapable": true, "wearableBackupRestoreCapable": true, "cyclingComputerBackupRestoreCapable":
+        false, "descriptiveTrainingEffectCapable": false, "sleepSkinTemperatureCapable":
+        true, "runningLactateThresholdCapable": true, "altitudeAcclimationPercentageCapable":
+        true, "hillScoreAndEnduranceScoreCapable": true, "swimWorkout2Capable": true,
+        "enhancedWorkoutStepCapable": true, "primaryTrainingBackupCapable": true,
+        "hideSoftwareUpdateVersionCapable": false, "adaptiveCoachingScheduleCapable":
+        true, "openWaterSwimWorkoutCapable": false, "multisportWorkoutCapable": true,
+        "fullNameSettingsCapable": true, "bodyBatteryTrueUpCapable": true, "skipLastWorkoutStepInRepeatBlockCapable":
+        true, "adaptiveCoachingStrengthCapable": true, "mobilityWorkoutCapable": true,
+        "coursePlannerCapable": false, "trainableTriathlonEventCapable": true, "passcodeLockCapable":
+        false, "strengthTrainingPlanCapable": true, "breathingDisruptionsCapable":
+        true, "standaloneFirstbeatActivityProcessingCapable": false, "rts20Capable":
+        false, "accessorySensorCanGenerateActivityCapable": false, "garminWellnessCoachCapable":
+        false, "adaptiveCoachingWorkoutSettingsCapable": true, "lifestyleLoggingCapable":
+        false, "topoactiveMapsRealTimeSettingCapable": false, "runningToleranceCapable":
+        true, "rechargeableSensorCapable": false, "lapByCoursePointsCapable": true,
+        "sleepAlignmentCapable": false, "runningEconomyCapable": true, "projectedRaceTimePredictionCapable":
+        true, "cyclingAbilityCapable": false, "archeryXCapable": false, "registrationMetricsBackfillUnsupported":
+        false, "healthStatusCapable": false, "adaptiveCoachingFitnessCapable": false,
+        "vbtCapable": false, "healthStatusTrueUpCapable": false, "walkWorkoutCapable":
+        false, "adaptiveCoachingNoviceCapable": false, "adaptiveCoachingWalkCapable":
+        false, "rowingCapable": false, "gearTrackingCapable": false, "liveTrackCapable":
+        true, "datasource": "C", "deviceStatus": "active", "registeredDate": 1758951359000,
+        "actualProductSku": "010-03199-00", "vivohubConfigurable": null, "unRetirable":
+        false, "corporateDevice": false, "prePairedWithHRM": false, "otherAssociation":
+        false, "serialNumber": "8U9006105", "shortName": null, "displayName": "fenix
+        8 Pro - 51mm", "activeInd": 1, "primaryActivityTrackerIndicator": true, "deviceId":
+        3618356072, "wifiSetup": false, "unitId": 3618356072, "currentFirmwareVersionMajor":
+        18, "currentFirmwareVersionMinor": 81, "isPrimaryUser": false, "currentFirmwareVersion":
+        "18.81"}]'
+    headers:
+      CF-RAY:
+      - 99675ee90f62f04c-DFW
+      Cache-Control:
+      - no-cache, no-store, private
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      Date:
+      - Thu, 30 Oct 2025 02:09:28 GMT
+      NEL:
+      - '{"success_fraction":0.01,"report_to":"cf-nel","max_age":604800}'
+      Report-To:
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=WH9IKWGMpdGsJqpalQqeY1%2FPlaLmFcvAqb3dPnEN7gAZMTAICDZITRbihZTXfUVc1ftmYW4YRPkKs2Lr4CuGSSzS6mSTPtmGhIdyo5YB6wdjZL3wPV88vZOXAprDO4BAVphkBSGRurIRQwvw70TSRz5PEg%3D%3D"}],"group":"cf-nel","max_age":604800}'
+      Server:
+      - cloudflare
+      Transfer-Encoding:
+      - chunked
+      alt-svc:
+      - h3=":443"; ma=86400
+      cf-cache-status:
+      - DYNAMIC
+      pragma:
+      - no-cache
+    status:
+      code: 200
+      message: OK
+version: 1

@@ -1,0 +1,1374 @@
+interactions:
+- request:
+    body: mfa_token=SANITIZED
+    headers:
+      Accept:
+      - !!binary |
+        Ki8q
+      Accept-Encoding:
+      - !!binary |
+        Z3ppcCwgZGVmbGF0ZQ==
+      Authorization:
+      - Bearer SANITIZED
+      Connection:
+      - !!binary |
+        a2VlcC1hbGl2ZQ==
+      Content-Length:
+      - '74'
+      Content-Type:
+      - !!binary |
+        YXBwbGljYXRpb24veC13d3ctZm9ybS11cmxlbmNvZGVk
+      User-Agent:
+      - !!binary |
+        Y29tLmdhcm1pbi5hbmRyb2lkLmFwcHMuY29ubmVjdG1vYmlsZQ==
+    method: POST
+    uri: https://connectapi.garmin.com/oauth-service/oauth/exchange/user/2.0
+  response:
+    body:
+      string: '{"scope": "GARMINPAY_WRITE ATP_READ GHS_SAMD INSIGHTS_READ CIQ_APPSTORE_SERVICES_CREATE
+        COMMUNITY_COURSE_WRITE GCOFFER_WRITE DT_CLIENT_ANALYTICS_WRITE CIQ_APPSTORE_SERVICES_DELETE
+        OMT_SUBSCRIPTION_READ CONNECT_READ COMMUNITY_COURSE_READ GOLF_API_READ GHS_UPLOAD
+        DIVE_API_READ CIQ_APPSTORE_SERVICES_READ CIQ_APPSTORE_SERVICES_UPDATE CONNECT_WRITE
+        CONNECT_MCT_DAILY_LOG_READ DI_OAUTH_2_AUTHORIZATION_CODE_CREATE GARMINPAY_READ
+        GOLF_API_WRITE INSIGHTS_WRITE PRODUCT_SEARCH_READ OMT_CAMPAIGN_READ GCOFFER_READ
+        ATP_WRITE", "jti": "SANITIZED", "access_token": "SANITIZED", "token_type":
+        "bearer", "refresh_token": "SANITIZED", "expires_in": 93095, "refresh_token_expires_in":
+        2591999}'
+    headers:
+      CF-RAY:
+      - 99675f00697d69bf-DFW
+      Cache-Control:
+      - no-cache, no-store, private
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      Date:
+      - Thu, 30 Oct 2025 02:09:32 GMT
+      NEL:
+      - '{"success_fraction":0.01,"report_to":"cf-nel","max_age":604800}'
+      Report-To:
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=MLrB%2FOFNB%2BRJr7322Yo6n4ESJzimJqdHzRo3KPMlaevotkvqfAHXtqgWmkYofWx2K1%2FsGq39iTRjWm90G%2BPAs2tdNmIyZd%2BUdIxQ1Q54CS9vOBz9KSyO2DsN40CI%2FVztzRH2v9icaJf1zk3MZMzQgzKfbQ%3D%3D"}],"group":"cf-nel","max_age":604800}'
+      Server:
+      - cloudflare
+      Set-Cookie:
+      - _cfuvid=SANITIZED; path=SANITIZED; domain=SANITIZED; HttpOnly; Secure; SameSite=SANITIZED
+      Transfer-Encoding:
+      - chunked
+      alt-svc:
+      - h3=":443"; ma=86400
+      cf-cache-status:
+      - DYNAMIC
+      pragma:
+      - no-cache
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Authorization:
+      - Bearer SANITIZED
+      Connection:
+      - keep-alive
+      Cookie:
+      - _cfuvid=SANITIZED
+      User-Agent:
+      - GCM-iOS-5.7.2.1
+    method: GET
+    uri: https://connectapi.garmin.com/mobile-gateway/calendar/year/2024/month/1
+  response:
+    body:
+      string: '{"startDayOfMonth": 4, "numOfDaysInMonth": 29, "numOfDaysInPrevMonth":
+        31, "month": 1, "year": 2024, "calendarItems": [{"id": 1707227033673, "groupId":
+        null, "trainingPlanId": null, "itemType": "weight", "activityTypeId": null,
+        "wellnessActivityUuid": null, "title": null, "date": "2024-02-06", "duration":
+        null, "distance": null, "calories": null, "floorsClimbed": null, "avgRespirationRate":
+        null, "unitOfPoolLength": null, "weight": 80000.0, "difference": null, "courseId":
+        null, "courseName": null, "sportTypeKey": null, "url": null, "isStart": null,
+        "isRace": null, "recurrenceId": null, "isParent": null, "parentId": null,
+        "userBadgeId": null, "badgeCategoryTypeId": null, "badgeCategoryTypeDesc":
+        null, "badgeAwardedDate": null, "badgeViewed": null, "hideBadge": null, "startTimestampLocal":
+        null, "eventTimeLocal": null, "diveNumber": null, "maxDepth": null, "avgDepth":
+        null, "surfaceInterval": null, "elapsedDuration": null, "lapCount": null,
+        "bottomTime": null, "atpPlanId": null, "workoutId": null, "protectedWorkoutSchedule":
+        false, "activeSets": null, "strokes": null, "noOfSplits": null, "maxGradeValue":
+        null, "totalAscent": null, "differenceStress": null, "climbDuration": null,
+        "maxSpeed": null, "averageHR": null, "activeSplitSummaryDuration": null, "activeSplitSummaryDistance":
+        null, "maxSplitDistance": null, "maxSplitSpeed": null, "location": null, "shareableEventUuid":
+        null, "splitSummaryMode": null, "completionTarget": null, "workoutUuid": null,
+        "napStartTimeLocal": null, "beginPackWeight": null, "hasSplits": null, "shareableEvent":
+        false, "subscribed": null, "primaryEvent": null, "autoCalcCalories": null,
+        "phasedTrainingPlan": null, "decoDive": null}, {"id": 13668314954, "groupId":
+        null, "trainingPlanId": null, "itemType": "activity", "activityTypeId": 1,
+        "wellnessActivityUuid": null, "title": "Cuauht\u00e9moc Running", "date":
+        "2024-01-25", "duration": 1396829, "distance": 376203, "calories": 1101, "floorsClimbed":
+        null, "avgRespirationRate": null, "unitOfPoolLength": null, "weight": null,
+        "difference": null, "courseId": null, "courseName": null, "sportTypeKey":
+        null, "url": null, "isStart": null, "isRace": null, "recurrenceId": null,
+        "isParent": false, "parentId": null, "userBadgeId": null, "badgeCategoryTypeId":
+        null, "badgeCategoryTypeDesc": null, "badgeAwardedDate": null, "badgeViewed":
+        null, "hideBadge": null, "startTimestampLocal": "2024-01-25T07:11:10.0", "eventTimeLocal":
+        null, "diveNumber": null, "maxDepth": null, "avgDepth": null, "surfaceInterval":
+        null, "elapsedDuration": 1409.301025390625, "lapCount": 4, "bottomTime": null,
+        "atpPlanId": null, "workoutId": null, "protectedWorkoutSchedule": false, "activeSets":
+        null, "strokes": null, "noOfSplits": null, "maxGradeValue": null, "totalAscent":
+        null, "differenceStress": null, "climbDuration": null, "maxSpeed": 2.947999954223633,
+        "averageHR": 134.0, "activeSplitSummaryDuration": null, "activeSplitSummaryDistance":
+        null, "maxSplitDistance": null, "maxSplitSpeed": null, "location": null, "shareableEventUuid":
+        null, "splitSummaryMode": null, "completionTarget": null, "workoutUuid": null,
+        "napStartTimeLocal": null, "beginPackWeight": null, "hasSplits": true, "shareableEvent":
+        false, "subscribed": null, "primaryEvent": null, "autoCalcCalories": false,
+        "phasedTrainingPlan": null, "decoDive": false}, {"id": 13668315944, "groupId":
+        null, "trainingPlanId": null, "itemType": "activity", "activityTypeId": 174,
+        "wellnessActivityUuid": null, "title": "Bouldering", "date": "2024-01-25",
+        "duration": 6893921, "distance": null, "calories": 1776, "floorsClimbed":
+        null, "avgRespirationRate": null, "unitOfPoolLength": null, "weight": null,
+        "difference": null, "courseId": null, "courseName": null, "sportTypeKey":
+        null, "url": null, "isStart": null, "isRace": null, "recurrenceId": null,
+        "isParent": false, "parentId": null, "userBadgeId": null, "badgeCategoryTypeId":
+        null, "badgeCategoryTypeDesc": null, "badgeAwardedDate": null, "badgeViewed":
+        null, "hideBadge": null, "startTimestampLocal": "2024-01-25T16:49:48.0", "eventTimeLocal":
+        null, "diveNumber": null, "maxDepth": null, "avgDepth": null, "surfaceInterval":
+        null, "elapsedDuration": 6894.97900390625, "lapCount": 1, "bottomTime": null,
+        "atpPlanId": null, "workoutId": null, "protectedWorkoutSchedule": false, "activeSets":
+        null, "strokes": null, "noOfSplits": 21, "maxGradeValue": {"sortOrder": 5,
+        "valueKey": "V4", "scale": "VERMIN"}, "totalAscent": null, "differenceStress":
+        null, "climbDuration": 1349.5240478515625, "maxSpeed": null, "averageHR":
+        112.0, "activeSplitSummaryDuration": 1349.5240478515625, "activeSplitSummaryDistance":
+        null, "maxSplitDistance": null, "maxSplitSpeed": null, "location": null, "shareableEventUuid":
+        null, "splitSummaryMode": null, "completionTarget": null, "workoutUuid": null,
+        "napStartTimeLocal": null, "beginPackWeight": null, "hasSplits": true, "shareableEvent":
+        false, "subscribed": null, "primaryEvent": null, "autoCalcCalories": false,
+        "phasedTrainingPlan": null, "decoDive": false}, {"id": 13672808442, "groupId":
+        null, "trainingPlanId": null, "itemType": "activity", "activityTypeId": 1,
+        "wellnessActivityUuid": null, "title": "Cuauht\u00e9moc Running", "date":
+        "2024-01-26", "duration": 649343, "distance": 189981, "calories": 548, "floorsClimbed":
+        null, "avgRespirationRate": null, "unitOfPoolLength": null, "weight": null,
+        "difference": null, "courseId": null, "courseName": null, "sportTypeKey":
+        null, "url": null, "isStart": null, "isRace": null, "recurrenceId": null,
+        "isParent": false, "parentId": null, "userBadgeId": null, "badgeCategoryTypeId":
+        null, "badgeCategoryTypeDesc": null, "badgeAwardedDate": null, "badgeViewed":
+        null, "hideBadge": null, "startTimestampLocal": "2024-01-26T07:09:34.0", "eventTimeLocal":
+        null, "diveNumber": null, "maxDepth": null, "avgDepth": null, "surfaceInterval":
+        null, "elapsedDuration": 649.343017578125, "lapCount": 2, "bottomTime": null,
+        "atpPlanId": null, "workoutId": null, "protectedWorkoutSchedule": false, "activeSets":
+        null, "strokes": null, "noOfSplits": null, "maxGradeValue": null, "totalAscent":
+        null, "differenceStress": null, "climbDuration": null, "maxSpeed": 3.1070001125335693,
+        "averageHR": 134.0, "activeSplitSummaryDuration": null, "activeSplitSummaryDistance":
+        null, "maxSplitDistance": null, "maxSplitSpeed": null, "location": null, "shareableEventUuid":
+        null, "splitSummaryMode": null, "completionTarget": null, "workoutUuid": null,
+        "napStartTimeLocal": null, "beginPackWeight": null, "hasSplits": true, "shareableEvent":
+        false, "subscribed": null, "primaryEvent": null, "autoCalcCalories": false,
+        "phasedTrainingPlan": null, "decoDive": false}, {"id": 13673775861, "groupId":
+        null, "trainingPlanId": null, "itemType": "activity", "activityTypeId": 163,
+        "wellnessActivityUuid": null, "title": "Yoga", "date": "2024-01-26", "duration":
+        3878416, "distance": null, "calories": 670, "floorsClimbed": null, "avgRespirationRate":
+        15.720000267028809, "unitOfPoolLength": null, "weight": null, "difference":
+        null, "courseId": null, "courseName": null, "sportTypeKey": null, "url": null,
+        "isStart": null, "isRace": null, "recurrenceId": null, "isParent": false,
+        "parentId": null, "userBadgeId": null, "badgeCategoryTypeId": null, "badgeCategoryTypeDesc":
+        null, "badgeAwardedDate": null, "badgeViewed": null, "hideBadge": null, "startTimestampLocal":
+        "2024-01-26T07:32:56.0", "eventTimeLocal": null, "diveNumber": null, "maxDepth":
+        null, "avgDepth": null, "surfaceInterval": null, "elapsedDuration": 3878.416015625,
+        "lapCount": 1, "bottomTime": null, "atpPlanId": null, "workoutId": null, "protectedWorkoutSchedule":
+        false, "activeSets": 1, "strokes": null, "noOfSplits": null, "maxGradeValue":
+        null, "totalAscent": null, "differenceStress": -80.0, "climbDuration": null,
+        "maxSpeed": null, "averageHR": 75.0, "activeSplitSummaryDuration": null, "activeSplitSummaryDistance":
+        null, "maxSplitDistance": null, "maxSplitSpeed": null, "location": null, "shareableEventUuid":
+        null, "splitSummaryMode": null, "completionTarget": null, "workoutUuid": null,
+        "napStartTimeLocal": null, "beginPackWeight": null, "hasSplits": false, "shareableEvent":
+        false, "subscribed": null, "primaryEvent": null, "autoCalcCalories": false,
+        "phasedTrainingPlan": null, "decoDive": false}, {"id": 13708821061, "groupId":
+        null, "trainingPlanId": null, "itemType": "activity", "activityTypeId": 6,
+        "wellnessActivityUuid": null, "title": "Cuajimalpa de Morelos Trail Running",
+        "date": "2024-01-28", "duration": 10092351, "distance": 1811757, "calories":
+        6808, "floorsClimbed": null, "avgRespirationRate": null, "unitOfPoolLength":
+        null, "weight": null, "difference": null, "courseId": null, "courseName":
+        null, "sportTypeKey": null, "url": null, "isStart": null, "isRace": null,
+        "recurrenceId": null, "isParent": false, "parentId": null, "userBadgeId":
+        null, "badgeCategoryTypeId": null, "badgeCategoryTypeDesc": null, "badgeAwardedDate":
+        null, "badgeViewed": null, "hideBadge": null, "startTimestampLocal": "2024-01-28T07:37:51.0",
+        "eventTimeLocal": null, "diveNumber": null, "maxDepth": null, "avgDepth":
+        null, "surfaceInterval": null, "elapsedDuration": 10746.8447265625, "lapCount":
+        9, "bottomTime": null, "atpPlanId": null, "workoutId": null, "protectedWorkoutSchedule":
+        false, "activeSets": null, "strokes": null, "noOfSplits": null, "maxGradeValue":
+        null, "totalAscent": null, "differenceStress": null, "climbDuration": null,
+        "maxSpeed": 2.986000061035156, "averageHR": 142.0, "activeSplitSummaryDuration":
+        null, "activeSplitSummaryDistance": null, "maxSplitDistance": null, "maxSplitSpeed":
+        null, "location": null, "shareableEventUuid": null, "splitSummaryMode": null,
+        "completionTarget": null, "workoutUuid": null, "napStartTimeLocal": null,
+        "beginPackWeight": null, "hasSplits": true, "shareableEvent": false, "subscribed":
+        null, "primaryEvent": null, "autoCalcCalories": false, "phasedTrainingPlan":
+        null, "decoDive": false}, {"id": 13718817304, "groupId": null, "trainingPlanId":
+        null, "itemType": "activity", "activityTypeId": 1, "wellnessActivityUuid":
+        null, "title": "Cuauht\u00e9moc - Base", "date": "2024-01-29", "duration":
+        1801793, "distance": 486802, "calories": 1470, "floorsClimbed": null, "avgRespirationRate":
+        null, "unitOfPoolLength": null, "weight": null, "difference": null, "courseId":
+        null, "courseName": null, "sportTypeKey": null, "url": null, "isStart": null,
+        "isRace": null, "recurrenceId": null, "isParent": false, "parentId": null,
+        "userBadgeId": null, "badgeCategoryTypeId": null, "badgeCategoryTypeDesc":
+        null, "badgeAwardedDate": null, "badgeViewed": null, "hideBadge": null, "startTimestampLocal":
+        "2024-01-29T07:24:41.0", "eventTimeLocal": null, "diveNumber": null, "maxDepth":
+        null, "avgDepth": null, "surfaceInterval": null, "elapsedDuration": 1804.58203125,
+        "lapCount": 6, "bottomTime": null, "atpPlanId": null, "workoutId": null, "protectedWorkoutSchedule":
+        false, "activeSets": null, "strokes": null, "noOfSplits": null, "maxGradeValue":
+        null, "totalAscent": 2.2299999967217445, "differenceStress": null, "climbDuration":
+        1801.794000029564, "maxSpeed": 4.086999893188477, "averageHR": 140.0, "activeSplitSummaryDuration":
+        1801.794000029564, "activeSplitSummaryDistance": 4868.029985427856, "maxSplitDistance":
+        4868, "maxSplitSpeed": 4.086999893188477, "location": null, "shareableEventUuid":
+        null, "splitSummaryMode": null, "completionTarget": null, "workoutUuid": null,
+        "napStartTimeLocal": null, "beginPackWeight": null, "hasSplits": true, "shareableEvent":
+        false, "subscribed": null, "primaryEvent": null, "autoCalcCalories": false,
+        "phasedTrainingPlan": null, "decoDive": false}, {"id": 13734931687, "groupId":
+        null, "trainingPlanId": null, "itemType": "activity", "activityTypeId": 6,
+        "wellnessActivityUuid": null, "title": "Cuajimalpa de Morelos Trail Running",
+        "date": "2024-01-30", "duration": 2589176, "distance": 654804, "calories":
+        2371, "floorsClimbed": null, "avgRespirationRate": null, "unitOfPoolLength":
+        null, "weight": null, "difference": null, "courseId": null, "courseName":
+        null, "sportTypeKey": null, "url": null, "isStart": null, "isRace": null,
+        "recurrenceId": null, "isParent": false, "parentId": null, "userBadgeId":
+        null, "badgeCategoryTypeId": null, "badgeCategoryTypeDesc": null, "badgeAwardedDate":
+        null, "badgeViewed": null, "hideBadge": null, "startTimestampLocal": "2024-01-30T07:48:37.0",
+        "eventTimeLocal": null, "diveNumber": null, "maxDepth": null, "avgDepth":
+        null, "surfaceInterval": null, "elapsedDuration": 2589.176025390625, "lapCount":
+        3, "bottomTime": null, "atpPlanId": null, "workoutId": null, "protectedWorkoutSchedule":
+        false, "activeSets": null, "strokes": null, "noOfSplits": null, "maxGradeValue":
+        null, "totalAscent": null, "differenceStress": null, "climbDuration": null,
+        "maxSpeed": 3.6519999504089355, "averageHR": 156.0, "activeSplitSummaryDuration":
+        null, "activeSplitSummaryDistance": null, "maxSplitDistance": null, "maxSplitSpeed":
+        null, "location": null, "shareableEventUuid": null, "splitSummaryMode": null,
+        "completionTarget": null, "workoutUuid": null, "napStartTimeLocal": null,
+        "beginPackWeight": null, "hasSplits": true, "shareableEvent": false, "subscribed":
+        null, "primaryEvent": null, "autoCalcCalories": false, "phasedTrainingPlan":
+        null, "decoDive": false}, {"id": 13751188933, "groupId": null, "trainingPlanId":
+        null, "itemType": "activity", "activityTypeId": 1, "wellnessActivityUuid":
+        null, "title": "Cuauht\u00e9moc Running", "date": "2024-01-31", "duration":
+        698952, "distance": 185605, "calories": 548, "floorsClimbed": null, "avgRespirationRate":
+        null, "unitOfPoolLength": null, "weight": null, "difference": null, "courseId":
+        null, "courseName": null, "sportTypeKey": null, "url": null, "isStart": null,
+        "isRace": null, "recurrenceId": null, "isParent": false, "parentId": null,
+        "userBadgeId": null, "badgeCategoryTypeId": null, "badgeCategoryTypeDesc":
+        null, "badgeAwardedDate": null, "badgeViewed": null, "hideBadge": null, "startTimestampLocal":
+        "2024-01-31T07:23:18.0", "eventTimeLocal": null, "diveNumber": null, "maxDepth":
+        null, "avgDepth": null, "surfaceInterval": null, "elapsedDuration": 698.9520263671875,
+        "lapCount": 2, "bottomTime": null, "atpPlanId": null, "workoutId": null, "protectedWorkoutSchedule":
+        false, "activeSets": null, "strokes": null, "noOfSplits": null, "maxGradeValue":
+        null, "totalAscent": null, "differenceStress": null, "climbDuration": null,
+        "maxSpeed": 2.9579999446868896, "averageHR": 134.0, "activeSplitSummaryDuration":
+        null, "activeSplitSummaryDistance": null, "maxSplitDistance": null, "maxSplitSpeed":
+        null, "location": null, "shareableEventUuid": null, "splitSummaryMode": null,
+        "completionTarget": null, "workoutUuid": null, "napStartTimeLocal": null,
+        "beginPackWeight": null, "hasSplits": true, "shareableEvent": false, "subscribed":
+        null, "primaryEvent": null, "autoCalcCalories": false, "phasedTrainingPlan":
+        null, "decoDive": false}, {"id": 13779979554, "groupId": null, "trainingPlanId":
+        null, "itemType": "activity", "activityTypeId": 163, "wellnessActivityUuid":
+        null, "title": "Yoga", "date": "2024-01-31", "duration": 3901970, "distance":
+        null, "calories": 750, "floorsClimbed": null, "avgRespirationRate": 16.059999465942383,
+        "unitOfPoolLength": null, "weight": null, "difference": null, "courseId":
+        null, "courseName": null, "sportTypeKey": null, "url": null, "isStart": null,
+        "isRace": null, "recurrenceId": null, "isParent": false, "parentId": null,
+        "userBadgeId": null, "badgeCategoryTypeId": null, "badgeCategoryTypeDesc":
+        null, "badgeAwardedDate": null, "badgeViewed": null, "hideBadge": null, "startTimestampLocal":
+        "2024-01-31T07:38:43.0", "eventTimeLocal": null, "diveNumber": null, "maxDepth":
+        null, "avgDepth": null, "surfaceInterval": null, "elapsedDuration": 3903.840087890625,
+        "lapCount": 1, "bottomTime": null, "atpPlanId": null, "workoutId": null, "protectedWorkoutSchedule":
+        false, "activeSets": 1, "strokes": null, "noOfSplits": null, "maxGradeValue":
+        null, "totalAscent": null, "differenceStress": -56.0, "climbDuration": null,
+        "maxSpeed": null, "averageHR": 81.0, "activeSplitSummaryDuration": null, "activeSplitSummaryDistance":
+        null, "maxSplitDistance": null, "maxSplitSpeed": null, "location": null, "shareableEventUuid":
+        null, "splitSummaryMode": null, "completionTarget": null, "workoutUuid": null,
+        "napStartTimeLocal": null, "beginPackWeight": null, "hasSplits": false, "shareableEvent":
+        false, "subscribed": null, "primaryEvent": null, "autoCalcCalories": false,
+        "phasedTrainingPlan": null, "decoDive": false}, {"id": 13780914038, "groupId":
+        null, "trainingPlanId": null, "itemType": "activity", "activityTypeId": 6,
+        "wellnessActivityUuid": null, "title": "Cuajimalpa de Morelos Trail Running",
+        "date": "2024-02-01", "duration": 2983235, "distance": 651058, "calories":
+        2358, "floorsClimbed": null, "avgRespirationRate": null, "unitOfPoolLength":
+        null, "weight": null, "difference": null, "courseId": null, "courseName":
+        null, "sportTypeKey": null, "url": null, "isStart": null, "isRace": null,
+        "recurrenceId": null, "isParent": false, "parentId": null, "userBadgeId":
+        null, "badgeCategoryTypeId": null, "badgeCategoryTypeDesc": null, "badgeAwardedDate":
+        null, "badgeViewed": null, "hideBadge": null, "startTimestampLocal": "2024-02-01T07:59:38.0",
+        "eventTimeLocal": null, "diveNumber": null, "maxDepth": null, "avgDepth":
+        null, "surfaceInterval": null, "elapsedDuration": 2989.55810546875, "lapCount":
+        1, "bottomTime": null, "atpPlanId": null, "workoutId": null, "protectedWorkoutSchedule":
+        false, "activeSets": null, "strokes": null, "noOfSplits": null, "maxGradeValue":
+        null, "totalAscent": null, "differenceStress": null, "climbDuration": null,
+        "maxSpeed": 2.8429999351501465, "averageHR": 142.0, "activeSplitSummaryDuration":
+        null, "activeSplitSummaryDistance": null, "maxSplitDistance": null, "maxSplitSpeed":
+        null, "location": null, "shareableEventUuid": null, "splitSummaryMode": null,
+        "completionTarget": null, "workoutUuid": null, "napStartTimeLocal": null,
+        "beginPackWeight": null, "hasSplits": true, "shareableEvent": false, "subscribed":
+        null, "primaryEvent": null, "autoCalcCalories": false, "phasedTrainingPlan":
+        null, "decoDive": false}, {"id": 13780916281, "groupId": null, "trainingPlanId":
+        null, "itemType": "activity", "activityTypeId": 1, "wellnessActivityUuid":
+        null, "title": "Cuauht\u00e9moc Running", "date": "2024-02-02", "duration":
+        1397496, "distance": 373992, "calories": 1106, "floorsClimbed": null, "avgRespirationRate":
+        null, "unitOfPoolLength": null, "weight": null, "difference": null, "courseId":
+        null, "courseName": null, "sportTypeKey": null, "url": null, "isStart": null,
+        "isRace": null, "recurrenceId": null, "isParent": false, "parentId": null,
+        "userBadgeId": null, "badgeCategoryTypeId": null, "badgeCategoryTypeDesc":
+        null, "badgeAwardedDate": null, "badgeViewed": null, "hideBadge": null, "startTimestampLocal":
+        "2024-02-02T07:06:19.0", "eventTimeLocal": null, "diveNumber": null, "maxDepth":
+        null, "avgDepth": null, "surfaceInterval": null, "elapsedDuration": 1412.4959716796875,
+        "lapCount": 4, "bottomTime": null, "atpPlanId": null, "workoutId": null, "protectedWorkoutSchedule":
+        false, "activeSets": null, "strokes": null, "noOfSplits": null, "maxGradeValue":
+        null, "totalAscent": null, "differenceStress": null, "climbDuration": null,
+        "maxSpeed": 3.0420000553131104, "averageHR": 141.0, "activeSplitSummaryDuration":
+        null, "activeSplitSummaryDistance": null, "maxSplitDistance": null, "maxSplitSpeed":
+        null, "location": null, "shareableEventUuid": null, "splitSummaryMode": null,
+        "completionTarget": null, "workoutUuid": null, "napStartTimeLocal": null,
+        "beginPackWeight": null, "hasSplits": true, "shareableEvent": false, "subscribed":
+        null, "primaryEvent": null, "autoCalcCalories": false, "phasedTrainingPlan":
+        null, "decoDive": false}, {"id": 13781225320, "groupId": null, "trainingPlanId":
+        null, "itemType": "activity", "activityTypeId": 163, "wellnessActivityUuid":
+        null, "title": "Yoga", "date": "2024-02-02", "duration": 4169758, "distance":
+        null, "calories": 951, "floorsClimbed": null, "avgRespirationRate": 16.010000228881836,
+        "unitOfPoolLength": null, "weight": null, "difference": null, "courseId":
+        null, "courseName": null, "sportTypeKey": null, "url": null, "isStart": null,
+        "isRace": null, "recurrenceId": null, "isParent": false, "parentId": null,
+        "userBadgeId": null, "badgeCategoryTypeId": null, "badgeCategoryTypeDesc":
+        null, "badgeAwardedDate": null, "badgeViewed": null, "hideBadge": null, "startTimestampLocal":
+        "2024-02-02T07:37:29.0", "eventTimeLocal": null, "diveNumber": null, "maxDepth":
+        null, "avgDepth": null, "surfaceInterval": null, "elapsedDuration": 4169.7587890625,
+        "lapCount": 1, "bottomTime": null, "atpPlanId": null, "workoutId": null, "protectedWorkoutSchedule":
+        false, "activeSets": 1, "strokes": null, "noOfSplits": null, "maxGradeValue":
+        null, "totalAscent": null, "differenceStress": -33.0, "climbDuration": null,
+        "maxSpeed": null, "averageHR": 87.0, "activeSplitSummaryDuration": null, "activeSplitSummaryDistance":
+        null, "maxSplitDistance": null, "maxSplitSpeed": null, "location": null, "shareableEventUuid":
+        null, "splitSummaryMode": null, "completionTarget": null, "workoutUuid": null,
+        "napStartTimeLocal": null, "beginPackWeight": null, "hasSplits": false, "shareableEvent":
+        false, "subscribed": null, "primaryEvent": null, "autoCalcCalories": false,
+        "phasedTrainingPlan": null, "decoDive": false}, {"id": 13814329046, "groupId":
+        null, "trainingPlanId": null, "itemType": "activity", "activityTypeId": 6,
+        "wellnessActivityUuid": null, "title": "Cuajimalpa de Morelos Trail Running",
+        "date": "2024-02-04", "duration": 4800339, "distance": 869423, "calories":
+        3008, "floorsClimbed": null, "avgRespirationRate": null, "unitOfPoolLength":
+        null, "weight": null, "difference": null, "courseId": null, "courseName":
+        null, "sportTypeKey": null, "url": null, "isStart": null, "isRace": null,
+        "recurrenceId": null, "isParent": false, "parentId": null, "userBadgeId":
+        null, "badgeCategoryTypeId": null, "badgeCategoryTypeDesc": null, "badgeAwardedDate":
+        null, "badgeViewed": null, "hideBadge": null, "startTimestampLocal": "2024-02-04T08:26:58.0",
+        "eventTimeLocal": null, "diveNumber": null, "maxDepth": null, "avgDepth":
+        null, "surfaceInterval": null, "elapsedDuration": 4800.33984375, "lapCount":
+        1, "bottomTime": null, "atpPlanId": null, "workoutId": null, "protectedWorkoutSchedule":
+        false, "activeSets": null, "strokes": null, "noOfSplits": null, "maxGradeValue":
+        null, "totalAscent": null, "differenceStress": null, "climbDuration": null,
+        "maxSpeed": 3.059999942779541, "averageHR": 129.0, "activeSplitSummaryDuration":
+        null, "activeSplitSummaryDistance": null, "maxSplitDistance": null, "maxSplitSpeed":
+        null, "location": null, "shareableEventUuid": null, "splitSummaryMode": null,
+        "completionTarget": null, "workoutUuid": null, "napStartTimeLocal": null,
+        "beginPackWeight": null, "hasSplits": true, "shareableEvent": false, "subscribed":
+        null, "primaryEvent": null, "autoCalcCalories": false, "phasedTrainingPlan":
+        null, "decoDive": false}, {"id": 13827357027, "groupId": null, "trainingPlanId":
+        null, "itemType": "activity", "activityTypeId": 1, "wellnessActivityUuid":
+        null, "title": "Cuauht\u00e9moc - Base", "date": "2024-02-05", "duration":
+        1860436, "distance": 509310, "calories": 1541, "floorsClimbed": null, "avgRespirationRate":
+        null, "unitOfPoolLength": null, "weight": null, "difference": null, "courseId":
+        null, "courseName": null, "sportTypeKey": null, "url": null, "isStart": null,
+        "isRace": null, "recurrenceId": null, "isParent": false, "parentId": null,
+        "userBadgeId": null, "badgeCategoryTypeId": null, "badgeCategoryTypeDesc":
+        null, "badgeAwardedDate": null, "badgeViewed": null, "hideBadge": null, "startTimestampLocal":
+        "2024-02-05T08:14:01.0", "eventTimeLocal": null, "diveNumber": null, "maxDepth":
+        null, "avgDepth": null, "surfaceInterval": null, "elapsedDuration": 1871.7860107421875,
+        "lapCount": 7, "bottomTime": null, "atpPlanId": null, "workoutId": null, "protectedWorkoutSchedule":
+        false, "activeSets": null, "strokes": null, "noOfSplits": null, "maxGradeValue":
+        null, "totalAscent": 5.169999998062849, "differenceStress": null, "climbDuration":
+        1860.4360305070877, "maxSpeed": 3.2100000381469727, "averageHR": 138.0, "activeSplitSummaryDuration":
+        1860.4360305070877, "activeSplitSummaryDistance": 5093.110001087189, "maxSplitDistance":
+        5093, "maxSplitSpeed": 3.2100000381469727, "location": null, "shareableEventUuid":
+        null, "splitSummaryMode": null, "completionTarget": null, "workoutUuid": null,
+        "napStartTimeLocal": null, "beginPackWeight": null, "hasSplits": true, "shareableEvent":
+        false, "subscribed": null, "primaryEvent": null, "autoCalcCalories": false,
+        "phasedTrainingPlan": null, "decoDive": false}, {"id": 13840925037, "groupId":
+        null, "trainingPlanId": null, "itemType": "activity", "activityTypeId": 6,
+        "wellnessActivityUuid": null, "title": "Cuajimalpa de Morelos Trail Running",
+        "date": "2024-02-06", "duration": 2105684, "distance": 386838, "calories":
+        1407, "floorsClimbed": null, "avgRespirationRate": 29.540000915527344, "unitOfPoolLength":
+        null, "weight": null, "difference": null, "courseId": null, "courseName":
+        null, "sportTypeKey": null, "url": null, "isStart": null, "isRace": null,
+        "recurrenceId": null, "isParent": false, "parentId": null, "userBadgeId":
+        null, "badgeCategoryTypeId": null, "badgeCategoryTypeDesc": null, "badgeAwardedDate":
+        null, "badgeViewed": null, "hideBadge": null, "startTimestampLocal": "2024-02-06T07:52:28.0",
+        "eventTimeLocal": null, "diveNumber": null, "maxDepth": null, "avgDepth":
+        null, "surfaceInterval": null, "elapsedDuration": 2271.735107421875, "lapCount":
+        8, "bottomTime": null, "atpPlanId": null, "workoutId": null, "protectedWorkoutSchedule":
+        false, "activeSets": null, "strokes": null, "noOfSplits": null, "maxGradeValue":
+        null, "totalAscent": null, "differenceStress": null, "climbDuration": null,
+        "maxSpeed": 4.685999870300293, "averageHR": 131.0, "activeSplitSummaryDuration":
+        null, "activeSplitSummaryDistance": null, "maxSplitDistance": null, "maxSplitSpeed":
+        null, "location": null, "shareableEventUuid": null, "splitSummaryMode": null,
+        "completionTarget": null, "workoutUuid": null, "napStartTimeLocal": null,
+        "beginPackWeight": null, "hasSplits": true, "shareableEvent": false, "subscribed":
+        null, "primaryEvent": null, "autoCalcCalories": false, "phasedTrainingPlan":
+        null, "decoDive": false}, {"id": 13855723779, "groupId": null, "trainingPlanId":
+        null, "itemType": "activity", "activityTypeId": 1, "wellnessActivityUuid":
+        null, "title": "Cuauht\u00e9moc Running", "date": "2024-02-07", "duration":
+        671843, "distance": 187106, "calories": 569, "floorsClimbed": null, "avgRespirationRate":
+        null, "unitOfPoolLength": null, "weight": null, "difference": null, "courseId":
+        null, "courseName": null, "sportTypeKey": null, "url": null, "isStart": null,
+        "isRace": null, "recurrenceId": null, "isParent": false, "parentId": null,
+        "userBadgeId": null, "badgeCategoryTypeId": null, "badgeCategoryTypeDesc":
+        null, "badgeAwardedDate": null, "badgeViewed": null, "hideBadge": null, "startTimestampLocal":
+        "2024-02-07T07:25:53.0", "eventTimeLocal": null, "diveNumber": null, "maxDepth":
+        null, "avgDepth": null, "surfaceInterval": null, "elapsedDuration": 679.8900146484375,
+        "lapCount": 2, "bottomTime": null, "atpPlanId": null, "workoutId": null, "protectedWorkoutSchedule":
+        false, "activeSets": null, "strokes": null, "noOfSplits": null, "maxGradeValue":
+        null, "totalAscent": null, "differenceStress": null, "climbDuration": null,
+        "maxSpeed": 3.4240000247955327, "averageHR": 139.0, "activeSplitSummaryDuration":
+        null, "activeSplitSummaryDistance": null, "maxSplitDistance": null, "maxSplitSpeed":
+        null, "location": null, "shareableEventUuid": null, "splitSummaryMode": null,
+        "completionTarget": null, "workoutUuid": null, "napStartTimeLocal": null,
+        "beginPackWeight": null, "hasSplits": true, "shareableEvent": false, "subscribed":
+        null, "primaryEvent": null, "autoCalcCalories": false, "phasedTrainingPlan":
+        null, "decoDive": false}, {"id": 13857524423, "groupId": null, "trainingPlanId":
+        null, "itemType": "activity", "activityTypeId": 163, "wellnessActivityUuid":
+        null, "title": "Yoga", "date": "2024-02-07", "duration": 6665319, "distance":
+        null, "calories": 1034, "floorsClimbed": null, "avgRespirationRate": 14.800000190734863,
+        "unitOfPoolLength": null, "weight": null, "difference": null, "courseId":
+        null, "courseName": null, "sportTypeKey": null, "url": null, "isStart": null,
+        "isRace": null, "recurrenceId": null, "isParent": false, "parentId": null,
+        "userBadgeId": null, "badgeCategoryTypeId": null, "badgeCategoryTypeDesc":
+        null, "badgeAwardedDate": null, "badgeViewed": null, "hideBadge": null, "startTimestampLocal":
+        "2024-02-07T07:42:33.0", "eventTimeLocal": null, "diveNumber": null, "maxDepth":
+        null, "avgDepth": null, "surfaceInterval": null, "elapsedDuration": 6665.31982421875,
+        "lapCount": 1, "bottomTime": null, "atpPlanId": null, "workoutId": null, "protectedWorkoutSchedule":
+        false, "activeSets": 1, "strokes": null, "noOfSplits": null, "maxGradeValue":
+        null, "totalAscent": null, "differenceStress": -61.0, "climbDuration": null,
+        "maxSpeed": null, "averageHR": 75.0, "activeSplitSummaryDuration": null, "activeSplitSummaryDistance":
+        null, "maxSplitDistance": null, "maxSplitSpeed": null, "location": null, "shareableEventUuid":
+        null, "splitSummaryMode": null, "completionTarget": null, "workoutUuid": null,
+        "napStartTimeLocal": null, "beginPackWeight": null, "hasSplits": false, "shareableEvent":
+        false, "subscribed": null, "primaryEvent": null, "autoCalcCalories": false,
+        "phasedTrainingPlan": null, "decoDive": false}, {"id": 13870652575, "groupId":
+        null, "trainingPlanId": null, "itemType": "activity", "activityTypeId": 1,
+        "wellnessActivityUuid": null, "title": "Cuauht\u00e9moc Running", "date":
+        "2024-02-08", "duration": 1294067, "distance": 376400, "calories": 1110, "floorsClimbed":
+        null, "avgRespirationRate": null, "unitOfPoolLength": null, "weight": null,
+        "difference": null, "courseId": null, "courseName": null, "sportTypeKey":
+        null, "url": null, "isStart": null, "isRace": null, "recurrenceId": null,
+        "isParent": false, "parentId": null, "userBadgeId": null, "badgeCategoryTypeId":
+        null, "badgeCategoryTypeDesc": null, "badgeAwardedDate": null, "badgeViewed":
+        null, "hideBadge": null, "startTimestampLocal": "2024-02-08T07:16:11.0", "eventTimeLocal":
+        null, "diveNumber": null, "maxDepth": null, "avgDepth": null, "surfaceInterval":
+        null, "elapsedDuration": 1317.134033203125, "lapCount": 4, "bottomTime": null,
+        "atpPlanId": null, "workoutId": null, "protectedWorkoutSchedule": false, "activeSets":
+        null, "strokes": null, "noOfSplits": null, "maxGradeValue": null, "totalAscent":
+        null, "differenceStress": null, "climbDuration": null, "maxSpeed": 3.302999973297119,
+        "averageHR": 142.0, "activeSplitSummaryDuration": null, "activeSplitSummaryDistance":
+        null, "maxSplitDistance": null, "maxSplitSpeed": null, "location": null, "shareableEventUuid":
+        null, "splitSummaryMode": null, "completionTarget": null, "workoutUuid": null,
+        "napStartTimeLocal": null, "beginPackWeight": null, "hasSplits": true, "shareableEvent":
+        false, "subscribed": null, "primaryEvent": null, "autoCalcCalories": false,
+        "phasedTrainingPlan": null, "decoDive": false}, {"id": 13884503971, "groupId":
+        null, "trainingPlanId": null, "itemType": "activity", "activityTypeId": 1,
+        "wellnessActivityUuid": null, "title": "Cuauht\u00e9moc Running", "date":
+        "2024-02-09", "duration": 615775, "distance": 187632, "calories": 536, "floorsClimbed":
+        null, "avgRespirationRate": null, "unitOfPoolLength": null, "weight": null,
+        "difference": null, "courseId": null, "courseName": null, "sportTypeKey":
+        null, "url": null, "isStart": null, "isRace": null, "recurrenceId": null,
+        "isParent": false, "parentId": null, "userBadgeId": null, "badgeCategoryTypeId":
+        null, "badgeCategoryTypeDesc": null, "badgeAwardedDate": null, "badgeViewed":
+        null, "hideBadge": null, "startTimestampLocal": "2024-02-09T07:20:19.0", "eventTimeLocal":
+        null, "diveNumber": null, "maxDepth": null, "avgDepth": null, "surfaceInterval":
+        null, "elapsedDuration": 631.9520263671875, "lapCount": 2, "bottomTime": null,
+        "atpPlanId": null, "workoutId": null, "protectedWorkoutSchedule": false, "activeSets":
+        null, "strokes": null, "noOfSplits": null, "maxGradeValue": null, "totalAscent":
+        null, "differenceStress": null, "climbDuration": null, "maxSpeed": 3.4709999561309814,
+        "averageHR": 137.0, "activeSplitSummaryDuration": null, "activeSplitSummaryDistance":
+        null, "maxSplitDistance": null, "maxSplitSpeed": null, "location": null, "shareableEventUuid":
+        null, "splitSummaryMode": null, "completionTarget": null, "workoutUuid": null,
+        "napStartTimeLocal": null, "beginPackWeight": null, "hasSplits": true, "shareableEvent":
+        false, "subscribed": null, "primaryEvent": null, "autoCalcCalories": false,
+        "phasedTrainingPlan": null, "decoDive": false}, {"id": 13885372878, "groupId":
+        null, "trainingPlanId": null, "itemType": "activity", "activityTypeId": 163,
+        "wellnessActivityUuid": null, "title": "Yoga", "date": "2024-02-09", "duration":
+        3873217, "distance": null, "calories": 770, "floorsClimbed": null, "avgRespirationRate":
+        16.139999389648438, "unitOfPoolLength": null, "weight": null, "difference":
+        null, "courseId": null, "courseName": null, "sportTypeKey": null, "url": null,
+        "isStart": null, "isRace": null, "recurrenceId": null, "isParent": false,
+        "parentId": null, "userBadgeId": null, "badgeCategoryTypeId": null, "badgeCategoryTypeDesc":
+        null, "badgeAwardedDate": null, "badgeViewed": null, "hideBadge": null, "startTimestampLocal":
+        "2024-02-09T07:35:59.0", "eventTimeLocal": null, "diveNumber": null, "maxDepth":
+        null, "avgDepth": null, "surfaceInterval": null, "elapsedDuration": 3873.217041015625,
+        "lapCount": 1, "bottomTime": null, "atpPlanId": null, "workoutId": null, "protectedWorkoutSchedule":
+        false, "activeSets": 1, "strokes": null, "noOfSplits": null, "maxGradeValue":
+        null, "totalAscent": null, "differenceStress": -68.0, "climbDuration": null,
+        "maxSpeed": null, "averageHR": 81.0, "activeSplitSummaryDuration": null, "activeSplitSummaryDistance":
+        null, "maxSplitDistance": null, "maxSplitSpeed": null, "location": null, "shareableEventUuid":
+        null, "splitSummaryMode": null, "completionTarget": null, "workoutUuid": null,
+        "napStartTimeLocal": null, "beginPackWeight": null, "hasSplits": false, "shareableEvent":
+        false, "subscribed": null, "primaryEvent": null, "autoCalcCalories": false,
+        "phasedTrainingPlan": null, "decoDive": false}, {"id": 13919652583, "groupId":
+        null, "trainingPlanId": null, "itemType": "activity", "activityTypeId": 6,
+        "wellnessActivityUuid": null, "title": "Cuajimalpa de Morelos Trail Running",
+        "date": "2024-02-11", "duration": 11112512, "distance": 1825989, "calories":
+        6724, "floorsClimbed": null, "avgRespirationRate": null, "unitOfPoolLength":
+        null, "weight": null, "difference": null, "courseId": null, "courseName":
+        null, "sportTypeKey": null, "url": null, "isStart": null, "isRace": null,
+        "recurrenceId": null, "isParent": false, "parentId": null, "userBadgeId":
+        null, "badgeCategoryTypeId": null, "badgeCategoryTypeDesc": null, "badgeAwardedDate":
+        null, "badgeViewed": null, "hideBadge": null, "startTimestampLocal": "2024-02-11T07:50:31.0",
+        "eventTimeLocal": null, "diveNumber": null, "maxDepth": null, "avgDepth":
+        null, "surfaceInterval": null, "elapsedDuration": 11325.5791015625, "lapCount":
+        7, "bottomTime": null, "atpPlanId": null, "workoutId": null, "protectedWorkoutSchedule":
+        false, "activeSets": null, "strokes": null, "noOfSplits": null, "maxGradeValue":
+        null, "totalAscent": null, "differenceStress": null, "climbDuration": null,
+        "maxSpeed": 4.039999961853027, "averageHR": 136.0, "activeSplitSummaryDuration":
+        null, "activeSplitSummaryDistance": null, "maxSplitDistance": null, "maxSplitSpeed":
+        null, "location": null, "shareableEventUuid": null, "splitSummaryMode": null,
+        "completionTarget": null, "workoutUuid": null, "napStartTimeLocal": null,
+        "beginPackWeight": null, "hasSplits": true, "shareableEvent": false, "subscribed":
+        null, "primaryEvent": null, "autoCalcCalories": false, "phasedTrainingPlan":
+        null, "decoDive": false}, {"id": 13928808958, "groupId": null, "trainingPlanId":
+        null, "itemType": "activity", "activityTypeId": 1, "wellnessActivityUuid":
+        null, "title": "Cuauht\u00e9moc - Base", "date": "2024-02-12", "duration":
+        2100993, "distance": 587495, "calories": 1831, "floorsClimbed": null, "avgRespirationRate":
+        null, "unitOfPoolLength": null, "weight": null, "difference": null, "courseId":
+        null, "courseName": null, "sportTypeKey": null, "url": null, "isStart": null,
+        "isRace": null, "recurrenceId": null, "isParent": false, "parentId": null,
+        "userBadgeId": null, "badgeCategoryTypeId": null, "badgeCategoryTypeDesc":
+        null, "badgeAwardedDate": null, "badgeViewed": null, "hideBadge": null, "startTimestampLocal":
+        "2024-02-12T07:26:38.0", "eventTimeLocal": null, "diveNumber": null, "maxDepth":
+        null, "avgDepth": null, "surfaceInterval": null, "elapsedDuration": 2100.993896484375,
+        "lapCount": 7, "bottomTime": null, "atpPlanId": null, "workoutId": null, "protectedWorkoutSchedule":
+        false, "activeSets": null, "strokes": null, "noOfSplits": null, "maxGradeValue":
+        null, "totalAscent": 2.1800000052899122, "differenceStress": null, "climbDuration":
+        2100.994000017643, "maxSpeed": 3.6480000019073486, "averageHR": 140.0, "activeSplitSummaryDuration":
+        2100.994000017643, "activeSplitSummaryDistance": 5874.959978103638, "maxSplitDistance":
+        5874, "maxSplitSpeed": 3.6480000019073486, "location": null, "shareableEventUuid":
+        null, "splitSummaryMode": null, "completionTarget": null, "workoutUuid": null,
+        "napStartTimeLocal": null, "beginPackWeight": null, "hasSplits": true, "shareableEvent":
+        false, "subscribed": null, "primaryEvent": null, "autoCalcCalories": false,
+        "phasedTrainingPlan": null, "decoDive": false}, {"id": 13931793960, "groupId":
+        null, "trainingPlanId": null, "itemType": "activity", "activityTypeId": 164,
+        "wellnessActivityUuid": null, "title": "Relax and Focus", "date": "2024-02-12",
+        "duration": 938000, "distance": null, "calories": 0, "floorsClimbed": null,
+        "avgRespirationRate": 4.099999904632568, "unitOfPoolLength": null, "weight":
+        null, "difference": null, "courseId": null, "courseName": null, "sportTypeKey":
+        null, "url": null, "isStart": null, "isRace": null, "recurrenceId": null,
+        "isParent": false, "parentId": null, "userBadgeId": null, "badgeCategoryTypeId":
+        null, "badgeCategoryTypeDesc": null, "badgeAwardedDate": null, "badgeViewed":
+        null, "hideBadge": null, "startTimestampLocal": "2024-02-12T11:38:57.0", "eventTimeLocal":
+        null, "diveNumber": null, "maxDepth": null, "avgDepth": null, "surfaceInterval":
+        null, "elapsedDuration": 938.0, "lapCount": 253, "bottomTime": null, "atpPlanId":
+        null, "workoutId": null, "protectedWorkoutSchedule": false, "activeSets":
+        null, "strokes": null, "noOfSplits": null, "maxGradeValue": null, "totalAscent":
+        null, "differenceStress": -23.0, "climbDuration": 454.0, "maxSpeed": null,
+        "averageHR": 63.0, "activeSplitSummaryDuration": 454.0, "activeSplitSummaryDistance":
+        null, "maxSplitDistance": null, "maxSplitSpeed": null, "location": null, "shareableEventUuid":
+        null, "splitSummaryMode": null, "completionTarget": null, "workoutUuid": null,
+        "napStartTimeLocal": null, "beginPackWeight": null, "hasSplits": false, "shareableEvent":
+        false, "subscribed": null, "primaryEvent": null, "autoCalcCalories": false,
+        "phasedTrainingPlan": null, "decoDive": false}, {"id": 13943990821, "groupId":
+        null, "trainingPlanId": null, "itemType": "activity", "activityTypeId": 1,
+        "wellnessActivityUuid": null, "title": "Cuauht\u00e9moc Running", "date":
+        "2024-02-13", "duration": 726525, "distance": 209625, "calories": 636, "floorsClimbed":
+        null, "avgRespirationRate": null, "unitOfPoolLength": null, "weight": null,
+        "difference": null, "courseId": null, "courseName": null, "sportTypeKey":
+        null, "url": null, "isStart": null, "isRace": null, "recurrenceId": null,
+        "isParent": false, "parentId": null, "userBadgeId": null, "badgeCategoryTypeId":
+        null, "badgeCategoryTypeDesc": null, "badgeAwardedDate": null, "badgeViewed":
+        null, "hideBadge": null, "startTimestampLocal": "2024-02-13T08:06:22.0", "eventTimeLocal":
+        null, "diveNumber": null, "maxDepth": null, "avgDepth": null, "surfaceInterval":
+        null, "elapsedDuration": 726.5250244140625, "lapCount": 3, "bottomTime": null,
+        "atpPlanId": null, "workoutId": null, "protectedWorkoutSchedule": false, "activeSets":
+        null, "strokes": null, "noOfSplits": null, "maxGradeValue": null, "totalAscent":
+        null, "differenceStress": null, "climbDuration": null, "maxSpeed": 3.555000066757202,
+        "averageHR": 136.0, "activeSplitSummaryDuration": null, "activeSplitSummaryDistance":
+        null, "maxSplitDistance": null, "maxSplitSpeed": null, "location": null, "shareableEventUuid":
+        null, "splitSummaryMode": null, "completionTarget": null, "workoutUuid": null,
+        "napStartTimeLocal": null, "beginPackWeight": null, "hasSplits": true, "shareableEvent":
+        false, "subscribed": null, "primaryEvent": null, "autoCalcCalories": false,
+        "phasedTrainingPlan": null, "decoDive": false}, {"id": 13958607011, "groupId":
+        null, "trainingPlanId": null, "itemType": "activity", "activityTypeId": 1,
+        "wellnessActivityUuid": null, "title": "Cuauht\u00e9moc Running", "date":
+        "2024-02-14", "duration": 631661, "distance": 188321, "calories": 565, "floorsClimbed":
+        null, "avgRespirationRate": null, "unitOfPoolLength": null, "weight": null,
+        "difference": null, "courseId": null, "courseName": null, "sportTypeKey":
+        null, "url": null, "isStart": null, "isRace": null, "recurrenceId": null,
+        "isParent": false, "parentId": null, "userBadgeId": null, "badgeCategoryTypeId":
+        null, "badgeCategoryTypeDesc": null, "badgeAwardedDate": null, "badgeViewed":
+        null, "hideBadge": null, "startTimestampLocal": "2024-02-14T06:51:38.0", "eventTimeLocal":
+        null, "diveNumber": null, "maxDepth": null, "avgDepth": null, "surfaceInterval":
+        null, "elapsedDuration": 641.6939697265625, "lapCount": 2, "bottomTime": null,
+        "atpPlanId": null, "workoutId": null, "protectedWorkoutSchedule": false, "activeSets":
+        null, "strokes": null, "noOfSplits": null, "maxGradeValue": null, "totalAscent":
+        null, "differenceStress": null, "climbDuration": null, "maxSpeed": 3.5360000133514404,
+        "averageHR": 135.0, "activeSplitSummaryDuration": null, "activeSplitSummaryDistance":
+        null, "maxSplitDistance": null, "maxSplitSpeed": null, "location": null, "shareableEventUuid":
+        null, "splitSummaryMode": null, "completionTarget": null, "workoutUuid": null,
+        "napStartTimeLocal": null, "beginPackWeight": null, "hasSplits": true, "shareableEvent":
+        false, "subscribed": null, "primaryEvent": null, "autoCalcCalories": false,
+        "phasedTrainingPlan": null, "decoDive": false}, {"id": 13959671461, "groupId":
+        null, "trainingPlanId": null, "itemType": "activity", "activityTypeId": 163,
+        "wellnessActivityUuid": null, "title": "Yoga", "date": "2024-02-14", "duration":
+        4030239, "distance": null, "calories": 750, "floorsClimbed": null, "avgRespirationRate":
+        16.770000457763672, "unitOfPoolLength": null, "weight": null, "difference":
+        null, "courseId": null, "courseName": null, "sportTypeKey": null, "url": null,
+        "isStart": null, "isRace": null, "recurrenceId": null, "isParent": false,
+        "parentId": null, "userBadgeId": null, "badgeCategoryTypeId": null, "badgeCategoryTypeDesc":
+        null, "badgeAwardedDate": null, "badgeViewed": null, "hideBadge": null, "startTimestampLocal":
+        "2024-02-14T07:09:11.0", "eventTimeLocal": null, "diveNumber": null, "maxDepth":
+        null, "avgDepth": null, "surfaceInterval": null, "elapsedDuration": 4030.239013671875,
+        "lapCount": 1, "bottomTime": null, "atpPlanId": null, "workoutId": null, "protectedWorkoutSchedule":
+        false, "activeSets": 1, "strokes": null, "noOfSplits": null, "maxGradeValue":
+        null, "totalAscent": null, "differenceStress": -64.0, "climbDuration": null,
+        "maxSpeed": null, "averageHR": 79.0, "activeSplitSummaryDuration": null, "activeSplitSummaryDistance":
+        null, "maxSplitDistance": null, "maxSplitSpeed": null, "location": null, "shareableEventUuid":
+        null, "splitSummaryMode": null, "completionTarget": null, "workoutUuid": null,
+        "napStartTimeLocal": null, "beginPackWeight": null, "hasSplits": false, "shareableEvent":
+        false, "subscribed": null, "primaryEvent": null, "autoCalcCalories": false,
+        "phasedTrainingPlan": null, "decoDive": false}, {"id": 14131350376, "groupId":
+        null, "trainingPlanId": null, "itemType": "activity", "activityTypeId": 1,
+        "wellnessActivityUuid": null, "title": "Cuauht\u00e9moc Running", "date":
+        "2024-02-21", "duration": 639818, "distance": 186800, "calories": 569, "floorsClimbed":
+        null, "avgRespirationRate": null, "unitOfPoolLength": null, "weight": null,
+        "difference": null, "courseId": null, "courseName": null, "sportTypeKey":
+        null, "url": null, "isStart": null, "isRace": null, "recurrenceId": null,
+        "isParent": false, "parentId": null, "userBadgeId": null, "badgeCategoryTypeId":
+        null, "badgeCategoryTypeDesc": null, "badgeAwardedDate": null, "badgeViewed":
+        null, "hideBadge": null, "startTimestampLocal": "2024-02-21T07:17:25.0", "eventTimeLocal":
+        null, "diveNumber": null, "maxDepth": null, "avgDepth": null, "surfaceInterval":
+        null, "elapsedDuration": 639.8189697265625, "lapCount": 2, "bottomTime": null,
+        "atpPlanId": null, "workoutId": null, "protectedWorkoutSchedule": false, "activeSets":
+        null, "strokes": null, "noOfSplits": null, "maxGradeValue": null, "totalAscent":
+        null, "differenceStress": null, "climbDuration": null, "maxSpeed": 3.5460000038146977,
+        "averageHR": 134.0, "activeSplitSummaryDuration": null, "activeSplitSummaryDistance":
+        null, "maxSplitDistance": null, "maxSplitSpeed": null, "location": null, "shareableEventUuid":
+        null, "splitSummaryMode": null, "completionTarget": null, "workoutUuid": null,
+        "napStartTimeLocal": null, "beginPackWeight": null, "hasSplits": true, "shareableEvent":
+        false, "subscribed": null, "primaryEvent": null, "autoCalcCalories": false,
+        "phasedTrainingPlan": null, "decoDive": false}, {"id": 14131352492, "groupId":
+        null, "trainingPlanId": null, "itemType": "activity", "activityTypeId": 163,
+        "wellnessActivityUuid": null, "title": "Yoga", "date": "2024-02-21", "duration":
+        4036042, "distance": null, "calories": 829, "floorsClimbed": null, "avgRespirationRate":
+        14.819999694824219, "unitOfPoolLength": null, "weight": null, "difference":
+        null, "courseId": null, "courseName": null, "sportTypeKey": null, "url": null,
+        "isStart": null, "isRace": null, "recurrenceId": null, "isParent": false,
+        "parentId": null, "userBadgeId": null, "badgeCategoryTypeId": null, "badgeCategoryTypeDesc":
+        null, "badgeAwardedDate": null, "badgeViewed": null, "hideBadge": null, "startTimestampLocal":
+        "2024-02-21T07:33:45.0", "eventTimeLocal": null, "diveNumber": null, "maxDepth":
+        null, "avgDepth": null, "surfaceInterval": null, "elapsedDuration": 4104.4130859375,
+        "lapCount": 1, "bottomTime": null, "atpPlanId": null, "workoutId": null, "protectedWorkoutSchedule":
+        false, "activeSets": 1, "strokes": null, "noOfSplits": null, "maxGradeValue":
+        null, "totalAscent": null, "differenceStress": -72.0, "climbDuration": null,
+        "maxSpeed": null, "averageHR": 82.0, "activeSplitSummaryDuration": null, "activeSplitSummaryDistance":
+        null, "maxSplitDistance": null, "maxSplitSpeed": null, "location": null, "shareableEventUuid":
+        null, "splitSummaryMode": null, "completionTarget": null, "workoutUuid": null,
+        "napStartTimeLocal": null, "beginPackWeight": null, "hasSplits": false, "shareableEvent":
+        false, "subscribed": null, "primaryEvent": null, "autoCalcCalories": false,
+        "phasedTrainingPlan": null, "decoDive": false}, {"id": 14131354641, "groupId":
+        null, "trainingPlanId": null, "itemType": "activity", "activityTypeId": 1,
+        "wellnessActivityUuid": null, "title": "Cuauht\u00e9moc Running", "date":
+        "2024-02-22", "duration": 1967181, "distance": 641341, "calories": 1810, "floorsClimbed":
+        null, "avgRespirationRate": null, "unitOfPoolLength": null, "weight": null,
+        "difference": null, "courseId": null, "courseName": null, "sportTypeKey":
+        null, "url": null, "isStart": null, "isRace": null, "recurrenceId": null,
+        "isParent": false, "parentId": null, "userBadgeId": null, "badgeCategoryTypeId":
+        null, "badgeCategoryTypeDesc": null, "badgeAwardedDate": null, "badgeViewed":
+        null, "hideBadge": null, "startTimestampLocal": "2024-02-22T08:00:23.0", "eventTimeLocal":
+        null, "diveNumber": null, "maxDepth": null, "avgDepth": null, "surfaceInterval":
+        null, "elapsedDuration": 1967.1810302734375, "lapCount": 7, "bottomTime":
+        null, "atpPlanId": null, "workoutId": null, "protectedWorkoutSchedule": false,
+        "activeSets": null, "strokes": null, "noOfSplits": null, "maxGradeValue":
+        null, "totalAscent": null, "differenceStress": null, "climbDuration": null,
+        "maxSpeed": 10.01200008392334, "averageHR": 143.0, "activeSplitSummaryDuration":
+        null, "activeSplitSummaryDistance": null, "maxSplitDistance": null, "maxSplitSpeed":
+        null, "location": null, "shareableEventUuid": null, "splitSummaryMode": null,
+        "completionTarget": null, "workoutUuid": null, "napStartTimeLocal": null,
+        "beginPackWeight": null, "hasSplits": true, "shareableEvent": false, "subscribed":
+        null, "primaryEvent": null, "autoCalcCalories": false, "phasedTrainingPlan":
+        null, "decoDive": false}, {"id": 14131355681, "groupId": null, "trainingPlanId":
+        null, "itemType": "activity", "activityTypeId": 1, "wellnessActivityUuid":
+        null, "title": "Cuauht\u00e9moc Running", "date": "2024-02-23", "duration":
+        595693, "distance": 189093, "calories": 523, "floorsClimbed": null, "avgRespirationRate":
+        null, "unitOfPoolLength": null, "weight": null, "difference": null, "courseId":
+        null, "courseName": null, "sportTypeKey": null, "url": null, "isStart": null,
+        "isRace": null, "recurrenceId": null, "isParent": false, "parentId": null,
+        "userBadgeId": null, "badgeCategoryTypeId": null, "badgeCategoryTypeDesc":
+        null, "badgeAwardedDate": null, "badgeViewed": null, "hideBadge": null, "startTimestampLocal":
+        "2024-02-23T08:33:26.0", "eventTimeLocal": null, "diveNumber": null, "maxDepth":
+        null, "avgDepth": null, "surfaceInterval": null, "elapsedDuration": 595.6939697265625,
+        "lapCount": 2, "bottomTime": null, "atpPlanId": null, "workoutId": null, "protectedWorkoutSchedule":
+        false, "activeSets": null, "strokes": null, "noOfSplits": null, "maxGradeValue":
+        null, "totalAscent": null, "differenceStress": null, "climbDuration": null,
+        "maxSpeed": 3.5920000076293945, "averageHR": 140.0, "activeSplitSummaryDuration":
+        null, "activeSplitSummaryDistance": null, "maxSplitDistance": null, "maxSplitSpeed":
+        null, "location": null, "shareableEventUuid": null, "splitSummaryMode": null,
+        "completionTarget": null, "workoutUuid": null, "napStartTimeLocal": null,
+        "beginPackWeight": null, "hasSplits": true, "shareableEvent": false, "subscribed":
+        null, "primaryEvent": null, "autoCalcCalories": false, "phasedTrainingPlan":
+        null, "decoDive": false}, {"id": 14140460587, "groupId": null, "trainingPlanId":
+        null, "itemType": "activity", "activityTypeId": 1, "wellnessActivityUuid":
+        null, "title": "Cuauht\u00e9moc - Base", "date": "2024-02-26", "duration":
+        1722948, "distance": 501312, "calories": 1483, "floorsClimbed": null, "avgRespirationRate":
+        null, "unitOfPoolLength": null, "weight": null, "difference": null, "courseId":
+        null, "courseName": null, "sportTypeKey": null, "url": null, "isStart": null,
+        "isRace": null, "recurrenceId": null, "isParent": false, "parentId": null,
+        "userBadgeId": null, "badgeCategoryTypeId": null, "badgeCategoryTypeDesc":
+        null, "badgeAwardedDate": null, "badgeViewed": null, "hideBadge": null, "startTimestampLocal":
+        "2024-02-26T07:27:58.0", "eventTimeLocal": null, "diveNumber": null, "maxDepth":
+        null, "avgDepth": null, "surfaceInterval": null, "elapsedDuration": 2032.383056640625,
+        "lapCount": 6, "bottomTime": null, "atpPlanId": null, "workoutId": null, "protectedWorkoutSchedule":
+        false, "activeSets": null, "strokes": null, "noOfSplits": null, "maxGradeValue":
+        null, "totalAscent": 14.55000001937151, "differenceStress": null, "climbDuration":
+        1722.9490187168121, "maxSpeed": 3.302999973297119, "averageHR": 137.0, "activeSplitSummaryDuration":
+        1722.9490187168121, "activeSplitSummaryDistance": 5013.119999885559, "maxSplitDistance":
+        5013, "maxSplitSpeed": 3.302999973297119, "location": null, "shareableEventUuid":
+        null, "splitSummaryMode": null, "completionTarget": null, "workoutUuid": null,
+        "napStartTimeLocal": null, "beginPackWeight": null, "hasSplits": true, "shareableEvent":
+        false, "subscribed": null, "primaryEvent": null, "autoCalcCalories": false,
+        "phasedTrainingPlan": null, "decoDive": false}, {"id": 14156411430, "groupId":
+        null, "trainingPlanId": null, "itemType": "activity", "activityTypeId": 1,
+        "wellnessActivityUuid": null, "title": "Cuauht\u00e9moc - Tempo", "date":
+        "2024-02-27", "duration": 2198072, "distance": 619266, "calories": 1831, "floorsClimbed":
+        null, "avgRespirationRate": 31.059999465942383, "unitOfPoolLength": null,
+        "weight": null, "difference": null, "courseId": null, "courseName": null,
+        "sportTypeKey": null, "url": null, "isStart": null, "isRace": null, "recurrenceId":
+        null, "isParent": false, "parentId": null, "userBadgeId": null, "badgeCategoryTypeId":
+        null, "badgeCategoryTypeDesc": null, "badgeAwardedDate": null, "badgeViewed":
+        null, "hideBadge": null, "startTimestampLocal": "2024-02-27T08:06:49.0", "eventTimeLocal":
+        null, "diveNumber": null, "maxDepth": null, "avgDepth": null, "surfaceInterval":
+        null, "elapsedDuration": 2430.050048828125, "lapCount": 10, "bottomTime":
+        null, "atpPlanId": null, "workoutId": null, "protectedWorkoutSchedule": false,
+        "activeSets": null, "strokes": null, "noOfSplits": null, "maxGradeValue":
+        null, "totalAscent": 6.730000004172325, "differenceStress": null, "climbDuration":
+        797.1319961547852, "maxSpeed": 3.6480000019073486, "averageHR": 141.0, "activeSplitSummaryDuration":
+        797.1319961547852, "activeSplitSummaryDistance": 2565.4000549316406, "maxSplitDistance":
+        1541, "maxSplitSpeed": 3.6480000019073486, "location": null, "shareableEventUuid":
+        null, "splitSummaryMode": null, "completionTarget": null, "workoutUuid": null,
+        "napStartTimeLocal": null, "beginPackWeight": null, "hasSplits": true, "shareableEvent":
+        false, "subscribed": null, "primaryEvent": null, "autoCalcCalories": false,
+        "phasedTrainingPlan": null, "decoDive": false}, {"id": 14171890101, "groupId":
+        null, "trainingPlanId": null, "itemType": "activity", "activityTypeId": 1,
+        "wellnessActivityUuid": null, "title": "Cuauht\u00e9moc Running", "date":
+        "2024-02-28", "duration": 585677, "distance": 183178, "calories": 536, "floorsClimbed":
+        null, "avgRespirationRate": null, "unitOfPoolLength": null, "weight": null,
+        "difference": null, "courseId": null, "courseName": null, "sportTypeKey":
+        null, "url": null, "isStart": null, "isRace": null, "recurrenceId": null,
+        "isParent": false, "parentId": null, "userBadgeId": null, "badgeCategoryTypeId":
+        null, "badgeCategoryTypeDesc": null, "badgeAwardedDate": null, "badgeViewed":
+        null, "hideBadge": null, "startTimestampLocal": "2024-02-28T07:53:53.0", "eventTimeLocal":
+        null, "diveNumber": null, "maxDepth": null, "avgDepth": null, "surfaceInterval":
+        null, "elapsedDuration": 606.0189819335938, "lapCount": 2, "bottomTime": null,
+        "atpPlanId": null, "workoutId": null, "protectedWorkoutSchedule": false, "activeSets":
+        null, "strokes": null, "noOfSplits": null, "maxGradeValue": null, "totalAscent":
+        null, "differenceStress": null, "climbDuration": null, "maxSpeed": 3.5920000076293945,
+        "averageHR": 144.0, "activeSplitSummaryDuration": null, "activeSplitSummaryDistance":
+        null, "maxSplitDistance": null, "maxSplitSpeed": null, "location": null, "shareableEventUuid":
+        null, "splitSummaryMode": null, "completionTarget": null, "workoutUuid": null,
+        "napStartTimeLocal": null, "beginPackWeight": null, "hasSplits": true, "shareableEvent":
+        false, "subscribed": null, "primaryEvent": null, "autoCalcCalories": false,
+        "phasedTrainingPlan": null, "decoDive": false}, {"id": 14172830842, "groupId":
+        null, "trainingPlanId": null, "itemType": "activity", "activityTypeId": 163,
+        "wellnessActivityUuid": null, "title": "Yoga", "date": "2024-02-28", "duration":
+        3671714, "distance": null, "calories": 913, "floorsClimbed": null, "avgRespirationRate":
+        16.219999313354492, "unitOfPoolLength": null, "weight": null, "difference":
+        null, "courseId": null, "courseName": null, "sportTypeKey": null, "url": null,
+        "isStart": null, "isRace": null, "recurrenceId": null, "isParent": false,
+        "parentId": null, "userBadgeId": null, "badgeCategoryTypeId": null, "badgeCategoryTypeDesc":
+        null, "badgeAwardedDate": null, "badgeViewed": null, "hideBadge": null, "startTimestampLocal":
+        "2024-02-28T08:11:07.0", "eventTimeLocal": null, "diveNumber": null, "maxDepth":
+        null, "avgDepth": null, "surfaceInterval": null, "elapsedDuration": 3671.714111328125,
+        "lapCount": 1, "bottomTime": null, "atpPlanId": null, "workoutId": null, "protectedWorkoutSchedule":
+        false, "activeSets": 1, "strokes": null, "noOfSplits": null, "maxGradeValue":
+        null, "totalAscent": null, "differenceStress": -7.0, "climbDuration": null,
+        "maxSpeed": null, "averageHR": 89.0, "activeSplitSummaryDuration": null, "activeSplitSummaryDistance":
+        null, "maxSplitDistance": null, "maxSplitSpeed": null, "location": null, "shareableEventUuid":
+        null, "splitSummaryMode": null, "completionTarget": null, "workoutUuid": null,
+        "napStartTimeLocal": null, "beginPackWeight": null, "hasSplits": false, "shareableEvent":
+        false, "subscribed": null, "primaryEvent": null, "autoCalcCalories": false,
+        "phasedTrainingPlan": null, "decoDive": false}, {"id": 14188057552, "groupId":
+        null, "trainingPlanId": null, "itemType": "activity", "activityTypeId": 1,
+        "wellnessActivityUuid": null, "title": "Cuauht\u00e9moc Running", "date":
+        "2024-02-29", "duration": 602059, "distance": 264084, "calories": 540, "floorsClimbed":
+        null, "avgRespirationRate": null, "unitOfPoolLength": null, "weight": null,
+        "difference": null, "courseId": null, "courseName": null, "sportTypeKey":
+        null, "url": null, "isStart": null, "isRace": null, "recurrenceId": null,
+        "isParent": false, "parentId": null, "userBadgeId": null, "badgeCategoryTypeId":
+        null, "badgeCategoryTypeDesc": null, "badgeAwardedDate": null, "badgeViewed":
+        null, "hideBadge": null, "startTimestampLocal": "2024-02-29T09:33:31.0", "eventTimeLocal":
+        null, "diveNumber": null, "maxDepth": null, "avgDepth": null, "surfaceInterval":
+        null, "elapsedDuration": 625.406982421875, "lapCount": 3, "bottomTime": null,
+        "atpPlanId": null, "workoutId": null, "protectedWorkoutSchedule": false, "activeSets":
+        null, "strokes": null, "noOfSplits": null, "maxGradeValue": null, "totalAscent":
+        null, "differenceStress": null, "climbDuration": null, "maxSpeed": 5.412000179290771,
+        "averageHR": 142.0, "activeSplitSummaryDuration": null, "activeSplitSummaryDistance":
+        null, "maxSplitDistance": null, "maxSplitSpeed": null, "location": null, "shareableEventUuid":
+        null, "splitSummaryMode": null, "completionTarget": null, "workoutUuid": null,
+        "napStartTimeLocal": null, "beginPackWeight": null, "hasSplits": true, "shareableEvent":
+        false, "subscribed": null, "primaryEvent": null, "autoCalcCalories": false,
+        "phasedTrainingPlan": null, "decoDive": false}, {"id": 14200922517, "groupId":
+        null, "trainingPlanId": null, "itemType": "activity", "activityTypeId": 1,
+        "wellnessActivityUuid": null, "title": "Cuauht\u00e9moc Running", "date":
+        "2024-03-01", "duration": 615888, "distance": 194943, "calories": 502, "floorsClimbed":
+        null, "avgRespirationRate": null, "unitOfPoolLength": null, "weight": null,
+        "difference": null, "courseId": null, "courseName": null, "sportTypeKey":
+        null, "url": null, "isStart": null, "isRace": null, "recurrenceId": null,
+        "isParent": false, "parentId": null, "userBadgeId": null, "badgeCategoryTypeId":
+        null, "badgeCategoryTypeDesc": null, "badgeAwardedDate": null, "badgeViewed":
+        null, "hideBadge": null, "startTimestampLocal": "2024-03-01T07:22:32.0", "eventTimeLocal":
+        null, "diveNumber": null, "maxDepth": null, "avgDepth": null, "surfaceInterval":
+        null, "elapsedDuration": 615.8880004882812, "lapCount": 2, "bottomTime": null,
+        "atpPlanId": null, "workoutId": null, "protectedWorkoutSchedule": false, "activeSets":
+        null, "strokes": null, "noOfSplits": null, "maxGradeValue": null, "totalAscent":
+        null, "differenceStress": null, "climbDuration": null, "maxSpeed": 3.507999897003174,
+        "averageHR": 131.0, "activeSplitSummaryDuration": null, "activeSplitSummaryDistance":
+        null, "maxSplitDistance": null, "maxSplitSpeed": null, "location": null, "shareableEventUuid":
+        null, "splitSummaryMode": null, "completionTarget": null, "workoutUuid": null,
+        "napStartTimeLocal": null, "beginPackWeight": null, "hasSplits": true, "shareableEvent":
+        false, "subscribed": null, "primaryEvent": null, "autoCalcCalories": false,
+        "phasedTrainingPlan": null, "decoDive": false}, {"id": 14201832334, "groupId":
+        null, "trainingPlanId": null, "itemType": "activity", "activityTypeId": 163,
+        "wellnessActivityUuid": null, "title": "Yoga", "date": "2024-03-01", "duration":
+        4223528, "distance": null, "calories": 858, "floorsClimbed": null, "avgRespirationRate":
+        15.039999961853027, "unitOfPoolLength": null, "weight": null, "difference":
+        null, "courseId": null, "courseName": null, "sportTypeKey": null, "url": null,
+        "isStart": null, "isRace": null, "recurrenceId": null, "isParent": false,
+        "parentId": null, "userBadgeId": null, "badgeCategoryTypeId": null, "badgeCategoryTypeDesc":
+        null, "badgeAwardedDate": null, "badgeViewed": null, "hideBadge": null, "startTimestampLocal":
+        "2024-03-01T07:38:01.0", "eventTimeLocal": null, "diveNumber": null, "maxDepth":
+        null, "avgDepth": null, "surfaceInterval": null, "elapsedDuration": 4223.52880859375,
+        "lapCount": 1, "bottomTime": null, "atpPlanId": null, "workoutId": null, "protectedWorkoutSchedule":
+        false, "activeSets": 1, "strokes": null, "noOfSplits": null, "maxGradeValue":
+        null, "totalAscent": null, "differenceStress": -23.0, "climbDuration": null,
+        "maxSpeed": null, "averageHR": 82.0, "activeSplitSummaryDuration": null, "activeSplitSummaryDistance":
+        null, "maxSplitDistance": null, "maxSplitSpeed": null, "location": null, "shareableEventUuid":
+        null, "splitSummaryMode": null, "completionTarget": null, "workoutUuid": null,
+        "napStartTimeLocal": null, "beginPackWeight": null, "hasSplits": false, "shareableEvent":
+        false, "subscribed": null, "primaryEvent": null, "autoCalcCalories": false,
+        "phasedTrainingPlan": null, "decoDive": false}, {"id": 14264206160, "groupId":
+        null, "trainingPlanId": null, "itemType": "activity", "activityTypeId": 1,
+        "wellnessActivityUuid": null, "title": "Cuauht\u00e9moc Running", "date":
+        "2024-03-05", "duration": 1181765, "distance": 320368, "calories": 1131, "floorsClimbed":
+        null, "avgRespirationRate": null, "unitOfPoolLength": null, "weight": null,
+        "difference": null, "courseId": null, "courseName": null, "sportTypeKey":
+        null, "url": null, "isStart": null, "isRace": null, "recurrenceId": null,
+        "isParent": false, "parentId": null, "userBadgeId": null, "badgeCategoryTypeId":
+        null, "badgeCategoryTypeDesc": null, "badgeAwardedDate": null, "badgeViewed":
+        null, "hideBadge": null, "startTimestampLocal": "2024-03-05T08:31:13.0", "eventTimeLocal":
+        null, "diveNumber": null, "maxDepth": null, "avgDepth": null, "surfaceInterval":
+        null, "elapsedDuration": 1252.3929443359375, "lapCount": 4, "bottomTime":
+        null, "atpPlanId": null, "workoutId": null, "protectedWorkoutSchedule": false,
+        "activeSets": null, "strokes": null, "noOfSplits": null, "maxGradeValue":
+        null, "totalAscent": null, "differenceStress": null, "climbDuration": null,
+        "maxSpeed": 4.339000225067139, "averageHR": 150.0, "activeSplitSummaryDuration":
+        null, "activeSplitSummaryDistance": null, "maxSplitDistance": null, "maxSplitSpeed":
+        null, "location": null, "shareableEventUuid": null, "splitSummaryMode": null,
+        "completionTarget": null, "workoutUuid": null, "napStartTimeLocal": null,
+        "beginPackWeight": null, "hasSplits": true, "shareableEvent": false, "subscribed":
+        null, "primaryEvent": null, "autoCalcCalories": false, "phasedTrainingPlan":
+        null, "decoDive": false}, {"date": "2024-02-01", "itemType": "SLEEP_SCORE",
+        "sleepScore": 78, "qualifierKey": "FAIR"}, {"date": "2024-02-01", "itemType":
+        "SLEEP", "sleepDuration": 26493, "sleepScore": 78, "qualifierKey": "FAIR"},
+        {"date": "2024-02-02", "itemType": "SLEEP_SCORE", "sleepScore": 77, "qualifierKey":
+        "FAIR"}, {"date": "2024-02-02", "itemType": "SLEEP", "sleepDuration": 23160,
+        "sleepScore": 77, "qualifierKey": "FAIR"}, {"date": "2024-02-03", "itemType":
+        "SLEEP_SCORE", "sleepScore": 79, "qualifierKey": "FAIR"}, {"date": "2024-02-03",
+        "itemType": "SLEEP", "sleepDuration": 23420, "sleepScore": 79, "qualifierKey":
+        "FAIR"}, {"date": "2024-02-04", "itemType": "SLEEP_SCORE", "sleepScore": 82,
+        "qualifierKey": "GOOD"}, {"date": "2024-02-04", "itemType": "SLEEP", "sleepDuration":
+        24120, "sleepScore": 82, "qualifierKey": "GOOD"}, {"date": "2024-02-05", "itemType":
+        "SLEEP_SCORE", "sleepScore": 91, "qualifierKey": "EXCELLENT"}, {"date": "2024-02-05",
+        "itemType": "SLEEP", "sleepDuration": 28740, "sleepScore": 91, "qualifierKey":
+        "EXCELLENT"}, {"date": "2024-02-06", "itemType": "SLEEP_SCORE", "sleepScore":
+        87, "qualifierKey": "GOOD"}, {"date": "2024-02-06", "itemType": "SLEEP", "sleepDuration":
+        26077, "sleepScore": 87, "qualifierKey": "GOOD"}, {"date": "2024-02-07", "itemType":
+        "SLEEP_SCORE", "sleepScore": 72, "qualifierKey": "FAIR"}, {"date": "2024-02-07",
+        "itemType": "SLEEP", "sleepDuration": 22320, "sleepScore": 72, "qualifierKey":
+        "FAIR"}, {"date": "2024-02-08", "itemType": "SLEEP_SCORE", "sleepScore": 83,
+        "qualifierKey": "GOOD"}, {"date": "2024-02-08", "itemType": "SLEEP", "sleepDuration":
+        25724, "sleepScore": 83, "qualifierKey": "GOOD"}, {"date": "2024-02-09", "itemType":
+        "SLEEP_SCORE", "sleepScore": 96, "qualifierKey": "EXCELLENT"}, {"date": "2024-02-09",
+        "itemType": "SLEEP", "sleepDuration": 27600, "sleepScore": 96, "qualifierKey":
+        "EXCELLENT"}, {"date": "2024-02-10", "itemType": "SLEEP_SCORE", "sleepScore":
+        72, "qualifierKey": "FAIR"}, {"date": "2024-02-10", "itemType": "SLEEP", "sleepDuration":
+        30420, "sleepScore": 72, "qualifierKey": "FAIR"}, {"date": "2024-02-11", "itemType":
+        "SLEEP_SCORE", "sleepScore": 75, "qualifierKey": "FAIR"}, {"date": "2024-02-11",
+        "itemType": "SLEEP", "sleepDuration": 20100, "sleepScore": 75, "qualifierKey":
+        "FAIR"}, {"date": "2024-02-12", "itemType": "SLEEP_SCORE", "sleepScore": 78,
+        "qualifierKey": "FAIR"}, {"date": "2024-02-12", "itemType": "SLEEP", "sleepDuration":
+        26640, "sleepScore": 78, "qualifierKey": "FAIR"}, {"date": "2024-02-13", "itemType":
+        "SLEEP_SCORE", "sleepScore": 70, "qualifierKey": "FAIR"}, {"date": "2024-02-13",
+        "itemType": "SLEEP", "sleepDuration": 25250, "sleepScore": 70, "qualifierKey":
+        "FAIR"}, {"date": "2024-02-14", "itemType": "SLEEP_SCORE", "sleepScore": 84,
+        "qualifierKey": "GOOD"}, {"date": "2024-02-14", "itemType": "SLEEP", "sleepDuration":
+        26253, "sleepScore": 84, "qualifierKey": "GOOD"}, {"date": "2024-02-15", "itemType":
+        "SLEEP_SCORE", "sleepScore": 55, "qualifierKey": "POOR"}, {"date": "2024-02-15",
+        "itemType": "SLEEP", "sleepDuration": 27960, "sleepScore": 55, "qualifierKey":
+        "POOR"}, {"date": "2024-02-16", "itemType": "SLEEP_SCORE", "sleepScore": 87,
+        "qualifierKey": "GOOD"}, {"date": "2024-02-16", "itemType": "SLEEP", "sleepDuration":
+        33240, "sleepScore": 87, "qualifierKey": "GOOD"}, {"date": "2024-02-17", "itemType":
+        "SLEEP_SCORE", "sleepScore": 54, "qualifierKey": "POOR"}, {"date": "2024-02-17",
+        "itemType": "SLEEP", "sleepDuration": 30480, "sleepScore": 54, "qualifierKey":
+        "POOR"}, {"date": "2024-02-18", "itemType": "SLEEP_SCORE", "sleepScore": 68,
+        "qualifierKey": "FAIR"}, {"date": "2024-02-18", "itemType": "SLEEP", "sleepDuration":
+        31860, "sleepScore": 68, "qualifierKey": "FAIR"}, {"date": "2024-02-19", "itemType":
+        "SLEEP_SCORE", "sleepScore": 73, "qualifierKey": "FAIR"}, {"date": "2024-02-19",
+        "itemType": "SLEEP", "sleepDuration": 29700, "sleepScore": 73, "qualifierKey":
+        "FAIR"}, {"date": "2024-02-20", "itemType": "SLEEP_SCORE", "sleepScore": 82,
+        "qualifierKey": "GOOD"}, {"date": "2024-02-20", "itemType": "SLEEP", "sleepDuration":
+        27900, "sleepScore": 82, "qualifierKey": "GOOD"}, {"date": "2024-02-21", "itemType":
+        "SLEEP_SCORE", "sleepScore": 80, "qualifierKey": "GOOD"}, {"date": "2024-02-21",
+        "itemType": "SLEEP", "sleepDuration": 22140, "sleepScore": 80, "qualifierKey":
+        "GOOD"}, {"date": "2024-02-22", "itemType": "SLEEP_SCORE", "sleepScore": 91,
+        "qualifierKey": "EXCELLENT"}, {"date": "2024-02-22", "itemType": "SLEEP",
+        "sleepDuration": 27480, "sleepScore": 91, "qualifierKey": "EXCELLENT"}, {"date":
+        "2024-02-23", "itemType": "SLEEP_SCORE", "sleepScore": 81, "qualifierKey":
+        "GOOD"}, {"date": "2024-02-23", "itemType": "SLEEP", "sleepDuration": 24180,
+        "sleepScore": 81, "qualifierKey": "GOOD"}, {"date": "2024-02-24", "itemType":
+        "SLEEP_SCORE", "sleepScore": 82, "qualifierKey": "GOOD"}, {"date": "2024-02-24",
+        "itemType": "SLEEP", "sleepDuration": 26040, "sleepScore": 82, "qualifierKey":
+        "GOOD"}, {"date": "2024-02-25", "itemType": "SLEEP_SCORE", "sleepScore": 75,
+        "qualifierKey": "FAIR"}, {"date": "2024-02-25", "itemType": "SLEEP", "sleepDuration":
+        28860, "sleepScore": 75, "qualifierKey": "FAIR"}, {"date": "2024-02-26", "itemType":
+        "SLEEP_SCORE", "sleepScore": 61, "qualifierKey": "FAIR"}, {"date": "2024-02-26",
+        "itemType": "SLEEP", "sleepDuration": 25123, "sleepScore": 61, "qualifierKey":
+        "FAIR"}, {"date": "2024-02-27", "itemType": "SLEEP_SCORE", "sleepScore": 66,
+        "qualifierKey": "FAIR"}, {"date": "2024-02-27", "itemType": "SLEEP", "sleepDuration":
+        18039, "sleepScore": 66, "qualifierKey": "FAIR"}, {"date": "2024-02-28", "itemType":
+        "SLEEP_SCORE", "sleepScore": 42, "qualifierKey": "POOR"}, {"date": "2024-02-28",
+        "itemType": "SLEEP", "sleepDuration": 12120, "sleepScore": 42, "qualifierKey":
+        "POOR"}, {"date": "2024-02-29", "itemType": "SLEEP_SCORE", "sleepScore": 73,
+        "qualifierKey": "FAIR"}, {"date": "2024-02-29", "itemType": "SLEEP", "sleepDuration":
+        28200, "sleepScore": 73, "qualifierKey": "FAIR"}, {"date": "2024-02-01", "itemType":
+        "HEART_RATE", "minHeartRate": 46, "maxHeartRate": 153}, {"date": "2024-02-01",
+        "stepGoal": 10490, "itemType": "STEPS", "step": 13484}, {"date": "2024-02-01",
+        "averageStressLevel": 27, "itemType": "STRESS", "maxStressLevel": 87}, {"date":
+        "2024-02-01", "bodyBatteryDrained": 79, "itemType": "BODY_BATTERY", "bodyBatteryCharged":
+        47}, {"date": "2024-02-02", "itemType": "HEART_RATE", "minHeartRate": 44,
+        "maxHeartRate": 147}, {"date": "2024-02-02", "stepGoal": 10790, "itemType":
+        "STEPS", "step": 12325}, {"date": "2024-02-02", "averageStressLevel": 30,
+        "itemType": "STRESS", "maxStressLevel": 96}, {"date": "2024-02-02", "bodyBatteryDrained":
+        69, "itemType": "BODY_BATTERY", "bodyBatteryCharged": 71}, {"date": "2024-02-03",
+        "itemType": "HEART_RATE", "minHeartRate": 45, "maxHeartRate": 111}, {"date":
+        "2024-02-03", "stepGoal": 11100, "itemType": "STEPS", "step": 6946}, {"date":
+        "2024-02-03", "averageStressLevel": 16, "itemType": "STRESS", "maxStressLevel":
+        74}, {"date": "2024-02-03", "bodyBatteryDrained": 60, "itemType": "BODY_BATTERY",
+        "bodyBatteryCharged": 77}, {"date": "2024-02-04", "itemType": "HEART_RATE",
+        "minHeartRate": 43, "maxHeartRate": 150}, {"date": "2024-02-04", "stepGoal":
+        10690, "itemType": "STEPS", "step": 17082}, {"date": "2024-02-04", "averageStressLevel":
+        21, "itemType": "STRESS", "maxStressLevel": 89}, {"date": "2024-02-04", "bodyBatteryDrained":
+        69, "itemType": "BODY_BATTERY", "bodyBatteryCharged": 65}, {"date": "2024-02-05",
+        "itemType": "HEART_RATE", "minHeartRate": 45, "maxHeartRate": 147}, {"date":
+        "2024-02-05", "stepGoal": 11330, "itemType": "STEPS", "step": 12146}, {"date":
+        "2024-02-05", "averageStressLevel": 18, "itemType": "STRESS", "maxStressLevel":
+        80}, {"date": "2024-02-05", "bodyBatteryDrained": 45, "itemType": "BODY_BATTERY",
+        "bodyBatteryCharged": 64}, {"date": "2024-02-06", "itemType": "HEART_RATE",
+        "minHeartRate": 43, "maxHeartRate": 159}, {"date": "2024-02-06", "stepGoal":
+        11500, "itemType": "STEPS", "step": 9909}, {"date": "2024-02-06", "averageStressLevel":
+        26, "itemType": "STRESS", "maxStressLevel": 90}, {"date": "2024-02-06", "bodyBatteryDrained":
+        72, "itemType": "BODY_BATTERY", "bodyBatteryCharged": 53}, {"date": "2024-02-07",
+        "itemType": "HEART_RATE", "minHeartRate": 44, "maxHeartRate": 146}, {"date":
+        "2024-02-07", "stepGoal": 11340, "itemType": "STEPS", "step": 11408}, {"date":
+        "2024-02-07", "averageStressLevel": 26, "itemType": "STRESS", "maxStressLevel":
+        93}, {"date": "2024-02-07", "bodyBatteryDrained": 57, "itemType": "BODY_BATTERY",
+        "bodyBatteryCharged": 63}, {"date": "2024-02-08", "itemType": "HEART_RATE",
+        "minHeartRate": 44, "maxHeartRate": 149}, {"date": "2024-02-08", "stepGoal":
+        11350, "itemType": "STEPS", "step": 5495}, {"date": "2024-02-08", "averageStressLevel":
+        21, "itemType": "STRESS", "maxStressLevel": 78}, {"date": "2024-02-08", "bodyBatteryDrained":
+        31, "itemType": "BODY_BATTERY", "bodyBatteryCharged": 71}, {"date": "2024-02-09",
+        "itemType": "HEART_RATE", "minHeartRate": 45, "maxHeartRate": 148}, {"date":
+        "2024-02-09", "stepGoal": 10770, "itemType": "STEPS", "step": 7610}, {"date":
+        "2024-02-09", "averageStressLevel": 20, "itemType": "STRESS", "maxStressLevel":
+        93}, {"date": "2024-02-09", "bodyBatteryDrained": 26, "itemType": "BODY_BATTERY",
+        "bodyBatteryCharged": 56}, {"date": "2024-02-10", "itemType": "HEART_RATE",
+        "minHeartRate": 41, "maxHeartRate": 99}, {"date": "2024-02-10", "stepGoal":
+        10140, "itemType": "STEPS", "step": 5628}, {"date": "2024-02-10", "averageStressLevel":
+        16, "itemType": "STRESS", "maxStressLevel": 91}, {"date": "2024-02-10", "bodyBatteryDrained":
+        45, "itemType": "BODY_BATTERY", "bodyBatteryCharged": 72}, {"date": "2024-02-11",
+        "itemType": "HEART_RATE", "minHeartRate": 41, "maxHeartRate": 157}, {"date":
+        "2024-02-11", "stepGoal": 9240, "itemType": "STEPS", "step": 28075}, {"date":
+        "2024-02-11", "averageStressLevel": 22, "itemType": "STRESS", "maxStressLevel":
+        94}, {"date": "2024-02-11", "bodyBatteryDrained": 72, "itemType": "BODY_BATTERY",
+        "bodyBatteryCharged": 53}, {"date": "2024-02-12", "itemType": "HEART_RATE",
+        "minHeartRate": 46, "maxHeartRate": 150}, {"date": "2024-02-12", "stepGoal":
+        11130, "itemType": "STEPS", "step": 14557}, {"date": "2024-02-12", "averageStressLevel":
+        25, "itemType": "STRESS", "maxStressLevel": 84}, {"date": "2024-02-12", "bodyBatteryDrained":
+        65, "itemType": "BODY_BATTERY", "bodyBatteryCharged": 60}, {"date": "2024-02-13",
+        "itemType": "HEART_RATE", "minHeartRate": 44, "maxHeartRate": 151}, {"date":
+        "2024-02-13", "stepGoal": 11820, "itemType": "STEPS", "step": 14405}, {"date":
+        "2024-02-13", "averageStressLevel": 27, "itemType": "STRESS", "maxStressLevel":
+        99}, {"date": "2024-02-13", "bodyBatteryDrained": 66, "itemType": "BODY_BATTERY",
+        "bodyBatteryCharged": 59}, {"date": "2024-02-14", "itemType": "HEART_RATE",
+        "minHeartRate": 36, "maxHeartRate": 150}, {"date": "2024-02-14", "stepGoal":
+        12340, "itemType": "STEPS", "step": 6562}, {"date": "2024-02-14", "averageStressLevel":
+        18, "itemType": "STRESS", "maxStressLevel": 91}, {"date": "2024-02-14", "bodyBatteryDrained":
+        45, "itemType": "BODY_BATTERY", "bodyBatteryCharged": 77}, {"date": "2024-02-15",
+        "itemType": "HEART_RATE", "minHeartRate": 43, "maxHeartRate": 97}, {"date":
+        "2024-02-15", "stepGoal": 11770, "itemType": "STEPS", "step": 2584}, {"date":
+        "2024-02-15", "averageStressLevel": 20, "itemType": "STRESS", "maxStressLevel":
+        80}, {"date": "2024-02-15", "bodyBatteryDrained": 53, "itemType": "BODY_BATTERY",
+        "bodyBatteryCharged": 50}, {"date": "2024-02-16", "itemType": "HEART_RATE",
+        "minHeartRate": 44, "maxHeartRate": 102}, {"date": "2024-02-16", "stepGoal":
+        9940, "itemType": "STEPS", "step": 3147}, {"date": "2024-02-16", "averageStressLevel":
+        18, "itemType": "STRESS", "maxStressLevel": 87}, {"date": "2024-02-16", "bodyBatteryDrained":
+        50, "itemType": "BODY_BATTERY", "bodyBatteryCharged": 49}, {"date": "2024-02-17",
+        "itemType": "HEART_RATE", "minHeartRate": 43, "maxHeartRate": 100}, {"date":
+        "2024-02-17", "stepGoal": 8590, "itemType": "STEPS", "step": 4770}, {"date":
+        "2024-02-17", "averageStressLevel": 21, "itemType": "STRESS", "maxStressLevel":
+        81}, {"date": "2024-02-17", "bodyBatteryDrained": 58, "itemType": "BODY_BATTERY",
+        "bodyBatteryCharged": 61}, {"date": "2024-02-18", "itemType": "HEART_RATE",
+        "minHeartRate": 43, "maxHeartRate": 105}, {"date": "2024-02-18", "stepGoal":
+        7830, "itemType": "STEPS", "step": 4271}, {"date": "2024-02-18", "averageStressLevel":
+        23, "itemType": "STRESS", "maxStressLevel": 88}, {"date": "2024-02-18", "bodyBatteryDrained":
+        61, "itemType": "BODY_BATTERY", "bodyBatteryCharged": 38}, {"date": "2024-02-19",
+        "itemType": "HEART_RATE", "minHeartRate": 41, "maxHeartRate": 114}, {"date":
+        "2024-02-19", "stepGoal": 7120, "itemType": "STEPS", "step": 8000}, {"date":
+        "2024-02-19", "averageStressLevel": 25, "itemType": "STRESS", "maxStressLevel":
+        93}, {"date": "2024-02-19", "bodyBatteryDrained": 40, "itemType": "BODY_BATTERY",
+        "bodyBatteryCharged": 50}, {"date": "2024-02-20", "itemType": "HEART_RATE",
+        "minHeartRate": 42, "maxHeartRate": 127}, {"date": "2024-02-20", "stepGoal":
+        7210, "itemType": "STEPS", "step": 2939}, {"date": "2024-02-20", "averageStressLevel":
+        15, "itemType": "STRESS", "maxStressLevel": 87}, {"date": "2024-02-20", "bodyBatteryDrained":
+        36, "itemType": "BODY_BATTERY", "bodyBatteryCharged": 62}, {"date": "2024-02-21",
+        "itemType": "HEART_RATE", "minHeartRate": 43, "maxHeartRate": 146}, {"date":
+        "2024-02-21", "stepGoal": 6790, "itemType": "STEPS", "step": 8802}, {"date":
+        "2024-02-21", "averageStressLevel": 22, "itemType": "STRESS", "maxStressLevel":
+        96}, {"date": "2024-02-21", "bodyBatteryDrained": 71, "itemType": "BODY_BATTERY",
+        "bodyBatteryCharged": 79}, {"date": "2024-02-22", "itemType": "HEART_RATE",
+        "minHeartRate": 41, "maxHeartRate": 155}, {"date": "2024-02-22", "stepGoal":
+        7000, "itemType": "STEPS", "step": 11500}, {"date": "2024-02-22", "averageStressLevel":
+        28, "itemType": "STRESS", "maxStressLevel": 89}, {"date": "2024-02-22", "bodyBatteryDrained":
+        73, "itemType": "BODY_BATTERY", "bodyBatteryCharged": 69}, {"date": "2024-02-23",
+        "itemType": "HEART_RATE", "minHeartRate": 41, "maxHeartRate": 151}, {"date":
+        "2024-02-23", "stepGoal": 7900, "itemType": "STEPS", "step": 5974}, {"date":
+        "2024-02-23", "averageStressLevel": 30, "itemType": "STRESS", "maxStressLevel":
+        93}, {"date": "2024-02-23", "bodyBatteryDrained": 79, "itemType": "BODY_BATTERY",
+        "bodyBatteryCharged": 62}, {"date": "2024-02-24", "itemType": "HEART_RATE",
+        "minHeartRate": 41, "maxHeartRate": 126}, {"date": "2024-02-24", "stepGoal":
+        7710, "itemType": "STEPS", "step": 6908}, {"date": "2024-02-24", "averageStressLevel":
+        21, "itemType": "STRESS", "maxStressLevel": 92}, {"date": "2024-02-24", "bodyBatteryDrained":
+        62, "itemType": "BODY_BATTERY", "bodyBatteryCharged": 76}, {"date": "2024-02-25",
+        "itemType": "HEART_RATE", "minHeartRate": 47, "maxHeartRate": 110}, {"date":
+        "2024-02-25", "stepGoal": 7550, "itemType": "STEPS", "step": 11601}, {"date":
+        "2024-02-25", "averageStressLevel": 27, "itemType": "STRESS", "maxStressLevel":
+        93}, {"date": "2024-02-25", "bodyBatteryDrained": 64, "itemType": "BODY_BATTERY",
+        "bodyBatteryCharged": 74}, {"date": "2024-02-26", "itemType": "HEART_RATE",
+        "minHeartRate": 43, "maxHeartRate": 154}, {"date": "2024-02-26", "stepGoal":
+        7960, "itemType": "STEPS", "step": 11289}, {"date": "2024-02-26", "averageStressLevel":
+        32, "itemType": "STRESS", "maxStressLevel": 93}, {"date": "2024-02-26", "bodyBatteryDrained":
+        78, "itemType": "BODY_BATTERY", "bodyBatteryCharged": 44}, {"date": "2024-02-27",
+        "itemType": "HEART_RATE", "minHeartRate": 42, "maxHeartRate": 160}, {"date":
+        "2024-02-27", "stepGoal": 8630, "itemType": "STEPS", "step": 12183}, {"date":
+        "2024-02-27", "averageStressLevel": 37, "itemType": "STRESS", "maxStressLevel":
+        99}, {"date": "2024-02-27", "bodyBatteryDrained": 73, "itemType": "BODY_BATTERY",
+        "bodyBatteryCharged": 62}, {"date": "2024-02-28", "itemType": "HEART_RATE",
+        "minHeartRate": 45, "maxHeartRate": 154}, {"date": "2024-02-28", "stepGoal":
+        9340, "itemType": "STEPS", "step": 6628}, {"date": "2024-02-28", "averageStressLevel":
+        34, "itemType": "STRESS", "maxStressLevel": 96}, {"date": "2024-02-28", "bodyBatteryDrained":
+        45, "itemType": "BODY_BATTERY", "bodyBatteryCharged": 47}, {"date": "2024-02-29",
+        "itemType": "HEART_RATE", "minHeartRate": 45, "maxHeartRate": 155}, {"date":
+        "2024-02-29", "stepGoal": 9070, "itemType": "STEPS", "step": 10191}, {"date":
+        "2024-02-29", "averageStressLevel": 32, "itemType": "STRESS", "maxStressLevel":
+        99}, {"date": "2024-02-29", "bodyBatteryDrained": 64, "itemType": "BODY_BATTERY",
+        "bodyBatteryCharged": 70}, {"vigorousIntensityMinutes": 42, "itemType": "MOVE_IQ_EVENT",
+        "startTimestampGMT": "2024-02-01T13:58:00.0", "startTimestampLocal": "2024-02-01T07:58:00.0",
+        "moderateIntensityMinutes": 3, "deviceId": 3329978681, "endTimestampGMT":
+        "2024-02-01T14:45:00.0", "duration": 47, "endTimestampLocal": "2024-02-01T08:45:00.0",
+        "userProfilePk": 2591602, "activityType": "running", "activitySubType": null,
+        "calendarDate": "2024-02-01"}, {"duration": 11, "itemType": "MOVE_IQ_EVENT",
+        "endTimestampLocal": "2024-02-01T18:33:00.0", "startTimestampGMT": "2024-02-02T00:22:00.0",
+        "startTimestampLocal": "2024-02-01T18:22:00.0", "userProfilePk": 2591602,
+        "activityType": "cycling", "activitySubType": null, "deviceId": 3329978681,
+        "calendarDate": "2024-02-01", "endTimestampGMT": "2024-02-02T00:33:00.0"},
+        {"duration": 25, "itemType": "MOVE_IQ_EVENT", "endTimestampLocal": "2024-02-01T22:25:00.0",
+        "startTimestampGMT": "2024-02-02T04:00:00.0", "startTimestampLocal": "2024-02-01T22:00:00.0",
+        "userProfilePk": 2591602, "activityType": "fitness_equipment", "activitySubType":
+        "elliptical", "deviceId": 3329978681, "calendarDate": "2024-02-01", "endTimestampGMT":
+        "2024-02-02T04:25:00.0"}, {"vigorousIntensityMinutes": 21, "itemType": "MOVE_IQ_EVENT",
+        "startTimestampGMT": "2024-02-02T13:05:00.0", "startTimestampLocal": "2024-02-02T07:05:00.0",
+        "moderateIntensityMinutes": 2, "deviceId": 3329978681, "endTimestampGMT":
+        "2024-02-02T13:29:00.0", "duration": 24, "endTimestampLocal": "2024-02-02T07:29:00.0",
+        "userProfilePk": 2591602, "activityType": "running", "activitySubType": null,
+        "calendarDate": "2024-02-02"}, {"duration": 19, "itemType": "MOVE_IQ_EVENT",
+        "endTimestampLocal": "2024-02-02T20:45:00.0", "startTimestampGMT": "2024-02-03T02:26:00.0",
+        "startTimestampLocal": "2024-02-02T20:26:00.0", "userProfilePk": 2591602,
+        "activityType": "fitness_equipment", "activitySubType": "elliptical", "deviceId":
+        3329978681, "calendarDate": "2024-02-02", "endTimestampGMT": "2024-02-03T02:45:00.0"},
+        {"duration": 19, "itemType": "MOVE_IQ_EVENT", "endTimestampLocal": "2024-02-02T21:31:00.0",
+        "startTimestampGMT": "2024-02-03T03:12:00.0", "startTimestampLocal": "2024-02-02T21:12:00.0",
+        "userProfilePk": 2591602, "activityType": "walking", "activitySubType": null,
+        "deviceId": 3329978681, "calendarDate": "2024-02-02", "endTimestampGMT": "2024-02-03T03:31:00.0"},
+        {"duration": 20, "itemType": "MOVE_IQ_EVENT", "endTimestampLocal": "2024-02-03T10:43:00.0",
+        "startTimestampGMT": "2024-02-03T16:23:00.0", "startTimestampLocal": "2024-02-03T10:23:00.0",
+        "userProfilePk": 2591602, "activityType": "walking", "activitySubType": null,
+        "deviceId": 3329978681, "calendarDate": "2024-02-03", "endTimestampGMT": "2024-02-03T16:43:00.0"},
+        {"duration": 18, "itemType": "MOVE_IQ_EVENT", "endTimestampLocal": "2024-02-03T22:58:00.0",
+        "startTimestampGMT": "2024-02-04T04:40:00.0", "startTimestampLocal": "2024-02-03T22:40:00.0",
+        "userProfilePk": 2591602, "activityType": "walking", "activitySubType": null,
+        "deviceId": 3329978681, "calendarDate": "2024-02-03", "endTimestampGMT": "2024-02-04T04:58:00.0"},
+        {"duration": 26, "itemType": "MOVE_IQ_EVENT", "endTimestampLocal": "2024-02-04T07:12:00.0",
+        "startTimestampGMT": "2024-02-04T12:46:00.0", "startTimestampLocal": "2024-02-04T06:46:00.0",
+        "userProfilePk": 2591602, "activityType": "walking", "activitySubType": null,
+        "deviceId": 3329978681, "calendarDate": "2024-02-04", "endTimestampGMT": "2024-02-04T13:12:00.0"},
+        {"vigorousIntensityMinutes": 41, "itemType": "MOVE_IQ_EVENT", "startTimestampGMT":
+        "2024-02-04T14:30:00.0", "startTimestampLocal": "2024-02-04T08:30:00.0", "moderateIntensityMinutes":
+        30, "deviceId": 3329978681, "endTimestampGMT": "2024-02-04T15:46:00.0", "duration":
+        76, "endTimestampLocal": "2024-02-04T09:46:00.0", "userProfilePk": 2591602,
+        "activityType": "running", "activitySubType": null, "calendarDate": "2024-02-04"},
+        {"duration": 13, "itemType": "MOVE_IQ_EVENT", "endTimestampLocal": "2024-02-04T19:12:00.0",
+        "startTimestampGMT": "2024-02-05T00:59:00.0", "startTimestampLocal": "2024-02-04T18:59:00.0",
+        "userProfilePk": 2591602, "activityType": "fitness_equipment", "activitySubType":
+        "elliptical", "deviceId": 3329978681, "calendarDate": "2024-02-04", "endTimestampGMT":
+        "2024-02-05T01:12:00.0"}, {"vigorousIntensityMinutes": 29, "itemType": "MOVE_IQ_EVENT",
+        "startTimestampGMT": "2024-02-05T14:13:00.0", "startTimestampLocal": "2024-02-05T08:13:00.0",
+        "moderateIntensityMinutes": 2, "deviceId": 3329978681, "endTimestampGMT":
+        "2024-02-05T14:45:00.0", "duration": 32, "endTimestampLocal": "2024-02-05T08:45:00.0",
+        "userProfilePk": 2591602, "activityType": "running", "activitySubType": null,
+        "calendarDate": "2024-02-05"}, {"duration": 29, "itemType": "MOVE_IQ_EVENT",
+        "endTimestampLocal": "2024-02-05T09:24:00.0", "startTimestampGMT": "2024-02-05T14:55:00.0",
+        "startTimestampLocal": "2024-02-05T08:55:00.0", "userProfilePk": 2591602,
+        "activityType": "walking", "activitySubType": null, "deviceId": 3329978681,
+        "calendarDate": "2024-02-05", "endTimestampGMT": "2024-02-05T15:24:00.0"},
+        {"duration": 15, "itemType": "MOVE_IQ_EVENT", "endTimestampLocal": "2024-02-06T06:40:00.0",
+        "startTimestampGMT": "2024-02-06T12:25:00.0", "startTimestampLocal": "2024-02-06T06:25:00.0",
+        "userProfilePk": 2591602, "activityType": "walking", "activitySubType": null,
+        "deviceId": 3329978681, "calendarDate": "2024-02-06", "endTimestampGMT": "2024-02-06T12:40:00.0"},
+        {"vigorousIntensityMinutes": 21, "itemType": "MOVE_IQ_EVENT", "startTimestampGMT":
+        "2024-02-06T13:53:00.0", "startTimestampLocal": "2024-02-06T07:53:00.0", "moderateIntensityMinutes":
+        15, "deviceId": 3329978681, "endTimestampGMT": "2024-02-06T14:30:00.0", "duration":
+        37, "endTimestampLocal": "2024-02-06T08:30:00.0", "userProfilePk": 2591602,
+        "activityType": "running", "activitySubType": null, "calendarDate": "2024-02-06"},
+        {"duration": 13, "itemType": "MOVE_IQ_EVENT", "endTimestampLocal": "2024-02-06T21:44:00.0",
+        "startTimestampGMT": "2024-02-07T03:31:00.0", "startTimestampLocal": "2024-02-06T21:31:00.0",
+        "userProfilePk": 2591602, "activityType": "walking", "activitySubType": null,
+        "deviceId": 3329978681, "calendarDate": "2024-02-06", "endTimestampGMT": "2024-02-07T03:44:00.0"},
+        {"vigorousIntensityMinutes": 10, "itemType": "MOVE_IQ_EVENT", "startTimestampGMT":
+        "2024-02-07T13:24:00.0", "startTimestampLocal": "2024-02-07T07:24:00.0", "moderateIntensityMinutes":
+        2, "deviceId": 3329978681, "endTimestampGMT": "2024-02-07T13:37:00.0", "duration":
+        13, "endTimestampLocal": "2024-02-07T07:37:00.0", "userProfilePk": 2591602,
+        "activityType": "running", "activitySubType": null, "calendarDate": "2024-02-07"},
+        {"duration": 10, "itemType": "MOVE_IQ_EVENT", "endTimestampLocal": "2024-02-07T10:20:00.0",
+        "startTimestampGMT": "2024-02-07T16:10:00.0", "startTimestampLocal": "2024-02-07T10:10:00.0",
+        "userProfilePk": 2591602, "activityType": "walking", "activitySubType": null,
+        "deviceId": 3329978681, "calendarDate": "2024-02-07", "endTimestampGMT": "2024-02-07T16:20:00.0"},
+        {"duration": 13, "itemType": "MOVE_IQ_EVENT", "endTimestampLocal": "2024-02-07T10:58:00.0",
+        "startTimestampGMT": "2024-02-07T16:45:00.0", "startTimestampLocal": "2024-02-07T10:45:00.0",
+        "userProfilePk": 2591602, "activityType": "walking", "activitySubType": null,
+        "deviceId": 3329978681, "calendarDate": "2024-02-07", "endTimestampGMT": "2024-02-07T16:58:00.0"},
+        {"duration": 16, "itemType": "MOVE_IQ_EVENT", "endTimestampLocal": "2024-02-07T16:31:00.0",
+        "startTimestampGMT": "2024-02-07T22:15:00.0", "startTimestampLocal": "2024-02-07T16:15:00.0",
+        "userProfilePk": 2591602, "activityType": "walking", "activitySubType": null,
+        "deviceId": 3329978681, "calendarDate": "2024-02-07", "endTimestampGMT": "2024-02-07T22:31:00.0"},
+        {"duration": 15, "itemType": "MOVE_IQ_EVENT", "endTimestampLocal": "2024-02-07T17:08:00.0",
+        "startTimestampGMT": "2024-02-07T22:53:00.0", "startTimestampLocal": "2024-02-07T16:53:00.0",
+        "userProfilePk": 2591602, "activityType": "walking", "activitySubType": null,
+        "deviceId": 3329978681, "calendarDate": "2024-02-07", "endTimestampGMT": "2024-02-07T23:08:00.0"},
+        {"vigorousIntensityMinutes": 20, "itemType": "MOVE_IQ_EVENT", "startTimestampGMT":
+        "2024-02-08T13:15:00.0", "startTimestampLocal": "2024-02-08T07:15:00.0", "moderateIntensityMinutes":
+        2, "deviceId": 3329978681, "endTimestampGMT": "2024-02-08T13:38:00.0", "duration":
+        23, "endTimestampLocal": "2024-02-08T07:38:00.0", "userProfilePk": 2591602,
+        "activityType": "running", "activitySubType": null, "calendarDate": "2024-02-08"},
+        {"duration": 10, "itemType": "MOVE_IQ_EVENT", "endTimestampLocal": "2024-02-09T18:13:00.0",
+        "startTimestampGMT": "2024-02-10T00:03:00.0", "startTimestampLocal": "2024-02-09T18:03:00.0",
+        "userProfilePk": 2591602, "activityType": "walking", "activitySubType": null,
+        "deviceId": 3329978681, "calendarDate": "2024-02-09", "endTimestampGMT": "2024-02-10T00:13:00.0"},
+        {"duration": 14, "itemType": "MOVE_IQ_EVENT", "endTimestampLocal": "2024-02-09T20:21:00.0",
+        "startTimestampGMT": "2024-02-10T02:07:00.0", "startTimestampLocal": "2024-02-09T20:07:00.0",
+        "userProfilePk": 2591602, "activityType": "walking", "activitySubType": null,
+        "deviceId": 3329978681, "calendarDate": "2024-02-09", "endTimestampGMT": "2024-02-10T02:21:00.0"},
+        {"duration": 25, "itemType": "MOVE_IQ_EVENT", "endTimestampLocal": "2024-02-09T21:38:00.0",
+        "startTimestampGMT": "2024-02-10T03:13:00.0", "startTimestampLocal": "2024-02-09T21:13:00.0",
+        "userProfilePk": 2591602, "activityType": "walking", "activitySubType": null,
+        "deviceId": 3329978681, "calendarDate": "2024-02-09", "endTimestampGMT": "2024-02-10T03:38:00.0"},
+        {"duration": 10, "itemType": "MOVE_IQ_EVENT", "endTimestampLocal": "2024-02-10T10:29:00.0",
+        "startTimestampGMT": "2024-02-10T16:19:00.0", "startTimestampLocal": "2024-02-10T10:19:00.0",
+        "userProfilePk": 2591602, "activityType": "cycling", "activitySubType": null,
+        "deviceId": 3329978681, "calendarDate": "2024-02-10", "endTimestampGMT": "2024-02-10T16:29:00.0"},
+        {"duration": 13, "itemType": "MOVE_IQ_EVENT", "endTimestampLocal": "2024-02-10T22:43:00.0",
+        "startTimestampGMT": "2024-02-11T04:30:00.0", "startTimestampLocal": "2024-02-10T22:30:00.0",
+        "userProfilePk": 2591602, "activityType": "walking", "activitySubType": null,
+        "deviceId": 3329978681, "calendarDate": "2024-02-10", "endTimestampGMT": "2024-02-11T04:43:00.0"},
+        {"vigorousIntensityMinutes": 98, "itemType": "MOVE_IQ_EVENT", "startTimestampGMT":
+        "2024-02-11T13:49:00.0", "startTimestampLocal": "2024-02-11T07:49:00.0", "moderateIntensityMinutes":
+        72, "deviceId": 3329978681, "endTimestampGMT": "2024-02-11T17:03:00.0", "duration":
+        194, "endTimestampLocal": "2024-02-11T11:03:00.0", "userProfilePk": 2591602,
+        "activityType": "running", "activitySubType": null, "calendarDate": "2024-02-11"},
+        {"vigorousIntensityMinutes": 33, "itemType": "MOVE_IQ_EVENT", "startTimestampGMT":
+        "2024-02-12T13:25:00.0", "startTimestampLocal": "2024-02-12T07:25:00.0", "moderateIntensityMinutes":
+        1, "deviceId": 3329978681, "endTimestampGMT": "2024-02-12T14:01:00.0", "duration":
+        36, "endTimestampLocal": "2024-02-12T08:01:00.0", "userProfilePk": 2591602,
+        "activityType": "running", "activitySubType": null, "calendarDate": "2024-02-12"},
+        {"duration": 56, "itemType": "MOVE_IQ_EVENT", "endTimestampLocal": "2024-02-12T20:57:00.0",
+        "startTimestampGMT": "2024-02-13T02:01:00.0", "startTimestampLocal": "2024-02-12T20:01:00.0",
+        "userProfilePk": 2591602, "activityType": "walking", "activitySubType": null,
+        "deviceId": 3329978681, "calendarDate": "2024-02-12", "endTimestampGMT": "2024-02-13T02:57:00.0"},
+        {"vigorousIntensityMinutes": 10, "itemType": "MOVE_IQ_EVENT", "startTimestampGMT":
+        "2024-02-13T14:05:00.0", "startTimestampLocal": "2024-02-13T08:05:00.0", "moderateIntensityMinutes":
+        2, "deviceId": 3329978681, "endTimestampGMT": "2024-02-13T14:18:00.0", "duration":
+        13, "endTimestampLocal": "2024-02-13T08:18:00.0", "userProfilePk": 2591602,
+        "activityType": "running", "activitySubType": null, "calendarDate": "2024-02-13"},
+        {"duration": 34, "itemType": "MOVE_IQ_EVENT", "endTimestampLocal": "2024-02-13T12:45:00.0",
+        "startTimestampGMT": "2024-02-13T18:11:00.0", "startTimestampLocal": "2024-02-13T12:11:00.0",
+        "userProfilePk": 2591602, "activityType": "walking", "activitySubType": null,
+        "deviceId": 3329978681, "calendarDate": "2024-02-13", "endTimestampGMT": "2024-02-13T18:45:00.0"},
+        {"duration": 13, "itemType": "MOVE_IQ_EVENT", "endTimestampLocal": "2024-02-13T18:48:00.0",
+        "startTimestampGMT": "2024-02-14T00:35:00.0", "startTimestampLocal": "2024-02-13T18:35:00.0",
+        "userProfilePk": 2591602, "activityType": "walking", "activitySubType": null,
+        "deviceId": 3329978681, "calendarDate": "2024-02-13", "endTimestampGMT": "2024-02-14T00:48:00.0"},
+        {"duration": 31, "itemType": "MOVE_IQ_EVENT", "endTimestampLocal": "2024-02-13T21:26:00.0",
+        "startTimestampGMT": "2024-02-14T02:55:00.0", "startTimestampLocal": "2024-02-13T20:55:00.0",
+        "userProfilePk": 2591602, "activityType": "walking", "activitySubType": null,
+        "deviceId": 3329978681, "calendarDate": "2024-02-13", "endTimestampGMT": "2024-02-14T03:26:00.0"},
+        {"vigorousIntensityMinutes": 9, "itemType": "MOVE_IQ_EVENT", "startTimestampGMT":
+        "2024-02-14T12:50:00.0", "startTimestampLocal": "2024-02-14T06:50:00.0", "moderateIntensityMinutes":
+        1, "deviceId": 3329978681, "endTimestampGMT": "2024-02-14T13:02:00.0", "duration":
+        12, "endTimestampLocal": "2024-02-14T07:02:00.0", "userProfilePk": 2591602,
+        "activityType": "running", "activitySubType": null, "calendarDate": "2024-02-14"},
+        {"duration": 10, "itemType": "MOVE_IQ_EVENT", "endTimestampLocal": "2024-02-14T13:14:00.0",
+        "startTimestampGMT": "2024-02-14T19:04:00.0", "startTimestampLocal": "2024-02-14T13:04:00.0",
+        "userProfilePk": 2591602, "activityType": "walking", "activitySubType": null,
+        "deviceId": 3329978681, "calendarDate": "2024-02-14", "endTimestampGMT": "2024-02-14T19:14:00.0"},
+        {"duration": 13, "itemType": "MOVE_IQ_EVENT", "endTimestampLocal": "2024-02-19T08:36:00.0",
+        "startTimestampGMT": "2024-02-19T14:23:00.0", "startTimestampLocal": "2024-02-19T08:23:00.0",
+        "userProfilePk": 2591602, "activityType": "walking", "activitySubType": null,
+        "deviceId": 3329978681, "calendarDate": "2024-02-19", "endTimestampGMT": "2024-02-19T14:36:00.0"},
+        {"duration": 25, "itemType": "MOVE_IQ_EVENT", "endTimestampLocal": "2024-02-19T09:01:00.0",
+        "startTimestampGMT": "2024-02-19T14:36:00.0", "startTimestampLocal": "2024-02-19T08:36:00.0",
+        "userProfilePk": 2591602, "activityType": "fitness_equipment", "activitySubType":
+        "elliptical", "deviceId": 3329978681, "calendarDate": "2024-02-19", "endTimestampGMT":
+        "2024-02-19T15:01:00.0"}, {"duration": 28, "itemType": "MOVE_IQ_EVENT", "endTimestampLocal":
+        "2024-02-19T22:10:00.0", "startTimestampGMT": "2024-02-20T03:42:00.0", "startTimestampLocal":
+        "2024-02-19T21:42:00.0", "userProfilePk": 2591602, "activityType": "fitness_equipment",
+        "activitySubType": "elliptical", "deviceId": 3329978681, "calendarDate": "2024-02-19",
+        "endTimestampGMT": "2024-02-20T04:10:00.0"}, {"duration": 11, "itemType":
+        "MOVE_IQ_EVENT", "endTimestampLocal": "2024-02-21T20:15:00.0", "startTimestampGMT":
+        "2024-02-22T02:04:00.0", "startTimestampLocal": "2024-02-21T20:04:00.0", "userProfilePk":
+        2591602, "activityType": "walking", "activitySubType": null, "deviceId": 3329978681,
+        "calendarDate": "2024-02-21", "endTimestampGMT": "2024-02-22T02:15:00.0"},
+        {"vigorousIntensityMinutes": 30, "itemType": "MOVE_IQ_EVENT", "startTimestampGMT":
+        "2024-02-22T13:59:00.0", "startTimestampLocal": "2024-02-22T07:59:00.0", "moderateIntensityMinutes":
+        2, "deviceId": 3329978681, "endTimestampGMT": "2024-02-22T14:32:00.0", "duration":
+        33, "endTimestampLocal": "2024-02-22T08:32:00.0", "userProfilePk": 2591602,
+        "activityType": "running", "activitySubType": null, "calendarDate": "2024-02-22"},
+        {"duration": 25, "itemType": "MOVE_IQ_EVENT", "endTimestampLocal": "2024-02-22T20:55:00.0",
+        "startTimestampGMT": "2024-02-23T02:30:00.0", "startTimestampLocal": "2024-02-22T20:30:00.0",
+        "userProfilePk": 2591602, "activityType": "walking", "activitySubType": null,
+        "deviceId": 3329978681, "calendarDate": "2024-02-22", "endTimestampGMT": "2024-02-23T02:55:00.0"},
+        {"duration": 12, "itemType": "MOVE_IQ_EVENT", "endTimestampLocal": "2024-02-22T21:28:00.0",
+        "startTimestampGMT": "2024-02-23T03:16:00.0", "startTimestampLocal": "2024-02-22T21:16:00.0",
+        "userProfilePk": 2591602, "activityType": "walking", "activitySubType": null,
+        "deviceId": 3329978681, "calendarDate": "2024-02-22", "endTimestampGMT": "2024-02-23T03:28:00.0"},
+        {"duration": 34, "itemType": "MOVE_IQ_EVENT", "endTimestampLocal": "2024-02-23T23:00:00.0",
+        "startTimestampGMT": "2024-02-24T04:26:00.0", "startTimestampLocal": "2024-02-23T22:26:00.0",
+        "userProfilePk": 2591602, "activityType": "walking", "activitySubType": null,
+        "deviceId": 3329978681, "calendarDate": "2024-02-23", "endTimestampGMT": "2024-02-24T05:00:00.0"},
+        {"duration": 11, "itemType": "MOVE_IQ_EVENT", "endTimestampLocal": "2024-02-24T10:27:00.0",
+        "startTimestampGMT": "2024-02-24T16:16:00.0", "startTimestampLocal": "2024-02-24T10:16:00.0",
+        "userProfilePk": 2591602, "activityType": "walking", "activitySubType": null,
+        "deviceId": 3329978681, "calendarDate": "2024-02-24", "endTimestampGMT": "2024-02-24T16:27:00.0"},
+        {"duration": 41, "itemType": "MOVE_IQ_EVENT", "endTimestampLocal": "2024-02-25T14:16:00.0",
+        "startTimestampGMT": "2024-02-25T19:35:00.0", "startTimestampLocal": "2024-02-25T13:35:00.0",
+        "userProfilePk": 2591602, "activityType": "walking", "activitySubType": null,
+        "deviceId": 3329978681, "calendarDate": "2024-02-25", "endTimestampGMT": "2024-02-25T20:16:00.0"},
+        {"duration": 32, "itemType": "MOVE_IQ_EVENT", "endTimestampLocal": "2024-02-25T15:44:00.0",
+        "startTimestampGMT": "2024-02-25T21:12:00.0", "startTimestampLocal": "2024-02-25T15:12:00.0",
+        "userProfilePk": 2591602, "activityType": "walking", "activitySubType": null,
+        "deviceId": 3329978681, "calendarDate": "2024-02-25", "endTimestampGMT": "2024-02-25T21:44:00.0"},
+        {"vigorousIntensityMinutes": 27, "itemType": "MOVE_IQ_EVENT", "startTimestampGMT":
+        "2024-02-26T13:27:00.0", "startTimestampLocal": "2024-02-26T07:27:00.0", "moderateIntensityMinutes":
+        3, "deviceId": 3329978681, "endTimestampGMT": "2024-02-26T14:01:00.0", "duration":
+        34, "endTimestampLocal": "2024-02-26T08:01:00.0", "userProfilePk": 2591602,
+        "activityType": "running", "activitySubType": null, "calendarDate": "2024-02-26"},
+        {"duration": 26, "itemType": "MOVE_IQ_EVENT", "endTimestampLocal": "2024-02-26T21:13:00.0",
+        "startTimestampGMT": "2024-02-27T02:47:00.0", "startTimestampLocal": "2024-02-26T20:47:00.0",
+        "userProfilePk": 2591602, "activityType": "fitness_equipment", "activitySubType":
+        "elliptical", "deviceId": 3329978681, "calendarDate": "2024-02-26", "endTimestampGMT":
+        "2024-02-27T03:13:00.0"}, {"vigorousIntensityMinutes": 33, "itemType": "MOVE_IQ_EVENT",
+        "startTimestampGMT": "2024-02-27T14:05:00.0", "startTimestampLocal": "2024-02-27T08:05:00.0",
+        "moderateIntensityMinutes": 3, "deviceId": 3329978681, "endTimestampGMT":
+        "2024-02-27T14:45:00.0", "duration": 40, "endTimestampLocal": "2024-02-27T08:45:00.0",
+        "userProfilePk": 2591602, "activityType": "running", "activitySubType": null,
+        "calendarDate": "2024-02-27"}, {"duration": 24, "itemType": "MOVE_IQ_EVENT",
+        "endTimestampLocal": "2024-02-27T21:42:00.0", "startTimestampGMT": "2024-02-28T03:18:00.0",
+        "startTimestampLocal": "2024-02-27T21:18:00.0", "userProfilePk": 2591602,
+        "activityType": "walking", "activitySubType": null, "deviceId": 3329978681,
+        "calendarDate": "2024-02-27", "endTimestampGMT": "2024-02-28T03:42:00.0"},
+        {"duration": 38, "itemType": "MOVE_IQ_EVENT", "endTimestampLocal": "2024-02-29T09:32:00.0",
+        "startTimestampGMT": "2024-02-29T14:54:00.0", "startTimestampLocal": "2024-02-29T08:54:00.0",
+        "userProfilePk": 2591602, "activityType": "walking", "activitySubType": null,
+        "deviceId": 3329978681, "calendarDate": "2024-02-29", "endTimestampGMT": "2024-02-29T15:32:00.0"},
+        {"vigorousIntensityMinutes": 10, "itemType": "MOVE_IQ_EVENT", "startTimestampGMT":
+        "2024-02-29T18:35:00.0", "startTimestampLocal": "2024-02-29T12:35:00.0", "moderateIntensityMinutes":
+        2, "deviceId": 3329978681, "endTimestampGMT": "2024-02-29T18:51:00.0", "duration":
+        16, "endTimestampLocal": "2024-02-29T12:51:00.0", "userProfilePk": 2591602,
+        "activityType": "cycling", "activitySubType": null, "calendarDate": "2024-02-29"},
+        {"duration": 13, "itemType": "MOVE_IQ_EVENT", "endTimestampLocal": "2024-02-29T16:28:00.0",
+        "startTimestampGMT": "2024-02-29T22:15:00.0", "startTimestampLocal": "2024-02-29T16:15:00.0",
+        "userProfilePk": 2591602, "activityType": "walking", "activitySubType": null,
+        "deviceId": 3329978681, "calendarDate": "2024-02-29", "endTimestampGMT": "2024-02-29T22:28:00.0"},
+        {"date": "2024-02-01", "itemType": "hrvStatus", "lastNightAvg": 47, "weeklyAvg":
+        42, "status": "BALANCED"}, {"date": "2024-02-02", "itemType": "hrvStatus",
+        "lastNightAvg": 44, "weeklyAvg": 42, "status": "BALANCED"}, {"date": "2024-02-03",
+        "itemType": "hrvStatus", "lastNightAvg": 43, "weeklyAvg": 42, "status": "BALANCED"},
+        {"date": "2024-02-04", "itemType": "hrvStatus", "lastNightAvg": 45, "weeklyAvg":
+        43, "status": "BALANCED"}, {"date": "2024-02-05", "itemType": "hrvStatus",
+        "lastNightAvg": 39, "weeklyAvg": 43, "status": "BALANCED"}, {"date": "2024-02-06",
+        "itemType": "hrvStatus", "lastNightAvg": 44, "weeklyAvg": 43, "status": "BALANCED"},
+        {"date": "2024-02-07", "itemType": "hrvStatus", "lastNightAvg": 43, "weeklyAvg":
+        43, "status": "BALANCED"}, {"date": "2024-02-08", "itemType": "hrvStatus",
+        "lastNightAvg": 46, "weeklyAvg": 43, "status": "BALANCED"}, {"date": "2024-02-09",
+        "itemType": "hrvStatus", "lastNightAvg": 45, "weeklyAvg": 44, "status": "BALANCED"},
+        {"date": "2024-02-10", "itemType": "hrvStatus", "lastNightAvg": 43, "weeklyAvg":
+        43, "status": "BALANCED"}, {"date": "2024-02-11", "itemType": "hrvStatus",
+        "lastNightAvg": 46, "weeklyAvg": 44, "status": "BALANCED"}, {"date": "2024-02-12",
+        "itemType": "hrvStatus", "lastNightAvg": 43, "weeklyAvg": 44, "status": "BALANCED"},
+        {"date": "2024-02-13", "itemType": "hrvStatus", "lastNightAvg": 43, "weeklyAvg":
+        44, "status": "BALANCED"}, {"date": "2024-02-14", "itemType": "hrvStatus",
+        "lastNightAvg": 44, "weeklyAvg": 44, "status": "BALANCED"}, {"date": "2024-02-15",
+        "itemType": "hrvStatus", "lastNightAvg": 45, "weeklyAvg": 44, "status": "BALANCED"},
+        {"date": "2024-02-16", "itemType": "hrvStatus", "lastNightAvg": 48, "weeklyAvg":
+        45, "status": "BALANCED"}, {"date": "2024-02-17", "itemType": "hrvStatus",
+        "lastNightAvg": 45, "weeklyAvg": 45, "status": "BALANCED"}, {"date": "2024-02-18",
+        "itemType": "hrvStatus", "lastNightAvg": 45, "weeklyAvg": 45, "status": "BALANCED"},
+        {"date": "2024-02-19", "itemType": "hrvStatus", "lastNightAvg": 38, "weeklyAvg":
+        44, "status": "BALANCED"}, {"date": "2024-02-20", "itemType": "hrvStatus",
+        "lastNightAvg": 54, "weeklyAvg": 45, "status": "BALANCED"}, {"date": "2024-02-21",
+        "itemType": "hrvStatus", "lastNightAvg": 57, "weeklyAvg": 47, "status": "BALANCED"},
+        {"date": "2024-02-22", "itemType": "hrvStatus", "lastNightAvg": 46, "weeklyAvg":
+        47, "status": "BALANCED"}, {"date": "2024-02-23", "itemType": "hrvStatus",
+        "lastNightAvg": 50, "weeklyAvg": 47, "status": "BALANCED"}, {"date": "2024-02-24",
+        "itemType": "hrvStatus", "lastNightAvg": 48, "weeklyAvg": 48, "status": "UNBALANCED"},
+        {"date": "2024-02-25", "itemType": "hrvStatus", "lastNightAvg": 47, "weeklyAvg":
+        48, "status": "UNBALANCED"}, {"date": "2024-02-26", "itemType": "hrvStatus",
+        "lastNightAvg": 46, "weeklyAvg": 50, "status": "UNBALANCED"}, {"date": "2024-02-27",
+        "itemType": "hrvStatus", "lastNightAvg": 47, "weeklyAvg": 49, "status": "UNBALANCED"},
+        {"date": "2024-02-28", "itemType": "hrvStatus", "lastNightAvg": 50, "weeklyAvg":
+        48, "status": "BALANCED"}, {"date": "2024-02-29", "itemType": "hrvStatus",
+        "lastNightAvg": 43, "weeklyAvg": 47, "status": "BALANCED"}]}'
+    headers:
+      CF-RAY:
+      - 99675f02aae1d930-QRO
+      Cache-Control:
+      - no-cache, no-store, private
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      Date:
+      - Thu, 30 Oct 2025 02:09:32 GMT
+      NEL:
+      - '{"success_fraction":0.01,"report_to":"cf-nel","max_age":604800}'
+      Report-To:
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=3GftlY9S392p52dVE3gFoIx6NaFn8CBL2%2FrWCL2DngldsgnfMO52t5w5xuHi9nRcQO8Lo2FLG6i2uwIP1YuKr%2FTswv7FaL3hF8FDgkOhf9vj0%2FT%2BGaLiH26K4wSXHffH1vGaLvah8RHjyMXeu%2BreydbMUg%3D%3D"}],"group":"cf-nel","max_age":604800}'
+      Server:
+      - cloudflare
+      Transfer-Encoding:
+      - chunked
+      alt-svc:
+      - h3=":443"; ma=86400
+      cf-cache-status:
+      - DYNAMIC
+      pragma:
+      - no-cache
+    status:
+      code: 200
+      message: OK
+version: 1
