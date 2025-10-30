@@ -1,0 +1,68 @@
+interactions:
+- request:
+    body: mfa_token=SANITIZED
+    headers:
+      Accept:
+      - !!binary |
+        Ki8q
+      Accept-Encoding:
+      - !!binary |
+        Z3ppcCwgZGVmbGF0ZQ==
+      Authorization:
+      - Bearer SANITIZED
+      Connection:
+      - !!binary |
+        a2VlcC1hbGl2ZQ==
+      Content-Length:
+      - '74'
+      Content-Type:
+      - !!binary |
+        YXBwbGljYXRpb24veC13d3ctZm9ybS11cmxlbmNvZGVk
+      User-Agent:
+      - !!binary |
+        Y29tLmdhcm1pbi5hbmRyb2lkLmFwcHMuY29ubmVjdG1vYmlsZQ==
+    method: POST
+    uri: https://connectapi.garmin.com/oauth-service/oauth/exchange/user/2.0
+  response:
+    body:
+      string: "<!doctype html><html lang=\"en\"><head><title>HTTP Status 401 \u2013
+        Unauthorized</title><style type=\"text/css\">body {font-family:Tahoma,Arial,sans-serif;}
+        h1, h2, h3, b {color:white;background-color:#525D76;} h1 {font-size:22px;}
+        h2 {font-size:16px;} h3 {font-size:14px;} p {font-size:12px;} a {color:black;}
+        .line {height:1px;background-color:#525D76;border:none;}</style></head><body><h1>HTTP
+        Status 401 \u2013 Unauthorized</h1><hr class=\"line\" /><p><b>Type</b> Status
+        Report</p><p><b>Message</b> ConsumerKey is invalid</p><p><b>Description</b>
+        The request has not been applied to the target resource because it lacks valid
+        authentication credentials for that resource.</p><hr class=\"line\" /><h3>Garmin
+        Connect API Server</h3></body></html>"
+    headers:
+      CF-RAY:
+      - 9967d4016bccf0a0-DFW
+      Connection:
+      - keep-alive
+      Content-Type:
+      - text/html;charset=utf-8
+      Date:
+      - Thu, 30 Oct 2025 03:29:24 GMT
+      NEL:
+      - '{"success_fraction":0.01,"report_to":"cf-nel","max_age":604800}'
+      Report-To:
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=bhta17%2BVdXc61oh0ovrt916DhWNscC2tvv9p9dv7czjv09FYJKcGwgB%2BF4hqalEt4rubpnIpbF%2FaR4CC0eGCIYLtwr%2FgrGA6QOHHMEfFadaGzJlW5Gh2PbZ5bNQpe%2FA8RT%2BIAYlSCfz8bEwmo1NUhI5dKw%3D%3D"}],"group":"cf-nel","max_age":604800}'
+      Server:
+      - cloudflare
+      Set-Cookie:
+      - _cfuvid=SANITIZED; path=SANITIZED; domain=SANITIZED; HttpOnly; Secure; SameSite=SANITIZED
+      Transfer-Encoding:
+      - chunked
+      alt-svc:
+      - h3=":443"; ma=86400
+      cf-cache-status:
+      - DYNAMIC
+      content-language:
+      - en
+      www-authenticate:
+      - OAuth realm="connect.garmin.com"
+    status:
+      code: 401
+      message: Unauthorized
+version: 1

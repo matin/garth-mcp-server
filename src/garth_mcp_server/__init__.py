@@ -238,26 +238,12 @@ def get_activity_weather(activity_id: str) -> ConnectAPIResponse:
 
 @server.tool()
 @requires_garth_session
-def get_body_composition(date: str | None = None) -> ConnectAPIResponse:
-    """
-    Get body composition data from Garmin Connect.
-    date: Date for body composition data (YYYY-MM-DD format), if not provided returns latest
-    """
-    if date:
-        endpoint = f"wellness-service/wellness/bodyComposition/{date}"
-    else:
-        endpoint = "wellness-service/wellness/bodyComposition"
-    return garth.connectapi(endpoint)
-
-
-@server.tool()
-@requires_garth_session
 def get_respiration_data(date: str) -> ConnectAPIResponse:
     """
     Get respiration data from Garmin Connect.
     date: Date for respiration data (YYYY-MM-DD format)
     """
-    return garth.connectapi(f"wellness-service/wellness/dailyRespiration/{date}")
+    return garth.connectapi(f"wellness-service/wellness/daily/respiration/{date}")
 
 
 @server.tool()
@@ -277,7 +263,7 @@ def get_blood_pressure(date: str) -> ConnectAPIResponse:
     Get blood pressure readings from Garmin Connect.
     date: Date for blood pressure data (YYYY-MM-DD format)
     """
-    return garth.connectapi(f"wellness-service/wellness/dailyBloodPressure/{date}")
+    return garth.connectapi(f"bloodpressure-service/bloodpressure/dayview/{date}")
 
 
 @server.tool()
@@ -307,27 +293,10 @@ def get_gear() -> ConnectAPIResponse:
     """
     Get gear information from Garmin Connect.
     """
-    return garth.connectapi("gear-service/gear")
-
-
-@server.tool()
-@requires_garth_session
-def get_gear_stats(gear_uuid: str) -> ConnectAPIResponse:
-    """
-    Get usage statistics for specific gear.
-    gear_uuid: UUID of the gear item
-    """
-    return garth.connectapi(f"gear-service/gear/stats/{gear_uuid}")
-
-
-@server.tool()
-@requires_garth_session
-def get_connectapi_endpoint(endpoint: str) -> ConnectAPIResponse:
-    """
-    Get the data from a given Garmin Connect API endpoint.
-    This is a generic tool that can be used to get data from any Garmin Connect API endpoint.
-    """
-    return garth.connectapi(endpoint)
+    profile = garth.UserProfile.get()
+    return garth.connectapi(
+        f"gear-service/gear/filterGear?userProfilePk={profile.profile_id}"
+    )
 
 
 @server.tool()

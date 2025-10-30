@@ -180,17 +180,10 @@ async def test_activity_related_tools(mcp_client: Client):
     weather_data = json.loads(weather_response.content[0].text)
     assert isinstance(weather_data, dict)
 
-@pytest.mark.vcr
-async def test_get_body_composition(mcp_client: Client):
-    response = await mcp_client.call_tool("get_body_composition")
-    assert response.is_error is False
-    assert response.content[0].type == "text"
-    data = json.loads(response.content[0].text)
-    assert isinstance(data, dict)
 
 @pytest.mark.vcr
 async def test_get_respiration_data(mcp_client: Client):
-    response = await mcp_client.call_tool("get_respiration_data", {"date": "2024-01-15"})
+    response = await mcp_client.call_tool("get_respiration_data", {"date": "2025-10-29"})
     assert response.is_error is False
     assert response.content[0].type == "text"
     data = json.loads(response.content[0].text)
@@ -206,7 +199,7 @@ async def test_get_spo2_data(mcp_client: Client):
 
 @pytest.mark.vcr
 async def test_get_blood_pressure(mcp_client: Client):
-    response = await mcp_client.call_tool("get_blood_pressure", {"date": "2024-01-15"})
+    response = await mcp_client.call_tool("get_blood_pressure", {"date": "2025-10-29"})
     assert response.is_error is False
     assert response.content[0].type == "text"
     data = json.loads(response.content[0].text)
@@ -236,21 +229,6 @@ async def test_get_gear(mcp_client: Client):
     data = json.loads(response.content[0].text)
     assert isinstance(data, (dict, list))
 
-@pytest.mark.vcr
-async def test_get_gear_stats(mcp_client: Client):
-    response = await mcp_client.call_tool("get_gear_stats", {"gear_uuid": "12345678-1234-1234-1234-123456789012"})
-    assert response.is_error is False
-    assert response.content[0].type == "text"
-    data = json.loads(response.content[0].text)
-    assert isinstance(data, dict)
-
-@pytest.mark.vcr
-async def test_get_connectapi_endpoint(mcp_client: Client):
-    response = await mcp_client.call_tool("get_connectapi_endpoint", {"endpoint": "test/endpoint"})
-    assert response.is_error is False
-    assert response.content[0].type == "text"
-    data = json.loads(response.content[0].text)
-    assert isinstance(data, (dict, list))
 
 @pytest.mark.vcr
 async def test_monthly_activity_summary(mcp_client: Client):

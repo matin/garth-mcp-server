@@ -1,0 +1,261 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.32.3
+    method: GET
+    uri: https://thegarth.s3.amazonaws.com/oauth_consumer.json
+  response:
+    body:
+      string: '{"consumer_key": "SANITIZED", "consumer_secret": "SANITIZED"}'
+    headers:
+      Accept-Ranges:
+      - bytes
+      Content-Length:
+      - '124'
+      Content-Type:
+      - application/json
+      Date:
+      - Thu, 30 Oct 2025 03:42:06 GMT
+      ETag:
+      - '"20240b1013cb35419bb5b2cff1407a4e"'
+      Last-Modified:
+      - Thu, 03 Aug 2023 00:16:11 GMT
+      Server:
+      - AmazonS3
+      x-amz-id-2:
+      - rMY7spfBzrri4tPZaiKT/zI1sHlxtorTecrGeyubZOQltYU/eS3LRk6eUWc14MzYrrfeKMMfjpI=
+      x-amz-request-id:
+      - Z824DR1HMWCZNA9T
+      x-amz-server-side-encryption:
+      - AES256
+    status:
+      code: 200
+      message: OK
+- request:
+    body: mfa_token=SANITIZED
+    headers:
+      Accept:
+      - !!binary |
+        Ki8q
+      Accept-Encoding:
+      - !!binary |
+        Z3ppcCwgZGVmbGF0ZQ==
+      Authorization:
+      - Bearer SANITIZED
+      Connection:
+      - !!binary |
+        a2VlcC1hbGl2ZQ==
+      Content-Length:
+      - '74'
+      Content-Type:
+      - !!binary |
+        YXBwbGljYXRpb24veC13d3ctZm9ybS11cmxlbmNvZGVk
+      User-Agent:
+      - !!binary |
+        Y29tLmdhcm1pbi5hbmRyb2lkLmFwcHMuY29ubmVjdG1vYmlsZQ==
+    method: POST
+    uri: https://connectapi.garmin.com/oauth-service/oauth/exchange/user/2.0
+  response:
+    body:
+      string: '{"scope": "GARMINPAY_WRITE ATP_READ GHS_SAMD INSIGHTS_READ CIQ_APPSTORE_SERVICES_CREATE
+        COMMUNITY_COURSE_WRITE GCOFFER_WRITE DT_CLIENT_ANALYTICS_WRITE CIQ_APPSTORE_SERVICES_DELETE
+        OMT_SUBSCRIPTION_READ CONNECT_READ COMMUNITY_COURSE_READ GOLF_API_READ GHS_UPLOAD
+        DIVE_API_READ CIQ_APPSTORE_SERVICES_READ CIQ_APPSTORE_SERVICES_UPDATE CONNECT_WRITE
+        CONNECT_MCT_DAILY_LOG_READ DI_OAUTH_2_AUTHORIZATION_CODE_CREATE GARMINPAY_READ
+        GOLF_API_WRITE INSIGHTS_WRITE PRODUCT_SEARCH_READ OMT_CAMPAIGN_READ GCOFFER_READ
+        ATP_WRITE", "jti": "SANITIZED", "access_token": "SANITIZED", "token_type":
+        "bearer", "refresh_token": "SANITIZED", "expires_in": 67346, "refresh_token_expires_in":
+        2591999}'
+    headers:
+      CF-RAY:
+      - 9967e69689ed4f14-QRO
+      Cache-Control:
+      - no-cache, no-store, private
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      Date:
+      - Thu, 30 Oct 2025 03:42:06 GMT
+      NEL:
+      - '{"success_fraction":0.01,"report_to":"cf-nel","max_age":604800}'
+      Report-To:
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=CB3DgpNJs%2Bbub%2F8A41Me0GfmxZT1dTetsJZsC8nNa9McoIrCgpzqUya2tRCLagq63PJk1B18XediQO4rNY1ZEO1dHQ8GMfmMYq6N4K%2FKeWD91FZZbJyYQfH8KsYHUhCcR6JxLNyps7E4xa1hdGrvvQhg9A%3D%3D"}],"group":"cf-nel","max_age":604800}'
+      Server:
+      - cloudflare
+      Set-Cookie:
+      - _cfuvid=SANITIZED; path=SANITIZED; domain=SANITIZED; HttpOnly; Secure; SameSite=SANITIZED
+      Transfer-Encoding:
+      - chunked
+      alt-svc:
+      - h3=":443"; ma=86400
+      cf-cache-status:
+      - DYNAMIC
+      pragma:
+      - no-cache
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Authorization:
+      - Bearer SANITIZED
+      Connection:
+      - keep-alive
+      User-Agent:
+      - GCM-iOS-5.7.2.1
+    method: GET
+    uri: https://connectapi.garmin.com/userprofile-service/socialProfile
+  response:
+    body:
+      string: '{"id": 398883470, "profileId": 104516149, "garminGUID": "00000000-0000-0000-0000-000000000000",
+        "displayName": "testuser", "fullName": "Test User", "userName": "flh.1989@gmail.com",
+        "profileImageType": "UPLOADED_PHOTO", "profileImageUrlLarge": "https://s3.amazonaws.com/garmin-connect-prod/profile_images/e451fbbb-139d-4427-a9be-ae3efe693502-104516149.png",
+        "profileImageUrlMedium": "https://s3.amazonaws.com/garmin-connect-prod/profile_images/fb01c4c6-9c4a-498f-9149-8fb6cfe87ccc-104516149.png",
+        "profileImageUrlSmall": "https://s3.amazonaws.com/garmin-connect-prod/profile_images/6c570641-cb01-4a6c-a885-b8a7cf71e8ab-104516149.png",
+        "hasPremiumSocialIcon": false, "location": "Test City, Test Country", "facebookUrl":
+        null, "twitterUrl": null, "personalWebsite": null, "motivation": null, "bio":
+        null, "primaryActivity": null, "favoriteActivityTypes": ["running", "hiking"],
+        "runningTrainingSpeed": 0.0, "cyclingTrainingSpeed": 0.0, "favoriteCyclingActivityTypes":
+        [], "cyclingClassification": null, "cyclingMaxAvgPower": 0.0, "swimmingTrainingSpeed":
+        0.0, "profileVisibility": "private", "activityStartVisibility": "public",
+        "activityMapVisibility": "public", "courseVisibility": "public", "activityHeartRateVisibility":
+        "public", "activityPowerVisibility": "public", "badgeVisibility": "following",
+        "showAge": false, "showWeight": false, "showHeight": false, "showWeightClass":
+        false, "showAgeRange": false, "showGender": false, "showActivityClass": false,
+        "showVO2Max": false, "showPersonalRecords": true, "showLast12Months": true,
+        "showLifetimeTotals": true, "showUpcomingEvents": true, "showRecentFavorites":
+        true, "showRecentDevice": true, "showRecentGear": false, "showBadges": true,
+        "otherActivity": null, "otherPrimaryActivity": null, "otherMotivation": null,
+        "userRoles": ["SCOPE_ATP_READ", "SCOPE_ATP_WRITE", "SCOPE_CIQ_APPSTORE_SERVICES_CREATE",
+        "SCOPE_CIQ_APPSTORE_SERVICES_DELETE", "SCOPE_CIQ_APPSTORE_SERVICES_READ",
+        "SCOPE_CIQ_APPSTORE_SERVICES_UPDATE", "SCOPE_COMMUNITY_COURSE_READ", "SCOPE_COMMUNITY_COURSE_WRITE",
+        "SCOPE_CONNECT_MCT_DAILY_LOG_READ", "SCOPE_CONNECT_READ", "SCOPE_CONNECT_WRITE",
+        "SCOPE_DIVE_API_READ", "SCOPE_DI_OAUTH_2_AUTHORIZATION_CODE_CREATE", "SCOPE_DT_CLIENT_ANALYTICS_WRITE",
+        "SCOPE_GARMINPAY_READ", "SCOPE_GARMINPAY_WRITE", "SCOPE_GCOFFER_READ", "SCOPE_GCOFFER_WRITE",
+        "SCOPE_GHS_SAMD", "SCOPE_GHS_UPLOAD", "SCOPE_GOLF_API_READ", "SCOPE_GOLF_API_WRITE",
+        "SCOPE_INSIGHTS_READ", "SCOPE_INSIGHTS_WRITE", "SCOPE_OMT_CAMPAIGN_READ",
+        "SCOPE_OMT_SUBSCRIPTION_READ", "SCOPE_PRODUCT_SEARCH_READ", "ROLE_CONNECTUSER",
+        "ROLE_FITNESS_USER", "ROLE_WELLNESS_USER", "ROLE_OUTDOOR_USER"], "nameApproved":
+        true, "userProfileFullName": "Felipe Lopez", "makeGolfScorecardsPrivate":
+        true, "allowGolfLiveScoring": false, "allowGolfScoringByConnections": true,
+        "userLevel": 3, "userPoint": 103, "levelUpdateDate": "2022-10-30T23:40:36.0",
+        "levelIsViewed": true, "levelPointThreshold": 140, "userPointOffset": 0, "userPro":
+        false}'
+    headers:
+      CF-RAY:
+      - 9967e6997e87c677-QRO
+      Cache-Control:
+      - no-cache, no-store, private
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      Date:
+      - Thu, 30 Oct 2025 03:42:06 GMT
+      NEL:
+      - '{"success_fraction":0.01,"report_to":"cf-nel","max_age":604800}'
+      Report-To:
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=t56%2Bb8kI5uZOfUd7X8sAVPkUfCx%2F4A%2BdhkFoYfj6MfgM5dcu%2BnJIsDSqBPkdAvE5DTALf7ZnBzdxaKb8yjZFLbT72Xx7JwBVniG%2BlfYNC8i9CWgrVgqjpoybxEH2JHFCHFH%2FMQKP5mrI16Azlq1HFwp6Ag%3D%3D"}],"group":"cf-nel","max_age":604800}'
+      Server:
+      - cloudflare
+      Set-Cookie:
+      - _cfuvid=SANITIZED; path=SANITIZED; domain=SANITIZED; HttpOnly; Secure; SameSite=SANITIZED
+      Transfer-Encoding:
+      - chunked
+      alt-svc:
+      - h3=":443"; ma=86400
+      cf-cache-status:
+      - DYNAMIC
+      pragma:
+      - no-cache
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Authorization:
+      - Bearer SANITIZED
+      Connection:
+      - keep-alive
+      Cookie:
+      - _cfuvid=SANITIZED
+      User-Agent:
+      - GCM-iOS-5.7.2.1
+    method: GET
+    uri: https://connectapi.garmin.com/gear-service/gear/filterGear?userProfilePk=104516149
+  response:
+    body:
+      string: '[{"gearPk": 34671481, "uuid": "595a36b1fc40460b8a8e5176595a210d", "userProfilePk":
+        104516149, "gearMakeName": "Other", "gearModelName": "Unknown Shoes", "gearTypeName":
+        "Shoes", "gearStatusName": "retired", "displayName": null, "customMakeModel":
+        "Salomon speedcross 6", "imageNameLarge": null, "imageNameMedium": null, "imageNameSmall":
+        null, "dateBegin": "2023-08-20T00:00:00.0", "dateEnd": "2025-09-01T14:50:58.0",
+        "maximumMeters": 643738.0, "notified": false, "createDate": "2023-08-20T20:41:47.0",
+        "updateDate": "2025-09-01T14:50:58.0"}, {"gearPk": 36942402, "uuid": "4096c68fedda435a9847681ba9dd45f9",
+        "userProfilePk": 104516149, "gearMakeName": "Other", "gearModelName": "Unknown
+        Shoes", "gearTypeName": "Shoes", "gearStatusName": "retired", "displayName":
+        "nike run", "customMakeModel": "noke pegasus 40", "imageNameLarge": null,
+        "imageNameMedium": null, "imageNameSmall": null, "dateBegin": "2024-02-10T00:00:00.0",
+        "dateEnd": "2025-09-01T14:50:44.0", "maximumMeters": 643738.0, "notified":
+        false, "createDate": "2024-02-10T18:18:06.0", "updateDate": "2025-09-01T14:50:44.0"},
+        {"gearPk": 39641450, "uuid": "054435d266bd4315a4de4aafd492da28", "userProfilePk":
+        104516149, "gearMakeName": "Other", "gearModelName": "Unknown Shoes", "gearTypeName":
+        "Shoes", "gearStatusName": "active", "displayName": null, "customMakeModel":
+        "Salomon Genesis", "imageNameLarge": null, "imageNameMedium": null, "imageNameSmall":
+        null, "dateBegin": "2024-08-17T00:00:00.0", "dateEnd": null, "maximumMeters":
+        644000.0, "notified": false, "createDate": "2024-08-18T03:26:22.0", "updateDate":
+        "2024-08-18T03:26:22.0"}, {"gearPk": 44006733, "uuid": "f232701fffec4b50bf6b829e26dba634",
+        "userProfilePk": 104516149, "gearMakeName": "Other", "gearModelName": "Unknown
+        Shoes", "gearTypeName": "Shoes", "gearStatusName": "active", "displayName":
+        null, "customMakeModel": "Asics cumulus 27", "imageNameLarge": null, "imageNameMedium":
+        null, "imageNameSmall": null, "dateBegin": "2025-05-25T00:00:00.0", "dateEnd":
+        null, "maximumMeters": 643738.0, "notified": false, "createDate": "2025-06-12T16:09:39.0",
+        "updateDate": "2025-06-12T16:12:48.0"}]'
+    headers:
+      CF-RAY:
+      - 9967e69a1d2634a7-QRO
+      Cache-Control:
+      - no-cache, no-store, private
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json;charset=UTF-8
+      Date:
+      - Thu, 30 Oct 2025 03:42:06 GMT
+      NEL:
+      - '{"success_fraction":0.01,"report_to":"cf-nel","max_age":604800}'
+      Report-To:
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=xcwMQqXFOtAzPaUfFOos%2FdNWhtpSZNSdYyUdX5Mo9wmWjPuu7GRP432uSqUZ1I%2BQ28TWb2GjlVzVYvhXI5jnQ5dffotgjdY%2BWfJg5WZn%2Fvfbal%2FA7h7Yr4PDR6CMyIAGx56P0esnqiB8S1%2FbU6nWVG1Mwg%3D%3D"}],"group":"cf-nel","max_age":604800}'
+      Server:
+      - cloudflare
+      Transfer-Encoding:
+      - chunked
+      alt-svc:
+      - h3=":443"; ma=86400
+      cf-cache-status:
+      - DYNAMIC
+      pragma:
+      - no-cache
+    status:
+      code: 200
+      message: OK
+version: 1

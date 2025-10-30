@@ -1,0 +1,160 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.32.3
+    method: GET
+    uri: https://thegarth.s3.amazonaws.com/oauth_consumer.json
+  response:
+    body:
+      string: '{"consumer_key": "SANITIZED", "consumer_secret": "SANITIZED"}'
+    headers:
+      Accept-Ranges:
+      - bytes
+      Content-Length:
+      - '124'
+      Content-Type:
+      - application/json
+      Date:
+      - Thu, 30 Oct 2025 03:27:02 GMT
+      ETag:
+      - '"20240b1013cb35419bb5b2cff1407a4e"'
+      Last-Modified:
+      - Thu, 03 Aug 2023 00:16:11 GMT
+      Server:
+      - AmazonS3
+      x-amz-id-2:
+      - +FGh7Li4ANpZP7r0gbq2YC1Fp6w1gYIdpsCIiq9tCj6raoR7zwUmyDZ2HQDra6Mn3bw6HJBPqmo=
+      x-amz-request-id:
+      - PP2FJVFR6CGSAE0B
+      x-amz-server-side-encryption:
+      - AES256
+    status:
+      code: 200
+      message: OK
+- request:
+    body: mfa_token=SANITIZED
+    headers:
+      Accept:
+      - !!binary |
+        Ki8q
+      Accept-Encoding:
+      - !!binary |
+        Z3ppcCwgZGVmbGF0ZQ==
+      Authorization:
+      - Bearer SANITIZED
+      Connection:
+      - !!binary |
+        a2VlcC1hbGl2ZQ==
+      Content-Length:
+      - '74'
+      Content-Type:
+      - !!binary |
+        YXBwbGljYXRpb24veC13d3ctZm9ybS11cmxlbmNvZGVk
+      User-Agent:
+      - !!binary |
+        Y29tLmdhcm1pbi5hbmRyb2lkLmFwcHMuY29ubmVjdG1vYmlsZQ==
+    method: POST
+    uri: https://connectapi.garmin.com/oauth-service/oauth/exchange/user/2.0
+  response:
+    body:
+      string: '{"scope": "GARMINPAY_WRITE ATP_READ GHS_SAMD INSIGHTS_READ CIQ_APPSTORE_SERVICES_CREATE
+        COMMUNITY_COURSE_WRITE GCOFFER_WRITE DT_CLIENT_ANALYTICS_WRITE CIQ_APPSTORE_SERVICES_DELETE
+        OMT_SUBSCRIPTION_READ CONNECT_READ COMMUNITY_COURSE_READ GOLF_API_READ GHS_UPLOAD
+        DIVE_API_READ CIQ_APPSTORE_SERVICES_READ CIQ_APPSTORE_SERVICES_UPDATE CONNECT_WRITE
+        CONNECT_MCT_DAILY_LOG_READ DI_OAUTH_2_AUTHORIZATION_CODE_CREATE GARMINPAY_READ
+        GOLF_API_WRITE INSIGHTS_WRITE PRODUCT_SEARCH_READ OMT_CAMPAIGN_READ GCOFFER_READ
+        ATP_WRITE", "jti": "SANITIZED", "access_token": "SANITIZED", "token_type":
+        "bearer", "refresh_token": "SANITIZED", "expires_in": 70754, "refresh_token_expires_in":
+        2591999}'
+    headers:
+      CF-RAY:
+      - 9967d07ffbb1576f-QRO
+      Cache-Control:
+      - no-cache, no-store, private
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      Date:
+      - Thu, 30 Oct 2025 03:27:01 GMT
+      NEL:
+      - '{"success_fraction":0.01,"report_to":"cf-nel","max_age":604800}'
+      Report-To:
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=Ta%2BB7dL8Pcc4CkcY2TZYJfG62irGaM5jxtVj35ac%2BX7jy0HsypHEkgwW3ugqcNLP20G86%2B3ktJlv%2FonrOGiPX1rQbHsSjVBEwcH%2FRLojSWnf5XaHaYgi4QAp0td5SPWgyH3%2BMJBqCZXAbUVZyUyVqYJYcw%3D%3D"}],"group":"cf-nel","max_age":604800}'
+      Server:
+      - cloudflare
+      Set-Cookie:
+      - _cfuvid=SANITIZED; path=SANITIZED; domain=SANITIZED; HttpOnly; Secure; SameSite=SANITIZED
+      Transfer-Encoding:
+      - chunked
+      alt-svc:
+      - h3=":443"; ma=86400
+      cf-cache-status:
+      - DYNAMIC
+      pragma:
+      - no-cache
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Authorization:
+      - Bearer SANITIZED
+      Connection:
+      - keep-alive
+      User-Agent:
+      - GCM-iOS-5.7.2.1
+    method: GET
+    uri: https://connectapi.garmin.com/bloodpressure-service/bloodpressure/dayview/2025-10-29
+  response:
+    body:
+      string: '{"startDate": "2025-10-29", "endDate": "2025-10-29", "bloodPressureMeasurements":
+        [{"version": 1761793376298, "systolic": 120, "diastolic": 80, "pulse": 55,
+        "multiMeasurement": false, "notes": "", "sourceType": "MANUAL", "measurementTimestampLocal":
+        "2025-10-29T21:02:00.0", "measurementTimestampGMT": "2025-10-30T03:02:00.0",
+        "category": "STAGE_1_HIGH", "categoryName": "NORMAL"}], "totalMeasurementCount":
+        null, "elevatedMeasurementCount": null}'
+    headers:
+      CF-RAY:
+      - 9967d082ca35ca13-QRO
+      Cache-Control:
+      - no-cache, no-store, private
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      Date:
+      - Thu, 30 Oct 2025 03:27:01 GMT
+      NEL:
+      - '{"success_fraction":0.01,"report_to":"cf-nel","max_age":604800}'
+      Report-To:
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=xsEYGt%2BRKQMeruQOiKpQrd7gfCJ7UxR9oK9iYBXXk%2FXHfb79FM7hUHA3zjFlGSqpWh2RBBu1LEfNfGZMGzWmYvCyQAwPmvuO%2FDL8W8f4anNb8ml4JrTmifbL%2FUT65XCj0%2BIdDrN89wrZZSKz19qqroJwew%3D%3D"}],"group":"cf-nel","max_age":604800}'
+      Server:
+      - cloudflare
+      Set-Cookie:
+      - _cfuvid=SANITIZED; path=SANITIZED; domain=SANITIZED; HttpOnly; Secure; SameSite=SANITIZED
+      Transfer-Encoding:
+      - chunked
+      alt-svc:
+      - h3=":443"; ma=86400
+      cf-cache-status:
+      - DYNAMIC
+      pragma:
+      - no-cache
+    status:
+      code: 200
+      message: OK
+version: 1
