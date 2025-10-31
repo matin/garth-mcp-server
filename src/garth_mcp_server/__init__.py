@@ -106,6 +106,144 @@ def user_profile() -> dict[str, Any]:
 
 @server.tool()
 @requires_garth_session
+def user_profile_statistics() -> dict[str, Any]:
+    """
+    General user statistics and experience summary.
+
+    Retrieves aggregate statistics from Garmin Connect to provide an overview of the user's activity totals across different time periods.
+
+    Behavior
+    - Returns a JSON object with aggregated activity statistics:
+        - `last_12_months`: Total activity metrics for the previous 12 months including total activities, distance (meters and kilometers), duration (seconds and hours), calories, and elevation gain.
+        - `lifetime_totals`: Contains two sub-objects:
+            - `activities`: Current year totals (same structure as last_12_months).
+            - `lifetime_totals`: All-time aggregated statistics including total steps, distance, calories, goals met in days, active days, wellness distance, and step calories.
+    - All distance values are provided in meters, with kilometer conversions added when distance >= 1000m.
+    - All duration values are provided in seconds, with hour conversions added when duration >= 3600s.
+
+    Intended Use for Agents
+    - Show a comprehensive overview of user activity levels and lifetime achievements, useful for context in health & activity coaching, summaries, introductions, or progress tracking.
+    - Allows comparison of user activity levels across different time periods (current year vs last 12 months vs lifetime).
+    - Useful for understanding long-term trends and overall fitness engagement.
+
+    Notes
+    - Statistics are aggregated across all activity types (not broken down by sport).
+    - Personal records (best performances) are not included—use activity-specific tools for detailed records.
+    - Returned fields may vary based on available data; treat zeroes/absences as unavailable.
+    - Always respect user privacy—do not surface sensitive fields unless relevant to the requested context.
+
+    Output Example:
+    {
+        "last_12_months": {
+            "total_activities": 124,
+            "total_distance": 1250000,
+            "total_distance_km": 1250.0,
+            "total_duration": 72000,
+            "total_duration_hours": 20.0,
+            "total_calories": 85000,
+            "total_elevation_gain": 45000
+        },
+        "lifetime_totals": {
+            "activities": {
+                "total_activities": 45,
+                "total_distance": 450000,
+                "total_distance_km": 450.0,
+                "total_duration": 27000,
+                "total_duration_hours": 7.5,
+                "total_calories": 32000,
+                "total_elevation_gain": 15000
+            },
+            "lifetime_totals": {
+                "total_distance": 5432100,
+                "total_distance_km": 5432.1,
+                "total_steps": 54730927,
+                "total_calories": 1250000,
+                "total_goals_met_in_days": 234,
+                "total_active_days": 456,
+                "total_wellness_distance": 1234000,
+                "total_wellness_distance_km": 1234.0,
+                "total_step_calories": 890000
+            }
+        }
+    }
+
+    """
+    # Gather summaries for the last 12 months
+    user_profile = garth.UserProfile.get()
+    display_name = user_profile.display_name
+    # breakpoint()
+
+    # Get user statistics for last 12 months
+    data = garth.connectapi(f"userstats-service/statistics/{display_name}")
+    assert isinstance(data, dict), f"Expected dict, got {type(data)}"
+    metrics = data["userMetrics"][0]
+    activities = {
+        "total_activities": metrics["totalActivities"],
+        "total_distance": metrics["totalDistance"],
+        "total_duration": metrics["totalDuration"],
+        "total_calories": metrics["totalCalories"],
+        "total_elevation_gain": metrics["totalElevationGain"],
+    }
+    if activities["total_distance"] >= 1000:
+        activities["total_distance_km"] = round(activities["total_distance"] / 1000, 2)
+    if activities["total_duration"] >= 3600:
+        activities["total_duration_hours"] = round(
+            activities["total_duration"] / 3600, 2
+        )
+
+    # Add new request for previous year totals, only include totals
+    prev_data = garth.connectapi(
+        f"userstats-service/statistics/previousDays/{display_name}"
+    )
+    assert isinstance(prev_data, dict), f"Expected dict, got {type(prev_data)}"
+    prev_metrics = prev_data["userMetrics"][0]
+    last_12_months_totals = {
+        "total_activities": prev_metrics["totalActivities"],
+        "total_distance": prev_metrics["totalDistance"],
+        "total_duration": prev_metrics["totalDuration"],
+        "total_calories": prev_metrics["totalCalories"],
+        "total_elevation_gain": prev_metrics["totalElevationGain"],
+    }
+    if last_12_months_totals["total_distance"] >= 1000:
+        last_12_months_totals["total_distance_km"] = round(
+            last_12_months_totals["total_distance"] / 1000, 2
+        )
+    if last_12_months_totals["total_duration"] >= 3600:
+        last_12_months_totals["total_duration_hours"] = round(
+            last_12_months_totals["total_duration"] / 3600, 2
+        )
+
+    # Get detailed lifetime totals and convert to snake_case
+    lt = garth.connectapi(
+        f"usersummary-service/stats/connectLifetimeTotals/{display_name}"
+    )
+    assert isinstance(lt, dict), f"Expected dict, got {type(lt)}"
+    lifetime_totals = {
+        "total_distance": lt["totalDistance"],
+        "total_distance_km": round(lt["totalDistance"] / 1000, 2),
+        "total_steps": lt["totalSteps"],
+        "total_calories": lt["totalCalories"],
+        "total_goals_met_in_days": lt["totalGoalsMetInDays"],
+        "total_active_days": lt["totalActiveDays"],
+        "total_wellness_distance": lt["totalWellnessDistance"],
+        "total_wellness_distance_km": round(lt["totalWellnessDistance"] / 1000, 2),
+        "total_step_calories": lt["totalStepCalories"],
+    }
+
+    # Organize final stats dictionary as requested
+    stats = {
+        "lifetime_totals": {
+            "activities": activities,
+            "lifetime_totals": lifetime_totals,
+        },
+        "last_12_months": last_12_months_totals,
+    }
+
+    return stats
+
+
+@server.tool()
+@requires_garth_session
 def weekly_intensity_minutes(
     end_date: date | None = None, weeks: int = 1
 ) -> str | list[garth.WeeklyIntensityMinutes]:

@@ -18,6 +18,25 @@ async def test_user_profile(mcp_client: Client):
     assert isinstance(data, dict)
 
 @pytest.mark.vcr
+async def test_user_profile_statistics(mcp_client: Client):
+    response = await mcp_client.call_tool("user_profile_statistics")
+    assert response.is_error is False
+
+    assert response.content[0].type == "text"
+    data = json.loads(response.content[0].text)
+    assert isinstance(data, dict)
+    # Check structure matches expected format
+    assert "last_12_months" in data
+    assert "lifetime_totals" in data
+    assert isinstance(data["last_12_months"], dict)
+    assert isinstance(data["lifetime_totals"], dict)
+    # Check lifetime_totals has the expected sub-structure
+    assert "activities" in data["lifetime_totals"]
+    assert "lifetime_totals" in data["lifetime_totals"]
+    assert isinstance(data["lifetime_totals"]["activities"], dict)
+    assert isinstance(data["lifetime_totals"]["lifetime_totals"], dict)
+
+@pytest.mark.vcr
 async def test_weekly_intensity_minutes(mcp_client: Client):
     response = await mcp_client.call_tool("weekly_intensity_minutes")
     assert response.is_error is False
