@@ -1,13 +1,14 @@
 import os
 from datetime import date
 from functools import wraps
+from typing import Any
 from urllib.parse import urlencode
 
 import garth
 from mcp.server.fastmcp import FastMCP
 
 
-__version__ = "0.0.10.dev3"
+__version__ = "0.0.10.dev4"
 
 # Type alias for functions that return data from garth.connectapi
 ConnectAPIResponse = str | dict | list | int | float | bool | None
@@ -32,7 +33,7 @@ def requires_garth_session(func):
 
 @server.tool()
 @requires_garth_session
-def user_profile() -> str | garth.UserProfile:
+def user_profile() -> dict[str, Any]:
     """
     Retrieve the authenticated user's Garmin Connect profile.
 
@@ -68,29 +69,39 @@ def user_profile() -> str | garth.UserProfile:
     - Weight: 60 kg
     - Height: 162 cm
     - Location: Ciudad de México, CDMX
+
     - Profile Image: https://s3.amazonaws.com/garmin-connect-prod/profile_images/73240e81-6e4d-43fc-8af8-c8f6c51b3b8f-2591602.png
     """
-    return garth.UserProfile.get()
+    user_profile = garth.UserProfile.get()
+    user_setting = garth.UserSettings.get()
 
-
-@server.tool()
-@requires_garth_session
-def user_settings() -> str | garth.UserSettings:
-    """
-    Retrieve the authenticated user's Garmin Connect settings.
-
-    Behavior
-    - Returns the structure of Garth's UserSettings, serialized to JSON.
-    - No parameters required; requires GARTH_TOKEN session.
-
-    Typical fields (vary by account)
-    - measurementSystem, timeFormat, activityStartVisibility, activityMapVisibility, badgeVisibility
-    - weightUnits, heightUnits, temperatureUnits
-
-    Output format
-    - Returns JSON (as text content in MCP).
-    """
-    return garth.UserSettings.get()
+    return {
+        "id": user_profile.id,
+        "profile_id": user_profile.profile_id,
+        "display_name": user_profile.display_name,
+        "full_name": user_profile.full_name,
+        "user_name": user_profile.user_name,
+        "user_profile_full_name": user_profile.user_profile_full_name,
+        "favorite_activity_types": user_profile.favorite_activity_types,
+        "gender": user_setting.user_data.gender,
+        "weight": user_setting.user_data.weight,
+        "height": user_setting.user_data.height,
+        "birth_date": user_setting.user_data.birth_date,
+        "measurement_system": user_setting.user_data.measurement_system,
+        "activity_level": user_setting.user_data.activity_level,
+        "handedness": user_setting.user_data.handedness,
+        "power_format": user_setting.user_data.power_format,
+        "heart_rate_format": user_setting.user_data.heart_rate_format,
+        "first_day_of_week": user_setting.user_data.first_day_of_week,
+        "vo_2_max_running": user_setting.user_data.vo_2_max_running,
+        "vo_2_max_cycling": user_setting.user_data.vo_2_max_cycling,
+        "lactate_threshold_speed": user_setting.user_data.lactate_threshold_speed,
+        "lactate_threshold_heart_rate": user_setting.user_data.lactate_threshold_heart_rate,
+        "dive_number": user_setting.user_data.dive_number,
+        "intensity_minutes_calc_method": user_setting.user_data.intensity_minutes_calc_method,
+        "moderate_intensity_minutes_hr_zone": user_setting.user_data.moderate_intensity_minutes_hr_zone,
+        "vigorous_intensity_minutes_hr_zone": user_setting.user_data.vigorous_intensity_minutes_hr_zone,
+    }
 
 
 @server.tool()

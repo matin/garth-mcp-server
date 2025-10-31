@@ -13,17 +13,10 @@ async def test_list_tools(mcp_client: Client):
 async def test_user_profile(mcp_client: Client):
     response = await mcp_client.call_tool("user_profile")
     assert response.is_error is False
+    breakpoint()
     assert response.content[0].type == "text"
-    profile_data = json.loads(response.content[0].text)
-    assert garth.UserProfile(**profile_data)
-
-@pytest.mark.vcr
-async def test_user_settings(mcp_client: Client):
-    response = await mcp_client.call_tool("user_settings")
-    assert response.is_error is False
-    assert response.content[0].type == "text"
-    settings_data = json.loads(response.content[0].text)
-    assert garth.UserSettings(**settings_data)
+    data = json.loads(response.content[0].text)
+    assert isinstance(data, dict)
 
 @pytest.mark.vcr
 async def test_weekly_intensity_minutes(mcp_client: Client):
