@@ -13,7 +13,6 @@ async def test_list_tools(mcp_client: Client):
 async def test_user_profile(mcp_client: Client):
     response = await mcp_client.call_tool("user_profile")
     assert response.is_error is False
-    breakpoint()
     assert response.content[0].type == "text"
     data = json.loads(response.content[0].text)
     assert isinstance(data, dict)
