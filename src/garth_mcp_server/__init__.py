@@ -171,7 +171,6 @@ def user_profile_statistics() -> dict[str, Any]:
     # Gather summaries for the last 12 months
     user_profile = garth.UserProfile.get()
     display_name = user_profile.display_name
-    # breakpoint()
 
     # Get user statistics for last 12 months
     data = garth.connectapi(f"userstats-service/statistics/{display_name}")
@@ -214,21 +213,26 @@ def user_profile_statistics() -> dict[str, Any]:
         )
 
     # Get detailed lifetime totals and convert to snake_case
-    lt = garth.connectapi(
-        f"usersummary-service/stats/connectLifetimeTotals/{display_name}"
-    )
-    assert isinstance(lt, dict), f"Expected dict, got {type(lt)}"
-    lifetime_totals = {
-        "total_distance": lt["totalDistance"],
-        "total_distance_km": round(lt["totalDistance"] / 1000, 2),
-        "total_steps": lt["totalSteps"],
-        "total_calories": lt["totalCalories"],
-        "total_goals_met_in_days": lt["totalGoalsMetInDays"],
-        "total_active_days": lt["totalActiveDays"],
-        "total_wellness_distance": lt["totalWellnessDistance"],
-        "total_wellness_distance_km": round(lt["totalWellnessDistance"] / 1000, 2),
-        "total_step_calories": lt["totalStepCalories"],
-    }
+    try:
+        lt = garth.connectapi(
+            f"usersummary-service/stats/connectLifetimeTotals/{display_name}"
+        )
+    except Exception:
+        # Investigate why for some users this endpoint raises 403 using the display_name
+        lifetime_totals = {}
+    else:
+        assert isinstance(lt, dict), f"Expected dict, got {type(lt)}"
+        lifetime_totals = {
+            "total_distance": lt["totalDistance"],
+            "total_distance_km": round(lt["totalDistance"] / 1000, 2),
+            "total_steps": lt["totalSteps"],
+            "total_calories": lt["totalCalories"],
+            "total_goals_met_in_days": lt["totalGoalsMetInDays"],
+            "total_active_days": lt["totalActiveDays"],
+            "total_wellness_distance": lt["totalWellnessDistance"],
+            "total_wellness_distance_km": round(lt["totalWellnessDistance"] / 1000, 2),
+            "total_step_calories": lt["totalStepCalories"],
+        }
 
     # Organize final stats dictionary as requested
     stats = {
