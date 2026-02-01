@@ -7,12 +7,46 @@ import garth
 from mcp.server.fastmcp import FastMCP
 
 
-__version__ = "0.0.9"
+__version__ = "0.0.10"
 
 # Type alias for functions that return data from garth.connectapi
 ConnectAPIResponse = str | dict | list | int | float | bool | None
 
 server = FastMCP("Garth - Garmin Connect", dependencies=["garth"])
+
+# Tool filtering configuration
+_ENABLED_TOOLS_ENV = os.getenv("GARTH_ENABLED_TOOLS")
+_DISABLED_TOOLS_ENV = os.getenv("GARTH_DISABLED_TOOLS")
+
+
+def _parse_tool_list(env_value: str | None) -> set[str] | None:
+    """Parse comma-separated tool names from environment variable."""
+    if not env_value:
+        return None
+    return {t.strip().lower() for t in env_value.split(",") if t.strip()}
+
+
+_ENABLED_TOOLS = _parse_tool_list(_ENABLED_TOOLS_ENV)
+_DISABLED_TOOLS = _parse_tool_list(_DISABLED_TOOLS_ENV) or set()
+
+
+def _should_register_tool(name: str) -> bool:
+    """Check if tool should be registered based on filter env vars."""
+    name_lower = name.lower()
+    if _ENABLED_TOOLS is not None:  # Whitelist mode
+        return name_lower in _ENABLED_TOOLS
+    return name_lower not in _DISABLED_TOOLS  # Blacklist mode
+
+
+def filtered_tool():
+    """Decorator that conditionally registers a tool based on env vars."""
+
+    def decorator(func):
+        if _should_register_tool(func.__name__):
+            return server.tool()(func)
+        return func
+
+    return decorator
 
 
 def requires_garth_session(func):
@@ -30,7 +64,7 @@ def requires_garth_session(func):
 # Tools using Garth data classes
 
 
-@server.tool()
+@filtered_tool()
 @requires_garth_session
 def user_profile() -> str | garth.UserProfile:
     """
@@ -39,7 +73,7 @@ def user_profile() -> str | garth.UserProfile:
     return garth.UserProfile.get()
 
 
-@server.tool()
+@filtered_tool()
 @requires_garth_session
 def user_settings() -> str | garth.UserSettings:
     """
@@ -48,7 +82,7 @@ def user_settings() -> str | garth.UserSettings:
     return garth.UserSettings.get()
 
 
-@server.tool()
+@filtered_tool()
 @requires_garth_session
 def weekly_intensity_minutes(
     end_date: date | None = None, weeks: int = 1
@@ -61,7 +95,7 @@ def weekly_intensity_minutes(
     return garth.WeeklyIntensityMinutes.list(end_date, weeks)
 
 
-@server.tool()
+@filtered_tool()
 @requires_garth_session
 def daily_body_battery(
     end_date: date | None = None, days: int = 1
@@ -74,7 +108,7 @@ def daily_body_battery(
     return garth.DailyBodyBatteryStress.list(end_date, days)
 
 
-@server.tool()
+@filtered_tool()
 @requires_garth_session
 def daily_hydration(
     end_date: date | None = None, days: int = 1
@@ -87,7 +121,7 @@ def daily_hydration(
     return garth.DailyHydration.list(end_date, days)
 
 
-@server.tool()
+@filtered_tool()
 @requires_garth_session
 def daily_steps(
     end_date: date | None = None, days: int = 1
@@ -100,7 +134,7 @@ def daily_steps(
     return garth.DailySteps.list(end_date, days)
 
 
-@server.tool()
+@filtered_tool()
 @requires_garth_session
 def weekly_steps(
     end_date: date | None = None, weeks: int = 1
@@ -113,7 +147,7 @@ def weekly_steps(
     return garth.WeeklySteps.list(end_date, weeks)
 
 
-@server.tool()
+@filtered_tool()
 @requires_garth_session
 def daily_hrv(
     end_date: date | None = None, days: int = 1
@@ -126,7 +160,7 @@ def daily_hrv(
     return garth.DailyHRV.list(end_date, days)
 
 
-@server.tool()
+@filtered_tool()
 @requires_garth_session
 def hrv_data(end_date: date | None = None, days: int = 1) -> str | list[garth.HRVData]:
     """
@@ -137,7 +171,7 @@ def hrv_data(end_date: date | None = None, days: int = 1) -> str | list[garth.HR
     return garth.HRVData.list(end_date, days)
 
 
-@server.tool()
+@filtered_tool()
 @requires_garth_session
 def daily_sleep(
     end_date: date | None = None, days: int = 1
@@ -153,7 +187,7 @@ def daily_sleep(
 # Tools using direct API calls
 
 
-@server.tool()
+@filtered_tool()
 @requires_garth_session
 def get_activities(
     start_date: str | None = None, limit: int | None = None
@@ -175,7 +209,7 @@ def get_activities(
     return garth.connectapi(endpoint)
 
 
-@server.tool()
+@filtered_tool()
 @requires_garth_session
 def get_activities_by_date(date: str) -> ConnectAPIResponse:
     """
@@ -185,7 +219,7 @@ def get_activities_by_date(date: str) -> ConnectAPIResponse:
     return garth.connectapi(f"wellness-service/wellness/dailySummaryChart/{date}")
 
 
-@server.tool()
+@filtered_tool()
 @requires_garth_session
 def get_activity_details(activity_id: str) -> ConnectAPIResponse:
     """
@@ -195,7 +229,7 @@ def get_activity_details(activity_id: str) -> ConnectAPIResponse:
     return garth.connectapi(f"activity-service/activity/{activity_id}")
 
 
-@server.tool()
+@filtered_tool()
 @requires_garth_session
 def get_activity_splits(activity_id: str) -> ConnectAPIResponse:
     """
@@ -205,7 +239,7 @@ def get_activity_splits(activity_id: str) -> ConnectAPIResponse:
     return garth.connectapi(f"activity-service/activity/{activity_id}/splits")
 
 
-@server.tool()
+@filtered_tool()
 @requires_garth_session
 def get_activity_weather(activity_id: str) -> ConnectAPIResponse:
     """
@@ -215,7 +249,7 @@ def get_activity_weather(activity_id: str) -> ConnectAPIResponse:
     return garth.connectapi(f"activity-service/activity/{activity_id}/weather")
 
 
-@server.tool()
+@filtered_tool()
 @requires_garth_session
 def get_body_composition(date: str | None = None) -> ConnectAPIResponse:
     """
@@ -229,7 +263,7 @@ def get_body_composition(date: str | None = None) -> ConnectAPIResponse:
     return garth.connectapi(endpoint)
 
 
-@server.tool()
+@filtered_tool()
 @requires_garth_session
 def get_respiration_data(date: str) -> ConnectAPIResponse:
     """
@@ -239,7 +273,7 @@ def get_respiration_data(date: str) -> ConnectAPIResponse:
     return garth.connectapi(f"wellness-service/wellness/dailyRespiration/{date}")
 
 
-@server.tool()
+@filtered_tool()
 @requires_garth_session
 def get_spo2_data(date: str) -> ConnectAPIResponse:
     """
@@ -249,7 +283,7 @@ def get_spo2_data(date: str) -> ConnectAPIResponse:
     return garth.connectapi(f"wellness-service/wellness/dailyPulseOx/{date}")
 
 
-@server.tool()
+@filtered_tool()
 @requires_garth_session
 def get_blood_pressure(date: str) -> ConnectAPIResponse:
     """
@@ -259,7 +293,7 @@ def get_blood_pressure(date: str) -> ConnectAPIResponse:
     return garth.connectapi(f"wellness-service/wellness/dailyBloodPressure/{date}")
 
 
-@server.tool()
+@filtered_tool()
 @requires_garth_session
 def get_devices() -> ConnectAPIResponse:
     """
@@ -268,7 +302,7 @@ def get_devices() -> ConnectAPIResponse:
     return garth.connectapi("device-service/deviceregistration/devices")
 
 
-@server.tool()
+@filtered_tool()
 @requires_garth_session
 def get_device_settings(device_id: str) -> ConnectAPIResponse:
     """
@@ -280,7 +314,7 @@ def get_device_settings(device_id: str) -> ConnectAPIResponse:
     )
 
 
-@server.tool()
+@filtered_tool()
 @requires_garth_session
 def get_gear() -> ConnectAPIResponse:
     """
@@ -289,7 +323,7 @@ def get_gear() -> ConnectAPIResponse:
     return garth.connectapi("gear-service/gear")
 
 
-@server.tool()
+@filtered_tool()
 @requires_garth_session
 def get_gear_stats(gear_uuid: str) -> ConnectAPIResponse:
     """
@@ -299,7 +333,7 @@ def get_gear_stats(gear_uuid: str) -> ConnectAPIResponse:
     return garth.connectapi(f"gear-service/gear/stats/{gear_uuid}")
 
 
-@server.tool()
+@filtered_tool()
 @requires_garth_session
 def get_connectapi_endpoint(endpoint: str) -> ConnectAPIResponse:
     """
@@ -309,7 +343,7 @@ def get_connectapi_endpoint(endpoint: str) -> ConnectAPIResponse:
     return garth.connectapi(endpoint)
 
 
-@server.tool()
+@filtered_tool()
 @requires_garth_session
 def nightly_sleep(
     end_date: date | None = None, nights: int = 1, sleep_movement: bool = False
@@ -329,7 +363,7 @@ def nightly_sleep(
     return sleep_data
 
 
-@server.tool()
+@filtered_tool()
 @requires_garth_session
 def daily_stress(
     end_date: date | None = None, days: int = 1
@@ -342,7 +376,7 @@ def daily_stress(
     return garth.DailyStress.list(end_date, days)
 
 
-@server.tool()
+@filtered_tool()
 @requires_garth_session
 def weekly_stress(
     end_date: date | None = None, weeks: int = 1
@@ -355,7 +389,7 @@ def weekly_stress(
     return garth.WeeklyStress.list(end_date, weeks)
 
 
-@server.tool()
+@filtered_tool()
 @requires_garth_session
 def daily_intensity_minutes(
     end_date: date | None = None, days: int = 1
@@ -368,7 +402,7 @@ def daily_intensity_minutes(
     return garth.DailyIntensityMinutes.list(end_date, days)
 
 
-@server.tool()
+@filtered_tool()
 @requires_garth_session
 def monthly_activity_summary(month: int, year: int) -> ConnectAPIResponse:
     """
@@ -377,7 +411,7 @@ def monthly_activity_summary(month: int, year: int) -> ConnectAPIResponse:
     return garth.connectapi(f"mobile-gateway/calendar/year/{year}/month/{month}")
 
 
-@server.tool()
+@filtered_tool()
 @requires_garth_session
 def snapshot(from_date: date, to_date: date) -> ConnectAPIResponse:
     """
