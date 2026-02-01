@@ -32,6 +32,40 @@ Make sure the path for the `uvx` command is fully scoped as MCP doesn't
 use the same PATH your shell does. On macOS, it's typically
 `/Users/{user}/.local/bin/uvx`.
 
+## Tool Filtering
+
+By default, all 30 tools are exposed. To reduce context size for LLM usage,
+you can filter tools using environment variables.
+
+### Enable specific tools only (whitelist)
+
+```json
+{
+  "mcpServers": {
+    "Garth - Garmin Connect": {
+      "command": "uvx",
+      "args": ["garth-mcp-server"],
+      "env": {
+        "GARTH_TOKEN": "<token>",
+        "GARTH_ENABLED_TOOLS": "get_activities,get_activity_details,daily_steps,nightly_sleep"
+      }
+    }
+  }
+}
+```
+
+### Disable specific tools (blacklist)
+
+```json
+"env": {
+  "GARTH_TOKEN": "<token>",
+  "GARTH_DISABLED_TOOLS": "get_gear,get_gear_stats,get_device_settings,get_connectapi_endpoint"
+}
+```
+
+Tool names are case-insensitive and comma-separated. If `GARTH_ENABLED_TOOLS`
+is set, `GARTH_DISABLED_TOOLS` is ignored.
+
 ## Tools
 
 ### Health & Wellness (using Garth data classes)
