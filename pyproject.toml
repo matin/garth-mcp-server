@@ -28,6 +28,7 @@ path = "src/garth_mcp_server/__init__.py"
 
 [project.scripts]
 garth-mcp-server = "garth_mcp_server:main"
+garth-mcp-auth = "garth_mcp_server.auth:main"
 
 [project.optional-dependencies]
 dev = [
