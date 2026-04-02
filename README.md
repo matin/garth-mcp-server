@@ -21,7 +21,7 @@ Garmin Connect MCP server based on [garth](https://github.com/matin/garth).
         "garth-mcp-server"
       ],
       "env": {
-        "GARTH_TOKEN": "<output of `uvx garth login`>"
+        "GARTH_TOKEN": "<output of garth-mcp-auth>"
       }
     }
   }
@@ -31,6 +31,42 @@ Garmin Connect MCP server based on [garth](https://github.com/matin/garth).
 Make sure the path for the `uvx` command is fully scoped as MCP doesn't
 use the same PATH your shell does. On macOS, it's typically
 `/Users/{user}/.local/bin/uvx`.
+
+## Authentication
+
+The server requires a `GARTH_TOKEN` environment variable containing your
+Garmin Connect OAuth tokens. Accounts with MFA (multi-factor authentication)
+are fully supported.
+
+### Using garth-mcp-auth (recommended)
+
+```bash
+uvx --from garth-mcp-server garth-mcp-auth
+```
+
+This will prompt for:
+1. Your Garmin email
+2. Your Garmin password (hidden)
+3. Your MFA code (if MFA is enabled on your account)
+
+On success, it prints a token string. Copy this into your MCP config's
+`GARTH_TOKEN` value.
+
+### Using garth CLI
+
+Alternatively, you can use the [garth](https://github.com/matin/garth) CLI
+directly:
+
+```bash
+uvx garth login
+```
+
+### Token lifetime
+
+The token includes an OAuth1 token and an MFA token. The MFA token is
+typically valid for ~1 year, so you should only need to re-authenticate
+annually. The OAuth2 access token expires more frequently but is
+automatically refreshed by the server using the OAuth1 token.
 
 ## Tool Filtering
 
